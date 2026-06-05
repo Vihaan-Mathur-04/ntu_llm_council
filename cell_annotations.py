@@ -2,6 +2,7 @@
 Cell annotation pipeline (NTU LLM Council - MEMORY SAFE VERSION)
 
 FINAL ARCHITECTURE:
+- Input: dataframe ONLY (NO file handling here)
 - Load 1 model at a time
 - Run ALL cells
 - Unload model
@@ -13,24 +14,12 @@ Then:
 """
 
 import asyncio
+import time
 import pandas as pd
 import torch
 import gc
 
 from backend.model_loader import run_unified_model
-
-
-# =========================================================
-# LOAD DATA (TEST MODE = 2 ROWS ONLY)
-# =========================================================
-
-def load_data(path: str):
-    df = pd.read_csv(path).head(2)
-
-    print(f"[INFO] Loaded shape: {df.shape}")
-    print(f"[INFO] Columns: {list(df.columns)}")
-
-    return df
 
 
 # =========================================================
@@ -64,7 +53,7 @@ Dendritic cell
 Endothelial cell
 Stem cell
 
-Return ONLY the label.
+Return ONLY ONE label.
 """.strip()
 
 
@@ -80,32 +69,33 @@ async def run_model_over_dataset(df, model_name, marker_col):
     print(f"LOADING MODEL: {model_name}")
     print("====================\n")
 
+    batch_start = time.time()
+
     for i in range(len(df)):
+
+        row_start = time.time()
 
         marker_text = str(df.iloc[i][marker_col])
         prompt = format_prompt(marker_text)
 
-        try:
-            output = run_unified_model(
-                model_name=model_name,
-                prompt=prompt,
-                max_new_tokens=64
-            )
-        except Exception as e:
-            print(f"[{model_name}][{i}] ERROR → {e}")
-            output = "ERROR"
+        output = run_unified_model(
+            model_name=model_name,
+            prompt=prompt,
+            max_new_tokens=64
+        )
 
-        if not isinstance(output, str) or len(output.strip()) == 0:
-            output = "ERROR_EMPTY"
-
-        label = output.strip()
+        label = output.strip() if isinstance(output, str) else "ERROR"
 
         predictions.append({
             "label": label,
             "confidence": None
         })
 
-        print(f"[{model_name}][{i}] → {label}")
+        row_time = time.time() - row_start
+        print(f"[{model_name}][{i}] → {label} ({row_time:.2f}s)")
+
+    batch_time = time.time() - batch_start
+    print(f"\n[MODEL DONE] {model_name} took {batch_time:.2f}s\n")
 
     return predictions
 
@@ -165,7 +155,7 @@ REASONING: ...
                 label = output.split("LABEL:")[1].split("\n")[0].strip()
 
             if "CONFIDENCE:" in output:
-                conf = output.split("CONFIDENCE:")[1].split("\n")[0].split("\n")[0].strip()
+                conf = output.split("CONFIDENCE:")[1].split("\n")[0].strip()
 
             if "REASONING:" in output:
                 reasoning = output.split("REASONING:")[1].strip()
@@ -184,7 +174,7 @@ REASONING: ...
 # =========================================================
 
 def safe_extract(model_outputs, n):
-    if not model_outputs or len(model_outputs) == 0:
+    if not model_outputs:
         return ["ERROR"] * n
 
     return [
@@ -194,12 +184,12 @@ def safe_extract(model_outputs, n):
 
 
 # =========================================================
-# PIPELINE
+# PIPELINE (ONLY ACCEPTS DF)
 # =========================================================
 
-async def run_pipeline(input_path: str):
+async def run_pipeline(df):
 
-    df = load_data(input_path)
+    pipeline_start = time.time()
     marker_col = df.columns[2]
 
     base_outputs = {
@@ -208,33 +198,26 @@ async def run_pipeline(input_path: str):
         "biomistral": []
     }
 
-    # =====================================================
-    # BASE MODELS (STRICT SEQUENTIAL EXECUTION)
-    # =====================================================
-
+    # -------------------------
+    # BASE MODELS
+    # -------------------------
     for model in ["txgemma", "qwen", "biomistral"]:
 
         preds = await run_model_over_dataset(df, model, marker_col)
-
         base_outputs[model] = preds
 
         gc.collect()
         if torch.backends.mps.is_available():
             torch.mps.empty_cache()
 
-    # =====================================================
+    # -------------------------
     # CHAIRMAN
-    # =====================================================
-
+    # -------------------------
     labels, confs, reasoning = await run_chairman(df, base_outputs, marker_col)
 
     gc.collect()
     if torch.backends.mps.is_available():
         torch.mps.empty_cache()
-
-    # =====================================================
-    # SAVE OUTPUT
-    # =====================================================
 
     output_df = df.copy()
 
@@ -246,19 +229,22 @@ async def run_pipeline(input_path: str):
     output_df["Council_Confidence"] = confs
     output_df["Council_Reasoning"] = reasoning
 
-    output_df.to_csv("cellstar_predictions.csv", index=False)
-
     print("\n========================")
     print("DONE")
     print("========================")
-    print("Saved to: cellstar_predictions.csv")
+    print(f"TOTAL TIME: {(time.time() - pipeline_start)/60:.2f} minutes")
+
+    return output_df
 
 
 # =========================================================
-# ENTRY POINT
+# ENTRY POINT (SAFE TEST ONLY)
 # =========================================================
 
 if __name__ == "__main__":
 
-    input_path = "/Users/vihaan_mathur/ntu_project/llm_council/cellstar_preprocessed.csv"
-    asyncio.run(run_pipeline(input_path))
+    # IMPORTANT:
+    # DO NOT call run_pipeline with arguments anymore.
+    # Use batch_runner.py for slicing.
+
+    print("[INFO] This module is now pipeline-only (no direct execution).")

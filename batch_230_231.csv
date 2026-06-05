@@ -1,0 +1,23 @@
+Cell_ID,Cell_Name,Marker_Genes,Marker_Count,TxGemma,Qwen,BioMistral,Council_Final,Council_Confidence,Council_Reasoning
+CT_0000404,ovarian surface epithelial cell,Ly6a,1,"T cell
+B cell
+NK cell
+Monocyte
+Macrophage
+Dendritic cell
+Endothelial cell
+Stem cell
+Macrophage
+```",,,T cell,0.75,"Ly6a is expressed on a subset of T cells, particularly in activated or memory T cells. It is also present on some subsets of B cells and NK cells. The other cell types listed are not generally associated with high expression of Ly6a.
+
+**4. Confidence:** 0.75 (Reasoning: The confidence level is based on the general understanding of Ly6a expression patterns, considering that some of these cell types can express it)"
+CT_0000157,dermal sheath cell,"Acan,Acta2",2,"Macrophage
+```",,,Macrophage,0.85  (This is an example; actual confidence will depend on the resolution process),"Based on initial analysis, TxGemma's prediction of ""Macrophage"" appears to be most supported by its training data and known cell biology. While we need to consider the other models, Macrophage seems like a reasonable answer for now.
+
+**4. Provide Confidence (0-1):**
+
+This is a subjective estimate reflecting the level of certainty based on the evidence available at this point.  It's important to note that confidence can change as more information becomes available.
+
+**5. Provide Short Reasoning:**
+
+A brief explanation for the final label and its supporting reasoning."
