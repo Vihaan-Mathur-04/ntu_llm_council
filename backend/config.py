@@ -29,8 +29,7 @@ OLLAMA_MODELS = {
 # =========================================================
 
 HF_MODELS = {
-    "txgemma": "google/txgemma-9b-chat",
-    "biomistral": "BioMistral/BioMistral-7B"
+    "meditron": "meditron:7b"
 }
 
 
@@ -39,9 +38,8 @@ HF_MODELS = {
 # =========================================================
 
 COUNCIL_MEMBERS = [
-    "txgemma",
     "qwen",
-    "biomistral"
+    "meditron"
 ]
 
 
@@ -62,8 +60,7 @@ MODEL_BACKENDS = {
     "medgemma": "ollama",
 
     # HF-backed models
-    "txgemma": "hf",
-    "biomistral": "hf"
+    "meditron": "ollama"
 }
 
 
@@ -72,9 +69,8 @@ MODEL_BACKENDS = {
 # =========================================================
 
 MODEL_ROLES = {
-    "txgemma": "biomedical_reasoner",
     "qwen": "general_reasoner",
-    "biomistral": "clinical_reasoner",
+    "meditron": "clinical_reasoner",
     "medgemma": "chairman_synthesizer"
 }
 

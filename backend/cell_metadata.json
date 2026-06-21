@@ -1,0 +1,4146 @@
+[
+  {
+    "id": 0,
+    "cell_name": "11b+ dendritic cell"
+  },
+  {
+    "id": 1,
+    "cell_name": "11b- dendritic cell"
+  },
+  {
+    "id": 2,
+    "cell_name": "AIRE-enriched cell"
+  },
+  {
+    "id": 3,
+    "cell_name": "Abnormal myeloid cell"
+  },
+  {
+    "id": 4,
+    "cell_name": "Acinar cell"
+  },
+  {
+    "id": 5,
+    "cell_name": "Activated B cell"
+  },
+  {
+    "id": 6,
+    "cell_name": "Activated CD4+ T cell"
+  },
+  {
+    "id": 7,
+    "cell_name": "Activated CD8+ T cell"
+  },
+  {
+    "id": 8,
+    "cell_name": "Activated T cell"
+  },
+  {
+    "id": 9,
+    "cell_name": "Activated cell"
+  },
+  {
+    "id": 10,
+    "cell_name": "Activated dendritic cell"
+  },
+  {
+    "id": 11,
+    "cell_name": "Activated double-positive T cell"
+  },
+  {
+    "id": 12,
+    "cell_name": "Activated endothelial cell"
+  },
+  {
+    "id": 13,
+    "cell_name": "Activated langerhans cell"
+  },
+  {
+    "id": 14,
+    "cell_name": "Activated memory B cell"
+  },
+  {
+    "id": 15,
+    "cell_name": "Activated memory CD8+ T cell"
+  },
+  {
+    "id": 16,
+    "cell_name": "Activated memory T cell"
+  },
+  {
+    "id": 17,
+    "cell_name": "Activated microglial cell"
+  },
+  {
+    "id": 18,
+    "cell_name": "Activated naive CD8+ T cell"
+  },
+  {
+    "id": 19,
+    "cell_name": "Activated naive T cell"
+  },
+  {
+    "id": 20,
+    "cell_name": "Activated natural killer cell"
+  },
+  {
+    "id": 21,
+    "cell_name": "Adipocyte"
+  },
+  {
+    "id": 22,
+    "cell_name": "Adipocyte progenitor cell"
+  },
+  {
+    "id": 23,
+    "cell_name": "Adrenal medulla cell"
+  },
+  {
+    "id": 24,
+    "cell_name": "Adult neural stem cell"
+  },
+  {
+    "id": 25,
+    "cell_name": "Adult podocyte"
+  },
+  {
+    "id": 26,
+    "cell_name": "Adult spermatogonia"
+  },
+  {
+    "id": 27,
+    "cell_name": "Aerocyte"
+  },
+  {
+    "id": 28,
+    "cell_name": "Aerocyte endothelial cell"
+  },
+  {
+    "id": 29,
+    "cell_name": "Age-associated B cell"
+  },
+  {
+    "id": 30,
+    "cell_name": "Aged memory B cell"
+  },
+  {
+    "id": 31,
+    "cell_name": "Airway smooth muscle cell"
+  },
+  {
+    "id": 32,
+    "cell_name": "Alpha cell (α cell)"
+  },
+  {
+    "id": 33,
+    "cell_name": "Alveolar cell"
+  },
+  {
+    "id": 34,
+    "cell_name": "Alveolar cell Type 1"
+  },
+  {
+    "id": 35,
+    "cell_name": "Alveolar cell Type 2"
+  },
+  {
+    "id": 36,
+    "cell_name": "Alveolar epithelial cell Type 1"
+  },
+  {
+    "id": 37,
+    "cell_name": "Alveolar epithelial cell Type 2"
+  },
+  {
+    "id": 38,
+    "cell_name": "Alveolar macrophage"
+  },
+  {
+    "id": 39,
+    "cell_name": "Alveolar pneumocyte Type I"
+  },
+  {
+    "id": 40,
+    "cell_name": "Alveolar pneumocyte Type II"
+  },
+  {
+    "id": 41,
+    "cell_name": "Alveolar type 2-like cell"
+  },
+  {
+    "id": 42,
+    "cell_name": "Alveolar type II (ATII) cell"
+  },
+  {
+    "id": 43,
+    "cell_name": "Amacrine cell"
+  },
+  {
+    "id": 44,
+    "cell_name": "Anterior cell"
+  },
+  {
+    "id": 45,
+    "cell_name": "Anterior placode cell"
+  },
+  {
+    "id": 46,
+    "cell_name": "Anti-tumor immune cell"
+  },
+  {
+    "id": 47,
+    "cell_name": "Antibody Secreting B cell"
+  },
+  {
+    "id": 48,
+    "cell_name": "Antibody-secreting cell"
+  },
+  {
+    "id": 49,
+    "cell_name": "Antigen presentation cancer-associated fibroblast"
+  },
+  {
+    "id": 50,
+    "cell_name": "Antigen-presenting cell"
+  },
+  {
+    "id": 51,
+    "cell_name": "Antrum gastric epithelial cell"
+  },
+  {
+    "id": 52,
+    "cell_name": "Apical cell"
+  },
+  {
+    "id": 53,
+    "cell_name": "Arterial endothelial cell"
+  },
+  {
+    "id": 54,
+    "cell_name": "Arteriole endothelial cell"
+  },
+  {
+    "id": 55,
+    "cell_name": "Artery cell"
+  },
+  {
+    "id": 56,
+    "cell_name": "Artery endothelial cell"
+  },
+  {
+    "id": 57,
+    "cell_name": "Ascending vasa recta cell"
+  },
+  {
+    "id": 58,
+    "cell_name": "Astrocyte"
+  },
+  {
+    "id": 59,
+    "cell_name": "Atrial cell"
+  },
+  {
+    "id": 60,
+    "cell_name": "Atrioventricular canal cell"
+  },
+  {
+    "id": 61,
+    "cell_name": "Atypical memory B cell"
+  },
+  {
+    "id": 62,
+    "cell_name": "B cell"
+  },
+  {
+    "id": 63,
+    "cell_name": "B cell lineage"
+  },
+  {
+    "id": 64,
+    "cell_name": "B progenitor cell"
+  },
+  {
+    "id": 65,
+    "cell_name": "B-2 cell"
+  },
+  {
+    "id": 66,
+    "cell_name": "Basal cell"
+  },
+  {
+    "id": 67,
+    "cell_name": "Basal epithelial cell"
+  },
+  {
+    "id": 68,
+    "cell_name": "Basal gland mucous cell"
+  },
+  {
+    "id": 69,
+    "cell_name": "Basal keratinocyte"
+  },
+  {
+    "id": 70,
+    "cell_name": "Basal progenitor cell"
+  },
+  {
+    "id": 71,
+    "cell_name": "Basal-like cell"
+  },
+  {
+    "id": 72,
+    "cell_name": "Basophil"
+  },
+  {
+    "id": 73,
+    "cell_name": "Beige adipocyte"
+  },
+  {
+    "id": 74,
+    "cell_name": "Beta cell(β cell)"
+  },
+  {
+    "id": 75,
+    "cell_name": "Beta-like cell"
+  },
+  {
+    "id": 76,
+    "cell_name": "Biliary cell"
+  },
+  {
+    "id": 77,
+    "cell_name": "Biliary epithelial cell"
+  },
+  {
+    "id": 78,
+    "cell_name": "Bipolar cell"
+  },
+  {
+    "id": 79,
+    "cell_name": "Bladder epithelial cell"
+  },
+  {
+    "id": 80,
+    "cell_name": "Blood cell"
+  },
+  {
+    "id": 81,
+    "cell_name": "Blood vessel cell"
+  },
+  {
+    "id": 82,
+    "cell_name": "Border-associated macrophage"
+  },
+  {
+    "id": 83,
+    "cell_name": "Bowman’s gland cell"
+  },
+  {
+    "id": 84,
+    "cell_name": "Brain cell"
+  },
+  {
+    "id": 85,
+    "cell_name": "Broad excitatory neuron"
+  },
+  {
+    "id": 86,
+    "cell_name": "Bronchial vessel cell"
+  },
+  {
+    "id": 87,
+    "cell_name": "Brown adipocyte"
+  },
+  {
+    "id": 88,
+    "cell_name": "Brush cell (Tuft cell)"
+  },
+  {
+    "id": 89,
+    "cell_name": "Bud tip progenitor cell"
+  },
+  {
+    "id": 90,
+    "cell_name": "CAR-T cell"
+  },
+  {
+    "id": 91,
+    "cell_name": "CD106+ mesenchymal stem cell"
+  },
+  {
+    "id": 92,
+    "cell_name": "CD14 monocyte"
+  },
+  {
+    "id": 93,
+    "cell_name": "CD14+ monocyte"
+  },
+  {
+    "id": 94,
+    "cell_name": "CD16 monocyte"
+  },
+  {
+    "id": 95,
+    "cell_name": "CD16+ monocyte"
+  },
+  {
+    "id": 96,
+    "cell_name": "CD1C+ dentritic cell"
+  },
+  {
+    "id": 97,
+    "cell_name": "CD20+ B cell"
+  },
+  {
+    "id": 98,
+    "cell_name": "CD3/CD28-stimulated NK cell"
+  },
+  {
+    "id": 99,
+    "cell_name": "CD3/CD28-stimulated T cell"
+  },
+  {
+    "id": 100,
+    "cell_name": "CD34+ progenitor cell"
+  },
+  {
+    "id": 101,
+    "cell_name": "CD4 T cell"
+  },
+  {
+    "id": 102,
+    "cell_name": "CD4 peripherally derived regulatory T cell"
+  },
+  {
+    "id": 103,
+    "cell_name": "CD4+ T cell"
+  },
+  {
+    "id": 104,
+    "cell_name": "CD4+ T helper cell"
+  },
+  {
+    "id": 105,
+    "cell_name": "CD4+ central memory like T (Tcm-like) cell"
+  },
+  {
+    "id": 106,
+    "cell_name": "CD4+ cytotoxic T lymphocyte"
+  },
+  {
+    "id": 107,
+    "cell_name": "CD4+ cytotoxic T1 cell"
+  },
+  {
+    "id": 108,
+    "cell_name": "CD4+ cytotoxic T2 cell"
+  },
+  {
+    "id": 109,
+    "cell_name": "CD4+ recently activated effector memory or effector T cell (CTL)"
+  },
+  {
+    "id": 110,
+    "cell_name": "CD4+ tumor antigen-specific T (Tas) cell"
+  },
+  {
+    "id": 111,
+    "cell_name": "CD45+ immune cell"
+  },
+  {
+    "id": 112,
+    "cell_name": "CD5+ dendritic cell"
+  },
+  {
+    "id": 113,
+    "cell_name": "CD56+ natural killer cell"
+  },
+  {
+    "id": 114,
+    "cell_name": "CD8 T cell"
+  },
+  {
+    "id": 115,
+    "cell_name": "CD8+ T cell"
+  },
+  {
+    "id": 116,
+    "cell_name": "CD8+ mucosal-associated invariant T cell(CD8+ MAIT)"
+  },
+  {
+    "id": 117,
+    "cell_name": "CD8+ recently activated effector memory or effector T cell (CTL)"
+  },
+  {
+    "id": 118,
+    "cell_name": "CD8+ terminally differentiated effector memory re-expressing CD45RA T cell(CD8+ TEMRA)"
+  },
+  {
+    "id": 119,
+    "cell_name": "CD8+ tumor antigen-specific T (Tas) cell"
+  },
+  {
+    "id": 120,
+    "cell_name": "CD8+ intraepithelial cell"
+  },
+  {
+    "id": 121,
+    "cell_name": "CLEC10A+ dendritic cell"
+  },
+  {
+    "id": 122,
+    "cell_name": "CLEC9A+ dendritic cell"
+  },
+  {
+    "id": 123,
+    "cell_name": "CMP cell"
+  },
+  {
+    "id": 124,
+    "cell_name": "Cajal-Retzius cell"
+  },
+  {
+    "id": 125,
+    "cell_name": "Cajal-Retzius neuron"
+  },
+  {
+    "id": 126,
+    "cell_name": "Cancer Stem cell"
+  },
+  {
+    "id": 127,
+    "cell_name": "Cancer cell"
+  },
+  {
+    "id": 128,
+    "cell_name": "Cancer stem cell"
+  },
+  {
+    "id": 129,
+    "cell_name": "Cancer-associated fibroblast"
+  },
+  {
+    "id": 130,
+    "cell_name": "Cap mesenchymal cell"
+  },
+  {
+    "id": 131,
+    "cell_name": "Capillary cell"
+  },
+  {
+    "id": 132,
+    "cell_name": "Capillary endothelial cell"
+  },
+  {
+    "id": 133,
+    "cell_name": "Capsular fibroblast(Fb2)"
+  },
+  {
+    "id": 134,
+    "cell_name": "Cardiac cell"
+  },
+  {
+    "id": 135,
+    "cell_name": "Cardiomyocyte"
+  },
+  {
+    "id": 136,
+    "cell_name": "Cardiosphere-derived cell"
+  },
+  {
+    "id": 137,
+    "cell_name": "Cardiovascular cell"
+  },
+  {
+    "id": 138,
+    "cell_name": "Cardiovascular progenitor cell"
+  },
+  {
+    "id": 139,
+    "cell_name": "Cartilage progenitor cell"
+  },
+  {
+    "id": 140,
+    "cell_name": "Caudal cortex cell"
+  },
+  {
+    "id": 141,
+    "cell_name": "Caudal forebrain cell"
+  },
+  {
+    "id": 142,
+    "cell_name": "Caudal ganglionic eminence cell"
+  },
+  {
+    "id": 143,
+    "cell_name": "Central memory CD4+ T cell"
+  },
+  {
+    "id": 144,
+    "cell_name": "Central memory CD8+ T cell"
+  },
+  {
+    "id": 145,
+    "cell_name": "Central memory T cell"
+  },
+  {
+    "id": 146,
+    "cell_name": "Central memory T cell precursor"
+  },
+  {
+    "id": 147,
+    "cell_name": "Central nervous system cell"
+  },
+  {
+    "id": 148,
+    "cell_name": "Chandelier cell"
+  },
+  {
+    "id": 149,
+    "cell_name": "Chief cell"
+  },
+  {
+    "id": 150,
+    "cell_name": "Cholangiocyte"
+  },
+  {
+    "id": 151,
+    "cell_name": "Cholinergic neuron"
+  },
+  {
+    "id": 152,
+    "cell_name": "Chondrocyte"
+  },
+  {
+    "id": 153,
+    "cell_name": "Choriocapillaris cell"
+  },
+  {
+    "id": 154,
+    "cell_name": "Choroid plexus cell"
+  },
+  {
+    "id": 155,
+    "cell_name": "Chromaffin cell"
+  },
+  {
+    "id": 156,
+    "cell_name": "Ciliary body cell"
+  },
+  {
+    "id": 157,
+    "cell_name": "Ciliated airway epithelial cell"
+  },
+  {
+    "id": 158,
+    "cell_name": "Ciliated cell"
+  },
+  {
+    "id": 159,
+    "cell_name": "Ciliated epithelial Cell"
+  },
+  {
+    "id": 160,
+    "cell_name": "Circulating memory T cell"
+  },
+  {
+    "id": 161,
+    "cell_name": "Circulating natural killer cell"
+  },
+  {
+    "id": 162,
+    "cell_name": "Classical barrett’s esophagus cell"
+  },
+  {
+    "id": 163,
+    "cell_name": "Classical dendritic cell a(cDCa)"
+  },
+  {
+    "id": 164,
+    "cell_name": "Classical dendritic cell b(cDCb)"
+  },
+  {
+    "id": 165,
+    "cell_name": "Classical monocyte"
+  },
+  {
+    "id": 166,
+    "cell_name": "Classical plasma cell"
+  },
+  {
+    "id": 167,
+    "cell_name": "Club cell (Clara cell)"
+  },
+  {
+    "id": 168,
+    "cell_name": "Collecting Duct Principal Cell"
+  },
+  {
+    "id": 169,
+    "cell_name": "Collecting duct & Ureteric Bud cell"
+  },
+  {
+    "id": 170,
+    "cell_name": "Collecting duct-intercalated cell (type A)"
+  },
+  {
+    "id": 171,
+    "cell_name": "Collecting duct-intercalated cell (type B)"
+  },
+  {
+    "id": 172,
+    "cell_name": "Collecting duct-principal cell"
+  },
+  {
+    "id": 173,
+    "cell_name": "Collecting duct-transitional cell"
+  },
+  {
+    "id": 174,
+    "cell_name": "Collecting ductal cell"
+  },
+  {
+    "id": 175,
+    "cell_name": "Colonic stem cell"
+  },
+  {
+    "id": 176,
+    "cell_name": "Colonocyte"
+  },
+  {
+    "id": 177,
+    "cell_name": "Columnar epithelial cell"
+  },
+  {
+    "id": 178,
+    "cell_name": "Common lymphoid progenitor cell"
+  },
+  {
+    "id": 179,
+    "cell_name": "Common myeloid progenitor cell"
+  },
+  {
+    "id": 180,
+    "cell_name": "Cone cell"
+  },
+  {
+    "id": 181,
+    "cell_name": "Cone photoreceptor cell"
+  },
+  {
+    "id": 182,
+    "cell_name": "Connecting tubular cell"
+  },
+  {
+    "id": 183,
+    "cell_name": "Conventional CD4 T cell"
+  },
+  {
+    "id": 184,
+    "cell_name": "Conventional CD4+ T cell"
+  },
+  {
+    "id": 185,
+    "cell_name": "Conventional CD8+ T cell"
+  },
+  {
+    "id": 186,
+    "cell_name": "Conventional T(Tconv) cell"
+  },
+  {
+    "id": 187,
+    "cell_name": "Conventional dendritic cell 1(cDC1)"
+  },
+  {
+    "id": 188,
+    "cell_name": "Conventional dendritic cell 2(cDC2)"
+  },
+  {
+    "id": 189,
+    "cell_name": "Conventional dendritic cell 2a(cDC2a)"
+  },
+  {
+    "id": 190,
+    "cell_name": "Conventional dendritic cell 2b(cDC2b)"
+  },
+  {
+    "id": 191,
+    "cell_name": "Conventional dendritic cell(cDC)"
+  },
+  {
+    "id": 192,
+    "cell_name": "Corneal cell"
+  },
+  {
+    "id": 193,
+    "cell_name": "Corneal epithelial cell"
+  },
+  {
+    "id": 194,
+    "cell_name": "Corneocyte-like cell"
+  },
+  {
+    "id": 195,
+    "cell_name": "Cortical cell"
+  },
+  {
+    "id": 196,
+    "cell_name": "Cortical stromal cell"
+  },
+  {
+    "id": 197,
+    "cell_name": "Corticotroph cell"
+  },
+  {
+    "id": 198,
+    "cell_name": "Corticotroph tumor cell"
+  },
+  {
+    "id": 199,
+    "cell_name": "Cranial neural crest cell"
+  },
+  {
+    "id": 200,
+    "cell_name": "Cranial neural crest-derived mesenchymal cell"
+  },
+  {
+    "id": 201,
+    "cell_name": "Cross-presenting dendritic cell"
+  },
+  {
+    "id": 202,
+    "cell_name": "Cutaneous squamous cell carcinoma (cSCC)cell"
+  },
+  {
+    "id": 203,
+    "cell_name": "Cycling B cell"
+  },
+  {
+    "id": 204,
+    "cell_name": "Cycling cell"
+  },
+  {
+    "id": 205,
+    "cell_name": "Cycling epithelial cell"
+  },
+  {
+    "id": 206,
+    "cell_name": "Cycling transient-amplifying cell"
+  },
+  {
+    "id": 207,
+    "cell_name": "Cytotoxic CD4+ T cell"
+  },
+  {
+    "id": 208,
+    "cell_name": "Cytotoxic CD4+ T2 cell"
+  },
+  {
+    "id": 209,
+    "cell_name": "Cytotoxic CD8 T cell"
+  },
+  {
+    "id": 210,
+    "cell_name": "Cytotoxic CD8+ T cell"
+  },
+  {
+    "id": 211,
+    "cell_name": "Cytotoxic T cell"
+  },
+  {
+    "id": 212,
+    "cell_name": "Cytotoxic T cell 2"
+  },
+  {
+    "id": 213,
+    "cell_name": "Cytotoxic T helper 1 cell"
+  },
+  {
+    "id": 214,
+    "cell_name": "Cytotoxic cell"
+  },
+  {
+    "id": 215,
+    "cell_name": "Cytotoxic double-positive T cell"
+  },
+  {
+    "id": 216,
+    "cell_name": "Cytotoxic effector T cell"
+  },
+  {
+    "id": 217,
+    "cell_name": "Cytotoxic natural killer cell"
+  },
+  {
+    "id": 218,
+    "cell_name": "D1-MSN(medium spiny neuron)"
+  },
+  {
+    "id": 219,
+    "cell_name": "D2-MSN(medium spiny neuron)"
+  },
+  {
+    "id": 220,
+    "cell_name": "Dark zone cell"
+  },
+  {
+    "id": 221,
+    "cell_name": "Deep layer cell"
+  },
+  {
+    "id": 222,
+    "cell_name": "Deep layer excitatory neuron"
+  },
+  {
+    "id": 223,
+    "cell_name": "Deep layer neuron"
+  },
+  {
+    "id": 224,
+    "cell_name": "Definitive endoderm cell"
+  },
+  {
+    "id": 225,
+    "cell_name": "Delta cell"
+  },
+  {
+    "id": 226,
+    "cell_name": "Dendritic cell"
+  },
+  {
+    "id": 227,
+    "cell_name": "Dendritic cell lineage"
+  },
+  {
+    "id": 228,
+    "cell_name": "Dental follicle(DF) cell"
+  },
+  {
+    "id": 229,
+    "cell_name": "Dermal cell"
+  },
+  {
+    "id": 230,
+    "cell_name": "Dermal fibroblast"
+  },
+  {
+    "id": 231,
+    "cell_name": "Dermal progenitor cell"
+  },
+  {
+    "id": 232,
+    "cell_name": "Descending thin limb cell"
+  },
+  {
+    "id": 233,
+    "cell_name": "Descending thin limb of LOH cell"
+  },
+  {
+    "id": 234,
+    "cell_name": "Descending vasa recta cell"
+  },
+  {
+    "id": 235,
+    "cell_name": "Deuterosomal cell"
+  },
+  {
+    "id": 236,
+    "cell_name": "Developing corpus callosum cell"
+  },
+  {
+    "id": 237,
+    "cell_name": "Developing nephron"
+  },
+  {
+    "id": 238,
+    "cell_name": "Differentiated keratinocyte"
+  },
+  {
+    "id": 239,
+    "cell_name": "Differentiating progenitor cell"
+  },
+  {
+    "id": 240,
+    "cell_name": "Diffuse gastric cancer cell"
+  },
+  {
+    "id": 241,
+    "cell_name": "Disease-associated microglial cell"
+  },
+  {
+    "id": 242,
+    "cell_name": "Distal cell"
+  },
+  {
+    "id": 243,
+    "cell_name": "Distal convoluted tubule Type 1(DCT1) cell"
+  },
+  {
+    "id": 244,
+    "cell_name": "Distal convoluted tubule Type 2(DCT2) cell"
+  },
+  {
+    "id": 245,
+    "cell_name": "Distal stem cell"
+  },
+  {
+    "id": 246,
+    "cell_name": "Distal tubular cell"
+  },
+  {
+    "id": 247,
+    "cell_name": "Distal tubule & loop of Henle cell"
+  },
+  {
+    "id": 248,
+    "cell_name": "Dividing T cell"
+  },
+  {
+    "id": 249,
+    "cell_name": "Dividing cardiomyocyte"
+  },
+  {
+    "id": 250,
+    "cell_name": "Dividing cell"
+  },
+  {
+    "id": 251,
+    "cell_name": "Dividing plasma B cell"
+  },
+  {
+    "id": 252,
+    "cell_name": "Dopaminergic neuron"
+  },
+  {
+    "id": 253,
+    "cell_name": "Dorsal lateral ganglionic eminence precursor cell"
+  },
+  {
+    "id": 254,
+    "cell_name": "Dorsal medial ganglionic eminence precursor cell"
+  },
+  {
+    "id": 255,
+    "cell_name": "Double-negative B cell"
+  },
+  {
+    "id": 256,
+    "cell_name": "Double-negative T cell"
+  },
+  {
+    "id": 257,
+    "cell_name": "Double-positive Treg cell"
+  },
+  {
+    "id": 258,
+    "cell_name": "Ductal cell"
+  },
+  {
+    "id": 259,
+    "cell_name": "Ductal epithelial cell"
+  },
+  {
+    "id": 260,
+    "cell_name": "Duodenal epithelial cell"
+  },
+  {
+    "id": 261,
+    "cell_name": "EMT cancer stem cell"
+  },
+  {
+    "id": 262,
+    "cell_name": "EMT non-cancer stem cell(EMT non-CSC)"
+  },
+  {
+    "id": 263,
+    "cell_name": "EMT-like cell"
+  },
+  {
+    "id": 264,
+    "cell_name": "Early B cell"
+  },
+  {
+    "id": 265,
+    "cell_name": "Early T cell progenitor (ETP)"
+  },
+  {
+    "id": 266,
+    "cell_name": "Early activated CD4+ T cell"
+  },
+  {
+    "id": 267,
+    "cell_name": "Early activated CD8+ T cell"
+  },
+  {
+    "id": 268,
+    "cell_name": "Early effector T cell"
+  },
+  {
+    "id": 269,
+    "cell_name": "Early erythrocyte"
+  },
+  {
+    "id": 270,
+    "cell_name": "Early erythroid progenitor cell"
+  },
+  {
+    "id": 271,
+    "cell_name": "Early hemangioblast"
+  },
+  {
+    "id": 272,
+    "cell_name": "Early megakaryocyte progenitor cell"
+  },
+  {
+    "id": 273,
+    "cell_name": "Early progenitor cell"
+  },
+  {
+    "id": 274,
+    "cell_name": "Early proximal tubule cell"
+  },
+  {
+    "id": 275,
+    "cell_name": "Early response secretory cell"
+  },
+  {
+    "id": 276,
+    "cell_name": "Early secretory cell"
+  },
+  {
+    "id": 277,
+    "cell_name": "Early-born neuron"
+  },
+  {
+    "id": 278,
+    "cell_name": "Ectodermal cell"
+  },
+  {
+    "id": 279,
+    "cell_name": "Effector CD4+ T cell"
+  },
+  {
+    "id": 280,
+    "cell_name": "Effector CD8 T cell"
+  },
+  {
+    "id": 281,
+    "cell_name": "Effector CD8+ T cell"
+  },
+  {
+    "id": 282,
+    "cell_name": "Effector T helper 1 cell"
+  },
+  {
+    "id": 283,
+    "cell_name": "Effector T(Teff) cell"
+  },
+  {
+    "id": 284,
+    "cell_name": "Effector Th2 cell"
+  },
+  {
+    "id": 285,
+    "cell_name": "Effector Th2-like cell"
+  },
+  {
+    "id": 286,
+    "cell_name": "Effector memory CD4 T cell"
+  },
+  {
+    "id": 287,
+    "cell_name": "Effector memory CD4+ T cell"
+  },
+  {
+    "id": 288,
+    "cell_name": "Effector memory CD8 T cell"
+  },
+  {
+    "id": 289,
+    "cell_name": "Effector memory CD8+ T cell"
+  },
+  {
+    "id": 290,
+    "cell_name": "Effector memory T cell"
+  },
+  {
+    "id": 291,
+    "cell_name": "Effector natural killer cell"
+  },
+  {
+    "id": 292,
+    "cell_name": "Effector regulatory T(eTreg) cell"
+  },
+  {
+    "id": 293,
+    "cell_name": "Elongating cell"
+  },
+  {
+    "id": 294,
+    "cell_name": "Ematopoietic progenitor-like cell"
+  },
+  {
+    "id": 295,
+    "cell_name": "Embryonic stem cell"
+  },
+  {
+    "id": 296,
+    "cell_name": "Endocardial cell"
+  },
+  {
+    "id": 297,
+    "cell_name": "Endocrine cell"
+  },
+  {
+    "id": 298,
+    "cell_name": "Endodermal cell"
+  },
+  {
+    "id": 299,
+    "cell_name": "Endodermal progenitor cell"
+  },
+  {
+    "id": 300,
+    "cell_name": "Endometrial stromal cell"
+  },
+  {
+    "id": 301,
+    "cell_name": "Endothelial cell"
+  },
+  {
+    "id": 302,
+    "cell_name": "Endothelial progenitor cell"
+  },
+  {
+    "id": 303,
+    "cell_name": "Ensheathing glial cell"
+  },
+  {
+    "id": 304,
+    "cell_name": "Enteric neuron"
+  },
+  {
+    "id": 305,
+    "cell_name": "Enterochromaffin cell"
+  },
+  {
+    "id": 306,
+    "cell_name": "Enterocyte"
+  },
+  {
+    "id": 307,
+    "cell_name": "Enterocyte progenitor cell"
+  },
+  {
+    "id": 308,
+    "cell_name": "Enteroendocrine cell"
+  },
+  {
+    "id": 309,
+    "cell_name": "Eomesodermin homolog(EOMES)+ regulatory T cell type 1"
+  },
+  {
+    "id": 310,
+    "cell_name": "Eosinophil"
+  },
+  {
+    "id": 311,
+    "cell_name": "Ependymal cell"
+  },
+  {
+    "id": 312,
+    "cell_name": "Ependymal-like cell"
+  },
+  {
+    "id": 313,
+    "cell_name": "Epiblast cell"
+  },
+  {
+    "id": 314,
+    "cell_name": "Epiblast-like cell"
+  },
+  {
+    "id": 315,
+    "cell_name": "Epicardial cell"
+  },
+  {
+    "id": 316,
+    "cell_name": "Epicardium-derived cell"
+  },
+  {
+    "id": 317,
+    "cell_name": "Epidermal cell"
+  },
+  {
+    "id": 318,
+    "cell_name": "Epidermal posterior cell"
+  },
+  {
+    "id": 319,
+    "cell_name": "Epidermal progenitor cell"
+  },
+  {
+    "id": 320,
+    "cell_name": "Epidermis cell"
+  },
+  {
+    "id": 321,
+    "cell_name": "Epithelial cell"
+  },
+  {
+    "id": 322,
+    "cell_name": "Epithelial cell Type 1"
+  },
+  {
+    "id": 323,
+    "cell_name": "Epithelial cell Type 2"
+  },
+  {
+    "id": 324,
+    "cell_name": "Epithelial ductal cell"
+  },
+  {
+    "id": 325,
+    "cell_name": "Epithelial progenitor cell"
+  },
+  {
+    "id": 326,
+    "cell_name": "Epithelial-mesenchymal cell"
+  },
+  {
+    "id": 327,
+    "cell_name": "Epithelial-mesenchymal transition cancer stem cell"
+  },
+  {
+    "id": 328,
+    "cell_name": "Epsilon cell"
+  },
+  {
+    "id": 329,
+    "cell_name": "Erythroblast"
+  },
+  {
+    "id": 330,
+    "cell_name": "Erythrocyte"
+  },
+  {
+    "id": 331,
+    "cell_name": "Erythroid cell"
+  },
+  {
+    "id": 332,
+    "cell_name": "Erythroid lineage cell"
+  },
+  {
+    "id": 333,
+    "cell_name": "Erythroid progenitor cell"
+  },
+  {
+    "id": 334,
+    "cell_name": "Esophageal cell"
+  },
+  {
+    "id": 335,
+    "cell_name": "Esophageal epithelial cell"
+  },
+  {
+    "id": 336,
+    "cell_name": "Exausted T(Tex) cell"
+  },
+  {
+    "id": 337,
+    "cell_name": "Excitatory neuron"
+  },
+  {
+    "id": 338,
+    "cell_name": "Exhasuted CD8+ T cell"
+  },
+  {
+    "id": 339,
+    "cell_name": "Exhausted CD4+ T cell"
+  },
+  {
+    "id": 340,
+    "cell_name": "Exhausted CD8+ T cell"
+  },
+  {
+    "id": 341,
+    "cell_name": "Exhausted T(Tex) cell"
+  },
+  {
+    "id": 342,
+    "cell_name": "Exhausted double-positive T cell"
+  },
+  {
+    "id": 343,
+    "cell_name": "Exocrine cell"
+  },
+  {
+    "id": 344,
+    "cell_name": "Extratelencephalic(ET) cell"
+  },
+  {
+    "id": 345,
+    "cell_name": "Extravillous trophoblast cell"
+  },
+  {
+    "id": 346,
+    "cell_name": "F-Pericyte"
+  },
+  {
+    "id": 347,
+    "cell_name": "Fat cell"
+  },
+  {
+    "id": 348,
+    "cell_name": "Fetal leydig progenitor cell"
+  },
+  {
+    "id": 349,
+    "cell_name": "Fetal myoblast"
+  },
+  {
+    "id": 350,
+    "cell_name": "Fibro-adipogenic progenitor cell"
+  },
+  {
+    "id": 351,
+    "cell_name": "Fibroblast"
+  },
+  {
+    "id": 352,
+    "cell_name": "Fibroblast-like cell"
+  },
+  {
+    "id": 353,
+    "cell_name": "Fibroblastic reticular cell"
+  },
+  {
+    "id": 354,
+    "cell_name": "Fibrocartilage chondrocyte"
+  },
+  {
+    "id": 355,
+    "cell_name": "Finally highly effector (TEMRA) memory T cell"
+  },
+  {
+    "id": 356,
+    "cell_name": "Foam cell"
+  },
+  {
+    "id": 357,
+    "cell_name": "Follicular B cell"
+  },
+  {
+    "id": 358,
+    "cell_name": "Follicular cell"
+  },
+  {
+    "id": 359,
+    "cell_name": "Follicular regulatory T(Tfr) cell"
+  },
+  {
+    "id": 360,
+    "cell_name": "Forebrain cell"
+  },
+  {
+    "id": 361,
+    "cell_name": "Foregut cell"
+  },
+  {
+    "id": 362,
+    "cell_name": "Frontal cortex cell"
+  },
+  {
+    "id": 363,
+    "cell_name": "GABAergic neuron"
+  },
+  {
+    "id": 364,
+    "cell_name": "GP2-preferred medullary thymic epithelial cell"
+  },
+  {
+    "id": 365,
+    "cell_name": "GZMK CD8 cell"
+  },
+  {
+    "id": 366,
+    "cell_name": "Gallbladder cell"
+  },
+  {
+    "id": 367,
+    "cell_name": "Gamma cell"
+  },
+  {
+    "id": 368,
+    "cell_name": "Gamma delta(γδ) T cell"
+  },
+  {
+    "id": 369,
+    "cell_name": "Ganglion cell"
+  },
+  {
+    "id": 370,
+    "cell_name": "Gastric neuroendocrine cell"
+  },
+  {
+    "id": 371,
+    "cell_name": "Gastric parietal cell"
+  },
+  {
+    "id": 372,
+    "cell_name": "Gastric stem cell"
+  },
+  {
+    "id": 373,
+    "cell_name": "General capillary cell"
+  },
+  {
+    "id": 374,
+    "cell_name": "Germ cell"
+  },
+  {
+    "id": 375,
+    "cell_name": "Germinal Centre (GC)-like cell"
+  },
+  {
+    "id": 376,
+    "cell_name": "Germinal center B cell"
+  },
+  {
+    "id": 377,
+    "cell_name": "Germinal center cell"
+  },
+  {
+    "id": 378,
+    "cell_name": "Gland cell"
+  },
+  {
+    "id": 379,
+    "cell_name": "Gland ductal cell"
+  },
+  {
+    "id": 380,
+    "cell_name": "Gland mucous cell"
+  },
+  {
+    "id": 381,
+    "cell_name": "Glandular Barrett's esophagus cell"
+  },
+  {
+    "id": 382,
+    "cell_name": "Glial cell"
+  },
+  {
+    "id": 383,
+    "cell_name": "Glial neural progenitor cell"
+  },
+  {
+    "id": 384,
+    "cell_name": "Globose basal cell"
+  },
+  {
+    "id": 385,
+    "cell_name": "Glomerular cell"
+  },
+  {
+    "id": 386,
+    "cell_name": "Glomerular endothelial cell"
+  },
+  {
+    "id": 387,
+    "cell_name": "Glomerular parietal epithelial cell"
+  },
+  {
+    "id": 388,
+    "cell_name": "Glutamatergic neuron"
+  },
+  {
+    "id": 389,
+    "cell_name": "Goblet cell"
+  },
+  {
+    "id": 390,
+    "cell_name": "Gonadotroph cell"
+  },
+  {
+    "id": 391,
+    "cell_name": "Granule cell"
+  },
+  {
+    "id": 392,
+    "cell_name": "Granulocyte"
+  },
+  {
+    "id": 393,
+    "cell_name": "Granulocyte-monocyte progenitor cell(GMP)"
+  },
+  {
+    "id": 394,
+    "cell_name": "H1 embryonic stem cell"
+  },
+  {
+    "id": 395,
+    "cell_name": "Haematopoietic cell"
+  },
+  {
+    "id": 396,
+    "cell_name": "Haematopoietic progenitor cell"
+  },
+  {
+    "id": 397,
+    "cell_name": "Haematopoietic stem cell"
+  },
+  {
+    "id": 398,
+    "cell_name": "Hair follicle cell"
+  },
+  {
+    "id": 399,
+    "cell_name": "Healing Enriched-Fibroblast"
+  },
+  {
+    "id": 400,
+    "cell_name": "Helper innate lymphoid cell"
+  },
+  {
+    "id": 401,
+    "cell_name": "Hematopoietic cell"
+  },
+  {
+    "id": 402,
+    "cell_name": "Hematopoietic progenitor cell"
+  },
+  {
+    "id": 403,
+    "cell_name": "Hematopoietic stem cell"
+  },
+  {
+    "id": 404,
+    "cell_name": "Hematopoietic-related cell"
+  },
+  {
+    "id": 405,
+    "cell_name": "Hepatic cell"
+  },
+  {
+    "id": 406,
+    "cell_name": "Hepatic stellate cell"
+  },
+  {
+    "id": 407,
+    "cell_name": "Hepatoblast"
+  },
+  {
+    "id": 408,
+    "cell_name": "Hepatocyte"
+  },
+  {
+    "id": 409,
+    "cell_name": "Hillock cell"
+  },
+  {
+    "id": 410,
+    "cell_name": "Hindgut cell"
+  },
+  {
+    "id": 411,
+    "cell_name": "Homeostatic chondrocyte"
+  },
+  {
+    "id": 412,
+    "cell_name": "Horizontal basal cell"
+  },
+  {
+    "id": 413,
+    "cell_name": "Horizontal cell"
+  },
+  {
+    "id": 414,
+    "cell_name": "Hypoblast cell"
+  },
+  {
+    "id": 415,
+    "cell_name": "Hypoblast-like cell"
+  },
+  {
+    "id": 416,
+    "cell_name": "IgA memory B cell"
+  },
+  {
+    "id": 417,
+    "cell_name": "IgG memory B cell"
+  },
+  {
+    "id": 418,
+    "cell_name": "IgM memory B cell"
+  },
+  {
+    "id": 419,
+    "cell_name": "Immature B cell"
+  },
+  {
+    "id": 420,
+    "cell_name": "Immature cortical thymic epithelial cell"
+  },
+  {
+    "id": 421,
+    "cell_name": "Immature endocrine cell"
+  },
+  {
+    "id": 422,
+    "cell_name": "Immature erythroid cell"
+  },
+  {
+    "id": 423,
+    "cell_name": "Immature glial cell"
+  },
+  {
+    "id": 424,
+    "cell_name": "Immature medullary thymic epithelial cell"
+  },
+  {
+    "id": 425,
+    "cell_name": "Immature neuron"
+  },
+  {
+    "id": 426,
+    "cell_name": "Immature neutrophil"
+  },
+  {
+    "id": 427,
+    "cell_name": "Immature osteoblast"
+  },
+  {
+    "id": 428,
+    "cell_name": "Immune cell"
+  },
+  {
+    "id": 429,
+    "cell_name": "Immune oligodendroglial cell(imOLG)"
+  },
+  {
+    "id": 430,
+    "cell_name": "Immuneendothelial cell"
+  },
+  {
+    "id": 431,
+    "cell_name": "Immunosuppressive neutrophil"
+  },
+  {
+    "id": 432,
+    "cell_name": "Indistinct epithelial cell"
+  },
+  {
+    "id": 433,
+    "cell_name": "Infiltrating macrophage"
+  },
+  {
+    "id": 434,
+    "cell_name": "Inflammatory cancer-associated fibroblast"
+  },
+  {
+    "id": 435,
+    "cell_name": "Inflammatory cancer‐associated fibroblast (iCAF)"
+  },
+  {
+    "id": 436,
+    "cell_name": "Inflammatory fibroblast"
+  },
+  {
+    "id": 437,
+    "cell_name": "Inhibitory neuron"
+  },
+  {
+    "id": 438,
+    "cell_name": "Injured Proximal tubular cell"
+  },
+  {
+    "id": 439,
+    "cell_name": "Innate Lymphoid cell"
+  },
+  {
+    "id": 440,
+    "cell_name": "Innate lymphoid cell"
+  },
+  {
+    "id": 441,
+    "cell_name": "Innate lymphoid cell (ILCs)"
+  },
+  {
+    "id": 442,
+    "cell_name": "Innate lymphoid cell 1"
+  },
+  {
+    "id": 443,
+    "cell_name": "Inner radial glial cell"
+  },
+  {
+    "id": 444,
+    "cell_name": "Inter-mediate progenitor cell"
+  },
+  {
+    "id": 445,
+    "cell_name": "Intercalated cell"
+  },
+  {
+    "id": 446,
+    "cell_name": "Interferon responsive secretory cell"
+  },
+  {
+    "id": 447,
+    "cell_name": "Intermediate keratinocyte"
+  },
+  {
+    "id": 448,
+    "cell_name": "Intermediate mesoderm cell"
+  },
+  {
+    "id": 449,
+    "cell_name": "Intermediate monocyte"
+  },
+  {
+    "id": 450,
+    "cell_name": "Intermediate monocyte cell"
+  },
+  {
+    "id": 451,
+    "cell_name": "Intermediate progenitor cell"
+  },
+  {
+    "id": 452,
+    "cell_name": "Intermediate transition memory B cell"
+  },
+  {
+    "id": 453,
+    "cell_name": "Interneuron"
+  },
+  {
+    "id": 454,
+    "cell_name": "Interneuron precursor cell"
+  },
+  {
+    "id": 455,
+    "cell_name": "Interstitial cell"
+  },
+  {
+    "id": 456,
+    "cell_name": "Interstitial macrophage"
+  },
+  {
+    "id": 457,
+    "cell_name": "Interstitial progenitor cell"
+  },
+  {
+    "id": 458,
+    "cell_name": "Intestinal cell"
+  },
+  {
+    "id": 459,
+    "cell_name": "Intestinal epithelial cell"
+  },
+  {
+    "id": 460,
+    "cell_name": "Intestinal gastric cancer cell"
+  },
+  {
+    "id": 461,
+    "cell_name": "Intestinal metaplasia cell"
+  },
+  {
+    "id": 462,
+    "cell_name": "Intestinal stem cell"
+  },
+  {
+    "id": 463,
+    "cell_name": "Intraepithelial lymphocyte cell"
+  },
+  {
+    "id": 464,
+    "cell_name": "Intrathymic fibroblast(Fb1)"
+  },
+  {
+    "id": 465,
+    "cell_name": "Intrinsic neuron"
+  },
+  {
+    "id": 466,
+    "cell_name": "Intrinsic primary afferent neuron"
+  },
+  {
+    "id": 467,
+    "cell_name": "Ionocyte"
+  },
+  {
+    "id": 468,
+    "cell_name": "Iris puttative stem cell"
+  },
+  {
+    "id": 469,
+    "cell_name": "Isthmus cell"
+  },
+  {
+    "id": 470,
+    "cell_name": "Juxtaglomerular cell"
+  },
+  {
+    "id": 471,
+    "cell_name": "Keratinocyte"
+  },
+  {
+    "id": 472,
+    "cell_name": "Ki-67+ epithelial cell"
+  },
+  {
+    "id": 473,
+    "cell_name": "Kupffer cell"
+  },
+  {
+    "id": 474,
+    "cell_name": "Kupffer-like cell"
+  },
+  {
+    "id": 475,
+    "cell_name": "LAMP3+ dentritic cell"
+  },
+  {
+    "id": 476,
+    "cell_name": "LGE-lineage cell (lateral ganglionic eminence)"
+  },
+  {
+    "id": 477,
+    "cell_name": "LTF granulocyte"
+  },
+  {
+    "id": 478,
+    "cell_name": "Lactotroph cell"
+  },
+  {
+    "id": 479,
+    "cell_name": "Langerhans cell"
+  },
+  {
+    "id": 480,
+    "cell_name": "Langerin-positive dendritic cell"
+  },
+  {
+    "id": 481,
+    "cell_name": "Late neuronal progenitor cell"
+  },
+  {
+    "id": 482,
+    "cell_name": "Later-stage progenitor cell"
+  },
+  {
+    "id": 483,
+    "cell_name": "Lateral ganglionic eminence cell"
+  },
+  {
+    "id": 484,
+    "cell_name": "Layer 4 cell"
+  },
+  {
+    "id": 485,
+    "cell_name": "Leptomeningeal cell"
+  },
+  {
+    "id": 486,
+    "cell_name": "Leukemia stem cell"
+  },
+  {
+    "id": 487,
+    "cell_name": "Leukemic stem cell"
+  },
+  {
+    "id": 488,
+    "cell_name": "Leukocyte"
+  },
+  {
+    "id": 489,
+    "cell_name": "Leydig and myoid-like cell"
+  },
+  {
+    "id": 490,
+    "cell_name": "Leydig cell"
+  },
+  {
+    "id": 491,
+    "cell_name": "Light zone cell"
+  },
+  {
+    "id": 492,
+    "cell_name": "Limbal stem cell"
+  },
+  {
+    "id": 493,
+    "cell_name": "Lining fibroblast"
+  },
+  {
+    "id": 494,
+    "cell_name": "Lipid-associated macrophage(LAM)"
+  },
+  {
+    "id": 495,
+    "cell_name": "Lipofibroblast"
+  },
+  {
+    "id": 496,
+    "cell_name": "Lonocyte"
+  },
+  {
+    "id": 497,
+    "cell_name": "Loop of Henle cell"
+  },
+  {
+    "id": 498,
+    "cell_name": "Loop of Henle thick ascending limb cell (TAL)"
+  },
+  {
+    "id": 499,
+    "cell_name": "Loop progenitor cell"
+  },
+  {
+    "id": 500,
+    "cell_name": "Lower layer neuron"
+  },
+  {
+    "id": 501,
+    "cell_name": "Luminal cell"
+  },
+  {
+    "id": 502,
+    "cell_name": "Luminal epithelial cell"
+  },
+  {
+    "id": 503,
+    "cell_name": "Luminal progenitor cell"
+  },
+  {
+    "id": 504,
+    "cell_name": "Lung cell"
+  },
+  {
+    "id": 505,
+    "cell_name": "Lymphangioleiomyomatosis cell(LAMcore)"
+  },
+  {
+    "id": 506,
+    "cell_name": "Lymphatic cell"
+  },
+  {
+    "id": 507,
+    "cell_name": "Lymphatic endothelial cell"
+  },
+  {
+    "id": 508,
+    "cell_name": "Lymphoblastoid cell"
+  },
+  {
+    "id": 509,
+    "cell_name": "Lymphocyte"
+  },
+  {
+    "id": 510,
+    "cell_name": "Lymphoid cell"
+  },
+  {
+    "id": 511,
+    "cell_name": "Lymphoid progenitor cell"
+  },
+  {
+    "id": 512,
+    "cell_name": "Lymphoid-primed multipotent progenitor cell(LMPP)"
+  },
+  {
+    "id": 513,
+    "cell_name": "M1 macrophage"
+  },
+  {
+    "id": 514,
+    "cell_name": "M2 macrophage"
+  },
+  {
+    "id": 515,
+    "cell_name": "MK/eryth cell"
+  },
+  {
+    "id": 516,
+    "cell_name": "MPO granulocyte"
+  },
+  {
+    "id": 517,
+    "cell_name": "Macroglial cell"
+  },
+  {
+    "id": 518,
+    "cell_name": "Macrophage"
+  },
+  {
+    "id": 519,
+    "cell_name": "Macrophage-dendritic cell progenitor cell"
+  },
+  {
+    "id": 520,
+    "cell_name": "Macula densa cell"
+  },
+  {
+    "id": 521,
+    "cell_name": "Mait-like cell"
+  },
+  {
+    "id": 522,
+    "cell_name": "Malignant cell"
+  },
+  {
+    "id": 523,
+    "cell_name": "Malignant plasma cell"
+  },
+  {
+    "id": 524,
+    "cell_name": "Malignant stem cell"
+  },
+  {
+    "id": 525,
+    "cell_name": "Mantle B cell"
+  },
+  {
+    "id": 526,
+    "cell_name": "Mantle cell lymphoma (MCL) cell"
+  },
+  {
+    "id": 527,
+    "cell_name": "Marginal zone B cell"
+  },
+  {
+    "id": 528,
+    "cell_name": "Mast cell"
+  },
+  {
+    "id": 529,
+    "cell_name": "Mast progenitor cell"
+  },
+  {
+    "id": 530,
+    "cell_name": "Mature B cell"
+  },
+  {
+    "id": 531,
+    "cell_name": "Mature MSN(medium spiny neuron)"
+  },
+  {
+    "id": 532,
+    "cell_name": "Mature astrocyte"
+  },
+  {
+    "id": 533,
+    "cell_name": "Mature basal cell"
+  },
+  {
+    "id": 534,
+    "cell_name": "Mature dendritic cell"
+  },
+  {
+    "id": 535,
+    "cell_name": "Mature endothelial cell"
+  },
+  {
+    "id": 536,
+    "cell_name": "Mature luminal cell"
+  },
+  {
+    "id": 537,
+    "cell_name": "Mature medullary thymic epithelial cell"
+  },
+  {
+    "id": 538,
+    "cell_name": "Mature neuron"
+  },
+  {
+    "id": 539,
+    "cell_name": "Mature neuronal"
+  },
+  {
+    "id": 540,
+    "cell_name": "Mature neutrophil"
+  },
+  {
+    "id": 541,
+    "cell_name": "Mature osteoblast"
+  },
+  {
+    "id": 542,
+    "cell_name": "Mature podocyte"
+  },
+  {
+    "id": 543,
+    "cell_name": "Mature progenitor cell"
+  },
+  {
+    "id": 544,
+    "cell_name": "Medial and distal segment cell"
+  },
+  {
+    "id": 545,
+    "cell_name": "Medial ganglionic eminence cell"
+  },
+  {
+    "id": 546,
+    "cell_name": "Medial ganglionic eminence precursor cell"
+  },
+  {
+    "id": 547,
+    "cell_name": "Medium spiny neuron(MSN)"
+  },
+  {
+    "id": 548,
+    "cell_name": "Medullary cell"
+  },
+  {
+    "id": 549,
+    "cell_name": "Megakaryocyte"
+  },
+  {
+    "id": 550,
+    "cell_name": "Megakaryocyte progenitor cell"
+  },
+  {
+    "id": 551,
+    "cell_name": "Megakaryocyte-erythroid-mast cell progenitor cell"
+  },
+  {
+    "id": 552,
+    "cell_name": "Melanocyte"
+  },
+  {
+    "id": 553,
+    "cell_name": "Melanocytes and Schwann cell"
+  },
+  {
+    "id": 554,
+    "cell_name": "Melanoma cell"
+  },
+  {
+    "id": 555,
+    "cell_name": "Memory B cell"
+  },
+  {
+    "id": 556,
+    "cell_name": "Memory B cell precursor"
+  },
+  {
+    "id": 557,
+    "cell_name": "Memory CD27+ B cell"
+  },
+  {
+    "id": 558,
+    "cell_name": "Memory CD27- B cell"
+  },
+  {
+    "id": 559,
+    "cell_name": "Memory CD4 T cell"
+  },
+  {
+    "id": 560,
+    "cell_name": "Memory CD4+ T cell"
+  },
+  {
+    "id": 561,
+    "cell_name": "Memory CD8 T cell"
+  },
+  {
+    "id": 562,
+    "cell_name": "Memory CD8+ T cell"
+  },
+  {
+    "id": 563,
+    "cell_name": "Memory T cell"
+  },
+  {
+    "id": 564,
+    "cell_name": "Memory T helper 1 cell"
+  },
+  {
+    "id": 565,
+    "cell_name": "Memory T(Tm) cell"
+  },
+  {
+    "id": 566,
+    "cell_name": "Memory T-cell"
+  },
+  {
+    "id": 567,
+    "cell_name": "Memory double-positive T cell"
+  },
+  {
+    "id": 568,
+    "cell_name": "Memory regulatory T cell"
+  },
+  {
+    "id": 569,
+    "cell_name": "Memory-like B cell"
+  },
+  {
+    "id": 570,
+    "cell_name": "Meningeal cell"
+  },
+  {
+    "id": 571,
+    "cell_name": "Merkel cell"
+  },
+  {
+    "id": 572,
+    "cell_name": "Mesangial cell"
+  },
+  {
+    "id": 573,
+    "cell_name": "Mesenchymal cell"
+  },
+  {
+    "id": 574,
+    "cell_name": "Mesenchymal progenitor cell"
+  },
+  {
+    "id": 575,
+    "cell_name": "Mesenchymal stem cell"
+  },
+  {
+    "id": 576,
+    "cell_name": "Mesenchymal stromal cell"
+  },
+  {
+    "id": 577,
+    "cell_name": "Mesenchymal-epithelial transitioning cell"
+  },
+  {
+    "id": 578,
+    "cell_name": "Mesendodermal cell"
+  },
+  {
+    "id": 579,
+    "cell_name": "Mesoderm cell"
+  },
+  {
+    "id": 580,
+    "cell_name": "Mesodermal cell"
+  },
+  {
+    "id": 581,
+    "cell_name": "Mesodermal progenitor cell"
+  },
+  {
+    "id": 582,
+    "cell_name": "Mesothelial cell"
+  },
+  {
+    "id": 583,
+    "cell_name": "Metaplastic-stem cell"
+  },
+  {
+    "id": 584,
+    "cell_name": "Meyloid cell"
+  },
+  {
+    "id": 585,
+    "cell_name": "Microglia-derived tumor-associated macrophage(Mg-TAM)"
+  },
+  {
+    "id": 586,
+    "cell_name": "Microglial cell"
+  },
+  {
+    "id": 587,
+    "cell_name": "Microglial-specific cell"
+  },
+  {
+    "id": 588,
+    "cell_name": "Microglial cell"
+  },
+  {
+    "id": 589,
+    "cell_name": "Microvascular cell"
+  },
+  {
+    "id": 590,
+    "cell_name": "Microvillar cell"
+  },
+  {
+    "id": 591,
+    "cell_name": "Midbrain dopaminergic neuron"
+  },
+  {
+    "id": 592,
+    "cell_name": "Midbrain floorplate progenitor cell"
+  },
+  {
+    "id": 593,
+    "cell_name": "Midgut cell"
+  },
+  {
+    "id": 594,
+    "cell_name": "Migrating dendritic cell"
+  },
+  {
+    "id": 595,
+    "cell_name": "Migratory dendritic cell"
+  },
+  {
+    "id": 596,
+    "cell_name": "Migratory langerhans cell"
+  },
+  {
+    "id": 597,
+    "cell_name": "Mitotic cell"
+  },
+  {
+    "id": 598,
+    "cell_name": "Mono-macrophage"
+  },
+  {
+    "id": 599,
+    "cell_name": "Monocyte"
+  },
+  {
+    "id": 600,
+    "cell_name": "Monocyte derived dendritic cell"
+  },
+  {
+    "id": 601,
+    "cell_name": "Monocyte precursor"
+  },
+  {
+    "id": 602,
+    "cell_name": "Monocyte progenitor cell"
+  },
+  {
+    "id": 603,
+    "cell_name": "Monocyte-dendritic cell progenitor cell"
+  },
+  {
+    "id": 604,
+    "cell_name": "Monocyte-derived cell"
+  },
+  {
+    "id": 605,
+    "cell_name": "Monocyte-derived macrophage"
+  },
+  {
+    "id": 606,
+    "cell_name": "Mononuclear phagocyte"
+  },
+  {
+    "id": 607,
+    "cell_name": "Motor neuron"
+  },
+  {
+    "id": 608,
+    "cell_name": "Mucosa associated invariant B cell"
+  },
+  {
+    "id": 609,
+    "cell_name": "Mucosa-associated invariant T (MAIT) cell"
+  },
+  {
+    "id": 610,
+    "cell_name": "Mucous cell"
+  },
+  {
+    "id": 611,
+    "cell_name": "Mucous pit cell"
+  },
+  {
+    "id": 612,
+    "cell_name": "Mucous-ciliated cell"
+  },
+  {
+    "id": 613,
+    "cell_name": "Mueller glia cell"
+  },
+  {
+    "id": 614,
+    "cell_name": "Multiciliated cell"
+  },
+  {
+    "id": 615,
+    "cell_name": "Multipotent progenitor cell"
+  },
+  {
+    "id": 616,
+    "cell_name": "Multipotent retinal progenitor cell"
+  },
+  {
+    "id": 617,
+    "cell_name": "Multipotent stromal cell"
+  },
+  {
+    "id": 618,
+    "cell_name": "Mural cell"
+  },
+  {
+    "id": 619,
+    "cell_name": "Muscle cell"
+  },
+  {
+    "id": 620,
+    "cell_name": "Muscle satellite cell"
+  },
+  {
+    "id": 621,
+    "cell_name": "Muscularis cell"
+  },
+  {
+    "id": 622,
+    "cell_name": "Myelinating schwann cell"
+  },
+  {
+    "id": 623,
+    "cell_name": "Myelo-monocytic cell"
+  },
+  {
+    "id": 624,
+    "cell_name": "Myeloid cell"
+  },
+  {
+    "id": 625,
+    "cell_name": "Myeloid dendritic cell"
+  },
+  {
+    "id": 626,
+    "cell_name": "Myeloid dendritic cell 1"
+  },
+  {
+    "id": 627,
+    "cell_name": "Myeloid derived suppressor cell (MDSC)"
+  },
+  {
+    "id": 628,
+    "cell_name": "Myeloid progenitor cell"
+  },
+  {
+    "id": 629,
+    "cell_name": "Myeloid-derived cell"
+  },
+  {
+    "id": 630,
+    "cell_name": "Myeloid-derived suppressor cell"
+  },
+  {
+    "id": 631,
+    "cell_name": "Myo-epithelial cell"
+  },
+  {
+    "id": 632,
+    "cell_name": "Myoblast"
+  },
+  {
+    "id": 633,
+    "cell_name": "Myocyte"
+  },
+  {
+    "id": 634,
+    "cell_name": "Myoepithelial cell"
+  },
+  {
+    "id": 635,
+    "cell_name": "Myofibroblast"
+  },
+  {
+    "id": 636,
+    "cell_name": "Myofibroblastic cancer-associated fibroblast"
+  },
+  {
+    "id": 637,
+    "cell_name": "Myofibroblastic cancer‐associated fibroblast (myCAF)"
+  },
+  {
+    "id": 638,
+    "cell_name": "Myogenic cell"
+  },
+  {
+    "id": 639,
+    "cell_name": "Myogenic progenitor cell"
+  },
+  {
+    "id": 640,
+    "cell_name": "Myoid cell"
+  },
+  {
+    "id": 641,
+    "cell_name": "Müller glial cell"
+  },
+  {
+    "id": 642,
+    "cell_name": "NECK cell"
+  },
+  {
+    "id": 643,
+    "cell_name": "NK and T cell"
+  },
+  {
+    "id": 644,
+    "cell_name": "Naive 1 progenitor cell"
+  },
+  {
+    "id": 645,
+    "cell_name": "Naive B cell"
+  },
+  {
+    "id": 646,
+    "cell_name": "Naive CD4 T cell"
+  },
+  {
+    "id": 647,
+    "cell_name": "Naive CD4+ T cell"
+  },
+  {
+    "id": 648,
+    "cell_name": "Naive CD8 T cell"
+  },
+  {
+    "id": 649,
+    "cell_name": "Naive CD8+ T cell"
+  },
+  {
+    "id": 650,
+    "cell_name": "Naive T(Th0) cell"
+  },
+  {
+    "id": 651,
+    "cell_name": "Naive cytotoxic T cell"
+  },
+  {
+    "id": 652,
+    "cell_name": "Naive double-positive T cell"
+  },
+  {
+    "id": 653,
+    "cell_name": "Naive progenitor cell"
+  },
+  {
+    "id": 654,
+    "cell_name": "Naive-like T cell"
+  },
+  {
+    "id": 655,
+    "cell_name": "Nascent mesodermal cell"
+  },
+  {
+    "id": 656,
+    "cell_name": "Nascent nephron cell"
+  },
+  {
+    "id": 657,
+    "cell_name": "Natural Treg (nTreg)"
+  },
+  {
+    "id": 658,
+    "cell_name": "Natural killer T(NKT) cell"
+  },
+  {
+    "id": 659,
+    "cell_name": "Natural killer T(NKT)-like cell"
+  },
+  {
+    "id": 660,
+    "cell_name": "Natural killer cell"
+  },
+  {
+    "id": 661,
+    "cell_name": "Natural regulatory T cell"
+  },
+  {
+    "id": 662,
+    "cell_name": "Naïve cell"
+  },
+  {
+    "id": 663,
+    "cell_name": "Naïve or central memory  T cell"
+  },
+  {
+    "id": 664,
+    "cell_name": "Neck cell"
+  },
+  {
+    "id": 665,
+    "cell_name": "Negative mesenchymal stem cell"
+  },
+  {
+    "id": 666,
+    "cell_name": "Nephron epithelial cell"
+  },
+  {
+    "id": 667,
+    "cell_name": "Nephron progenitor cell"
+  },
+  {
+    "id": 668,
+    "cell_name": "Nerve cell"
+  },
+  {
+    "id": 669,
+    "cell_name": "Neural Crest (NC) cell"
+  },
+  {
+    "id": 670,
+    "cell_name": "Neural cell"
+  },
+  {
+    "id": 671,
+    "cell_name": "Neural crest cell"
+  },
+  {
+    "id": 672,
+    "cell_name": "Neural crest stem cell"
+  },
+  {
+    "id": 673,
+    "cell_name": "Neural crest-derived cell"
+  },
+  {
+    "id": 674,
+    "cell_name": "Neural crest-like cell"
+  },
+  {
+    "id": 675,
+    "cell_name": "Neural plate cell"
+  },
+  {
+    "id": 676,
+    "cell_name": "Neural precursor cell"
+  },
+  {
+    "id": 677,
+    "cell_name": "Neural progenitor cell"
+  },
+  {
+    "id": 678,
+    "cell_name": "Neural stem cell"
+  },
+  {
+    "id": 679,
+    "cell_name": "Neural stem-like cell"
+  },
+  {
+    "id": 680,
+    "cell_name": "Neuroectoderm cell"
+  },
+  {
+    "id": 681,
+    "cell_name": "Neuroendocrine cell"
+  },
+  {
+    "id": 682,
+    "cell_name": "Neuroepithelial cell"
+  },
+  {
+    "id": 683,
+    "cell_name": "Neurogenic retinal progenitor cell"
+  },
+  {
+    "id": 684,
+    "cell_name": "Neuron"
+  },
+  {
+    "id": 685,
+    "cell_name": "Neuronal intermediate progenitor cell"
+  },
+  {
+    "id": 686,
+    "cell_name": "Neuronal progenitor cell"
+  },
+  {
+    "id": 687,
+    "cell_name": "Neuronal-like cell"
+  },
+  {
+    "id": 688,
+    "cell_name": "Neutrophil"
+  },
+  {
+    "id": 689,
+    "cell_name": "Neutrophil lineage"
+  },
+  {
+    "id": 690,
+    "cell_name": "Neutrophil progenitor cell"
+  },
+  {
+    "id": 691,
+    "cell_name": "Non PT tubular cell"
+  },
+  {
+    "id": 692,
+    "cell_name": "Non-classical monocyte"
+  },
+  {
+    "id": 693,
+    "cell_name": "Non-malignant epithelial cell"
+  },
+  {
+    "id": 694,
+    "cell_name": "Non-neural ectoderm cell"
+  },
+  {
+    "id": 695,
+    "cell_name": "Non-neuron"
+  },
+  {
+    "id": 696,
+    "cell_name": "Non-β endocrine cell"
+  },
+  {
+    "id": 697,
+    "cell_name": "Nonmyelinating schwann cell"
+  },
+  {
+    "id": 698,
+    "cell_name": "Normal cell"
+  },
+  {
+    "id": 699,
+    "cell_name": "Normal follicular cell"
+  },
+  {
+    "id": 700,
+    "cell_name": "Notochord cell"
+  },
+  {
+    "id": 701,
+    "cell_name": "Nucleus pulposus progenitor cell"
+  },
+  {
+    "id": 702,
+    "cell_name": "Oligodendrocyte"
+  },
+  {
+    "id": 703,
+    "cell_name": "Oligodendrocyte precursor cell"
+  },
+  {
+    "id": 704,
+    "cell_name": "Oligodendrocyte progenitor cell"
+  },
+  {
+    "id": 705,
+    "cell_name": "Oligodendroglial cell"
+  },
+  {
+    "id": 706,
+    "cell_name": "Osteoblast"
+  },
+  {
+    "id": 707,
+    "cell_name": "Osteoclast"
+  },
+  {
+    "id": 708,
+    "cell_name": "Osteoprogenitor cell"
+  },
+  {
+    "id": 709,
+    "cell_name": "Outer radial glia"
+  },
+  {
+    "id": 710,
+    "cell_name": "Ovarian cell"
+  },
+  {
+    "id": 711,
+    "cell_name": "Ovarian stromal cell"
+  },
+  {
+    "id": 712,
+    "cell_name": "OxPhos monocyte"
+  },
+  {
+    "id": 713,
+    "cell_name": "Paget cell"
+  },
+  {
+    "id": 714,
+    "cell_name": "Pan Proximal tubular cell"
+  },
+  {
+    "id": 715,
+    "cell_name": "Pan fibroblast"
+  },
+  {
+    "id": 716,
+    "cell_name": "Pan leukocyte"
+  },
+  {
+    "id": 717,
+    "cell_name": "Pan-B cell"
+  },
+  {
+    "id": 718,
+    "cell_name": "Pan-Collecting duct-intercalated cell"
+  },
+  {
+    "id": 719,
+    "cell_name": "Pan-T cell"
+  },
+  {
+    "id": 720,
+    "cell_name": "Pan-endothelial cell"
+  },
+  {
+    "id": 721,
+    "cell_name": "Pan-fibroblast"
+  },
+  {
+    "id": 722,
+    "cell_name": "Pan-macrophage"
+  },
+  {
+    "id": 723,
+    "cell_name": "Pan-microglial cell"
+  },
+  {
+    "id": 724,
+    "cell_name": "Pan-neuronal cell"
+  },
+  {
+    "id": 725,
+    "cell_name": "Pan-reactive astrocyte"
+  },
+  {
+    "id": 726,
+    "cell_name": "Pan-trophectoderm cell"
+  },
+  {
+    "id": 727,
+    "cell_name": "Pancreatic polypeptide cell"
+  },
+  {
+    "id": 728,
+    "cell_name": "Pancreatic progenitor cell"
+  },
+  {
+    "id": 729,
+    "cell_name": "Pancreatic stellate cell"
+  },
+  {
+    "id": 730,
+    "cell_name": "Paneth cell"
+  },
+  {
+    "id": 731,
+    "cell_name": "Panneuron"
+  },
+  {
+    "id": 732,
+    "cell_name": "Panvascular cell"
+  },
+  {
+    "id": 733,
+    "cell_name": "Pan‐T cell"
+  },
+  {
+    "id": 734,
+    "cell_name": "Papillary fibroblast"
+  },
+  {
+    "id": 735,
+    "cell_name": "Parafollicular cell"
+  },
+  {
+    "id": 736,
+    "cell_name": "Paraxial mesoderm cell"
+  },
+  {
+    "id": 737,
+    "cell_name": "Parietal cell"
+  },
+  {
+    "id": 738,
+    "cell_name": "Parvalbumin interneuron"
+  },
+  {
+    "id": 739,
+    "cell_name": "Patelet"
+  },
+  {
+    "id": 740,
+    "cell_name": "Pelvic epithelial cell"
+  },
+  {
+    "id": 741,
+    "cell_name": "Perichondrial embryonic skeletal stem cell"
+  },
+  {
+    "id": 742,
+    "cell_name": "Pericyte"
+  },
+  {
+    "id": 743,
+    "cell_name": "Peridermal keratinocyte"
+  },
+  {
+    "id": 744,
+    "cell_name": "Perietal cell"
+  },
+  {
+    "id": 745,
+    "cell_name": "Peripheral blood mononuclear cell (PBMC)"
+  },
+  {
+    "id": 746,
+    "cell_name": "Peripheral immune cell"
+  },
+  {
+    "id": 747,
+    "cell_name": "Peritubular capillary cell"
+  },
+  {
+    "id": 748,
+    "cell_name": "Peritubular myoid cell"
+  },
+  {
+    "id": 749,
+    "cell_name": "Perivascular cell"
+  },
+  {
+    "id": 750,
+    "cell_name": "Perivascular-like cell"
+  },
+  {
+    "id": 751,
+    "cell_name": "Phagocyte"
+  },
+  {
+    "id": 752,
+    "cell_name": "Pharyngeal arch  cell"
+  },
+  {
+    "id": 753,
+    "cell_name": "Pharyngeal arch 1 mesenchyme cell"
+  },
+  {
+    "id": 754,
+    "cell_name": "Pharyngeal arch mesenchyme cell"
+  },
+  {
+    "id": 755,
+    "cell_name": "Photoreceptor cell"
+  },
+  {
+    "id": 756,
+    "cell_name": "Pit cell"
+  },
+  {
+    "id": 757,
+    "cell_name": "Pit mucous cell"
+  },
+  {
+    "id": 758,
+    "cell_name": "Pituitary stem cell"
+  },
+  {
+    "id": 759,
+    "cell_name": "Placode cell"
+  },
+  {
+    "id": 760,
+    "cell_name": "Plasma cell"
+  },
+  {
+    "id": 761,
+    "cell_name": "Plasmablast"
+  },
+  {
+    "id": 762,
+    "cell_name": "Plasmacytoid dendritic cell"
+  },
+  {
+    "id": 763,
+    "cell_name": "Plasmacytoid dendritic cell(PDC)"
+  },
+  {
+    "id": 764,
+    "cell_name": "Plasmacytoid dendritic cell(pDC)"
+  },
+  {
+    "id": 765,
+    "cell_name": "Platelet"
+  },
+  {
+    "id": 766,
+    "cell_name": "Pluripotency cell"
+  },
+  {
+    "id": 767,
+    "cell_name": "Pluripotent cell"
+  },
+  {
+    "id": 768,
+    "cell_name": "Pluripotent stem cell"
+  },
+  {
+    "id": 769,
+    "cell_name": "Podocyte"
+  },
+  {
+    "id": 770,
+    "cell_name": "Podocyte precursor"
+  },
+  {
+    "id": 771,
+    "cell_name": "Podocyte progenitor"
+  },
+  {
+    "id": 772,
+    "cell_name": "Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell"
+  },
+  {
+    "id": 773,
+    "cell_name": "Polymorphonuclear neutrophil(PMN)"
+  },
+  {
+    "id": 774,
+    "cell_name": "Portal vein cell"
+  },
+  {
+    "id": 775,
+    "cell_name": "Portal vein epithelial cell"
+  },
+  {
+    "id": 776,
+    "cell_name": "Positive mesenchymal stem cell"
+  },
+  {
+    "id": 777,
+    "cell_name": "Post-meiotic spermatid cell"
+  },
+  {
+    "id": 778,
+    "cell_name": "Posterior cell"
+  },
+  {
+    "id": 779,
+    "cell_name": "Posterior foregut cell"
+  },
+  {
+    "id": 780,
+    "cell_name": "Posterior placode cell"
+  },
+  {
+    "id": 781,
+    "cell_name": "Postmitotic neuron"
+  },
+  {
+    "id": 782,
+    "cell_name": "Pre-B cell"
+  },
+  {
+    "id": 783,
+    "cell_name": "Pre-dendritic cell(pre-DC)"
+  },
+  {
+    "id": 784,
+    "cell_name": "Pre-exhausted CD8+ T cell"
+  },
+  {
+    "id": 785,
+    "cell_name": "Pre-neutrophil"
+  },
+  {
+    "id": 786,
+    "cell_name": "Pre-tubular aggregate cell"
+  },
+  {
+    "id": 787,
+    "cell_name": "Precursor cell"
+  },
+  {
+    "id": 788,
+    "cell_name": "Precursor memory cell"
+  },
+  {
+    "id": 789,
+    "cell_name": "Precursors CD8+ cell"
+  },
+  {
+    "id": 790,
+    "cell_name": "Prehypertrophic chondrocyte"
+  },
+  {
+    "id": 791,
+    "cell_name": "Presomitic mesoderm cell"
+  },
+  {
+    "id": 792,
+    "cell_name": "Presomitic mesoderm(PSM) cell"
+  },
+  {
+    "id": 793,
+    "cell_name": "Pretubular aggregate cell"
+  },
+  {
+    "id": 794,
+    "cell_name": "Primitive endoderm cell"
+  },
+  {
+    "id": 795,
+    "cell_name": "Primitive erythrocyte"
+  },
+  {
+    "id": 796,
+    "cell_name": "Primitive hematopoiesis cell"
+  },
+  {
+    "id": 797,
+    "cell_name": "Primitive hematopoietic progenitor"
+  },
+  {
+    "id": 798,
+    "cell_name": "Primitive streak cell"
+  },
+  {
+    "id": 799,
+    "cell_name": "Primitive stromal cell"
+  },
+  {
+    "id": 800,
+    "cell_name": "Primordial germ cell"
+  },
+  {
+    "id": 801,
+    "cell_name": "Primordial germ cell (PGC)"
+  },
+  {
+    "id": 802,
+    "cell_name": "Principal cell"
+  },
+  {
+    "id": 803,
+    "cell_name": "Pro-B cell"
+  },
+  {
+    "id": 804,
+    "cell_name": "Pro-inflammatory macrophage"
+  },
+  {
+    "id": 805,
+    "cell_name": "Pro-neutrophil"
+  },
+  {
+    "id": 806,
+    "cell_name": "Pro-tumor type-2 pericyte"
+  },
+  {
+    "id": 807,
+    "cell_name": "Proangiogenic B cell"
+  },
+  {
+    "id": 808,
+    "cell_name": "Profibrotic macrophage"
+  },
+  {
+    "id": 809,
+    "cell_name": "Profiling cell"
+  },
+  {
+    "id": 810,
+    "cell_name": "Progenitor cell"
+  },
+  {
+    "id": 811,
+    "cell_name": "Proliferating T cell"
+  },
+  {
+    "id": 812,
+    "cell_name": "Proliferating cell"
+  },
+  {
+    "id": 813,
+    "cell_name": "Proliferating medullary thymic epithelial cell"
+  },
+  {
+    "id": 814,
+    "cell_name": "Proliferating myeloid cell"
+  },
+  {
+    "id": 815,
+    "cell_name": "Proliferating progenitor cell"
+  },
+  {
+    "id": 816,
+    "cell_name": "Proliferating stem cell"
+  },
+  {
+    "id": 817,
+    "cell_name": "Proliferation cell"
+  },
+  {
+    "id": 818,
+    "cell_name": "Proliferative CD4+ T cell"
+  },
+  {
+    "id": 819,
+    "cell_name": "Proliferative CD8+ T cell"
+  },
+  {
+    "id": 820,
+    "cell_name": "Proliferative T cell"
+  },
+  {
+    "id": 821,
+    "cell_name": "Proliferative cell"
+  },
+  {
+    "id": 822,
+    "cell_name": "Proliferative cell (PC)"
+  },
+  {
+    "id": 823,
+    "cell_name": "Proliferative ductal cell"
+  },
+  {
+    "id": 824,
+    "cell_name": "Proliferative lymphocyte"
+  },
+  {
+    "id": 825,
+    "cell_name": "Proliferative macrophage"
+  },
+  {
+    "id": 826,
+    "cell_name": "Proliferative neural progenitor cell"
+  },
+  {
+    "id": 827,
+    "cell_name": "Proneural cell"
+  },
+  {
+    "id": 828,
+    "cell_name": "Prospermatogonia"
+  },
+  {
+    "id": 829,
+    "cell_name": "Proximal cell"
+  },
+  {
+    "id": 830,
+    "cell_name": "Proximal convoluted tubular cell"
+  },
+  {
+    "id": 831,
+    "cell_name": "Proximal segment cell"
+  },
+  {
+    "id": 832,
+    "cell_name": "Proximal stem cell"
+  },
+  {
+    "id": 833,
+    "cell_name": "Proximal straight tubular cell"
+  },
+  {
+    "id": 834,
+    "cell_name": "Proximal tubular cell"
+  },
+  {
+    "id": 835,
+    "cell_name": "Proximal tubule cell"
+  },
+  {
+    "id": 836,
+    "cell_name": "Proximal tubule progenitor cell"
+  },
+  {
+    "id": 837,
+    "cell_name": "Pulmonary alveolar cell Type 2"
+  },
+  {
+    "id": 838,
+    "cell_name": "Pulmonary neuroendocrine cell"
+  },
+  {
+    "id": 839,
+    "cell_name": "Purkinje cell"
+  },
+  {
+    "id": 840,
+    "cell_name": "Pyloric cell"
+  },
+  {
+    "id": 841,
+    "cell_name": "Radial glial cell"
+  },
+  {
+    "id": 842,
+    "cell_name": "Red blood cell (erythrocyte)"
+  },
+  {
+    "id": 843,
+    "cell_name": "Regulatory B(Breg) cell"
+  },
+  {
+    "id": 844,
+    "cell_name": "Regulatory CD4 T cell"
+  },
+  {
+    "id": 845,
+    "cell_name": "Regulatory CD4+ T cell"
+  },
+  {
+    "id": 846,
+    "cell_name": "Regulatory CD8+ T cell"
+  },
+  {
+    "id": 847,
+    "cell_name": "Regulatory T (Treg) cell"
+  },
+  {
+    "id": 848,
+    "cell_name": "Regulatory T(Treg) cell"
+  },
+  {
+    "id": 849,
+    "cell_name": "Regulatory chondrocyte"
+  },
+  {
+    "id": 850,
+    "cell_name": "Renal pelvic epithelial cell"
+  },
+  {
+    "id": 851,
+    "cell_name": "Renal tubular cell"
+  },
+  {
+    "id": 852,
+    "cell_name": "Renal vesicle & comma-shaped body cell"
+  },
+  {
+    "id": 853,
+    "cell_name": "Resident basal cell"
+  },
+  {
+    "id": 854,
+    "cell_name": "Resident memory CD8+ T cell"
+  },
+  {
+    "id": 855,
+    "cell_name": "Resident memory T cell"
+  },
+  {
+    "id": 856,
+    "cell_name": "Residual embryonic cell"
+  },
+  {
+    "id": 857,
+    "cell_name": "Respiratory ciliated cell"
+  },
+  {
+    "id": 858,
+    "cell_name": "Respiratory gland progenitor cell"
+  },
+  {
+    "id": 859,
+    "cell_name": "Respiratory horizontal basal cell"
+  },
+  {
+    "id": 860,
+    "cell_name": "Respiratory secretory cell"
+  },
+  {
+    "id": 861,
+    "cell_name": "Responding conventional T cell"
+  },
+  {
+    "id": 862,
+    "cell_name": "Resting T cell"
+  },
+  {
+    "id": 863,
+    "cell_name": "Resting regulatory T cell"
+  },
+  {
+    "id": 864,
+    "cell_name": "Reticular fibroblast"
+  },
+  {
+    "id": 865,
+    "cell_name": "Retina cell"
+  },
+  {
+    "id": 866,
+    "cell_name": "Retina ganglion cell"
+  },
+  {
+    "id": 867,
+    "cell_name": "Retinal astrocyte"
+  },
+  {
+    "id": 868,
+    "cell_name": "Retinal cell"
+  },
+  {
+    "id": 869,
+    "cell_name": "Retinal ganglion cell"
+  },
+  {
+    "id": 870,
+    "cell_name": "Retinal pigment epithelial cell"
+  },
+  {
+    "id": 871,
+    "cell_name": "Revertant memory CD8+ T(TEMRA) cell"
+  },
+  {
+    "id": 872,
+    "cell_name": "Rod cell"
+  },
+  {
+    "id": 873,
+    "cell_name": "Rosetting T cell"
+  },
+  {
+    "id": 874,
+    "cell_name": "Satellite cell"
+  },
+  {
+    "id": 875,
+    "cell_name": "Scar‐associated macrophage (SAM)"
+  },
+  {
+    "id": 876,
+    "cell_name": "Schwann cell"
+  },
+  {
+    "id": 877,
+    "cell_name": "Schwann cell precursor cell"
+  },
+  {
+    "id": 878,
+    "cell_name": "Schwann cell "
+  },
+  {
+    "id": 879,
+    "cell_name": "Secretory (glandular) cell"
+  },
+  {
+    "id": 880,
+    "cell_name": "Secretory cell"
+  },
+  {
+    "id": 881,
+    "cell_name": "Secretory club cell"
+  },
+  {
+    "id": 882,
+    "cell_name": "Secretory epithelial Cell"
+  },
+  {
+    "id": 883,
+    "cell_name": "Secretory transient-amplifying cell"
+  },
+  {
+    "id": 884,
+    "cell_name": "Sensory neuron"
+  },
+  {
+    "id": 885,
+    "cell_name": "Septum transversumal cell(STC)"
+  },
+  {
+    "id": 886,
+    "cell_name": "Sertoli cell"
+  },
+  {
+    "id": 887,
+    "cell_name": "Sex+ Cell"
+  },
+  {
+    "id": 888,
+    "cell_name": "Sinusoidal cell"
+  },
+  {
+    "id": 889,
+    "cell_name": "Sinusoidal endothelial cell"
+  },
+  {
+    "id": 890,
+    "cell_name": "Skeletal muscle stem cell"
+  },
+  {
+    "id": 891,
+    "cell_name": "Smooth muscle cell"
+  },
+  {
+    "id": 892,
+    "cell_name": "Smooth muscle-like cell"
+  },
+  {
+    "id": 893,
+    "cell_name": "Somatic cell"
+  },
+  {
+    "id": 894,
+    "cell_name": "Somatic hypermutation B cell"
+  },
+  {
+    "id": 895,
+    "cell_name": "Somatic stem cell"
+  },
+  {
+    "id": 896,
+    "cell_name": "Somatostatin interneuron"
+  },
+  {
+    "id": 897,
+    "cell_name": "Somatotroph cell"
+  },
+  {
+    "id": 898,
+    "cell_name": "Somitic cell"
+  },
+  {
+    "id": 899,
+    "cell_name": "Spermatogonial cell"
+  },
+  {
+    "id": 900,
+    "cell_name": "Spermatogonial stem cell"
+  },
+  {
+    "id": 901,
+    "cell_name": "Spermatogonial stem cell "
+  },
+  {
+    "id": 902,
+    "cell_name": "Spinal-progenitor-like cell"
+  },
+  {
+    "id": 903,
+    "cell_name": "Spinous cell"
+  },
+  {
+    "id": 904,
+    "cell_name": "Squamous cell"
+  },
+  {
+    "id": 905,
+    "cell_name": "Squamous epithelial cell"
+  },
+  {
+    "id": 906,
+    "cell_name": "Stellate cell"
+  },
+  {
+    "id": 907,
+    "cell_name": "Stem cell"
+  },
+  {
+    "id": 908,
+    "cell_name": "Stem-cell-derived-alpha cell"
+  },
+  {
+    "id": 909,
+    "cell_name": "Stem-cell-derived-beta cell"
+  },
+  {
+    "id": 910,
+    "cell_name": "Stem-cell-derived-endothelial cell"
+  },
+  {
+    "id": 911,
+    "cell_name": "Stem/progenitor cell"
+  },
+  {
+    "id": 912,
+    "cell_name": "Stratified esophageal cell"
+  },
+  {
+    "id": 913,
+    "cell_name": "Stratified keratinocyte"
+  },
+  {
+    "id": 914,
+    "cell_name": "Stromal cell"
+  },
+  {
+    "id": 915,
+    "cell_name": "Stromal progenitor cell"
+  },
+  {
+    "id": 916,
+    "cell_name": "Sublining fibroblast"
+  },
+  {
+    "id": 917,
+    "cell_name": "Subpallium cell"
+  },
+  {
+    "id": 918,
+    "cell_name": "Subplate cell"
+  },
+  {
+    "id": 919,
+    "cell_name": "Subplate neuron"
+  },
+  {
+    "id": 920,
+    "cell_name": "Superficial layer excitatory neuron"
+  },
+  {
+    "id": 921,
+    "cell_name": "Suppressive regulatory T cell"
+  },
+  {
+    "id": 922,
+    "cell_name": "Suprabasal cell"
+  },
+  {
+    "id": 923,
+    "cell_name": "Suprabasal epithelial cell"
+  },
+  {
+    "id": 924,
+    "cell_name": "Supratentorial-radial-glia-like cell"
+  },
+  {
+    "id": 925,
+    "cell_name": "Surface ectoderm cell"
+  },
+  {
+    "id": 926,
+    "cell_name": "Sustentacular cell"
+  },
+  {
+    "id": 927,
+    "cell_name": "Sweat and sebaceous gland cell"
+  },
+  {
+    "id": 928,
+    "cell_name": "Sweat gland cell"
+  },
+  {
+    "id": 929,
+    "cell_name": "Sympathoadrenal cell"
+  },
+  {
+    "id": 930,
+    "cell_name": "Sympathoblast cell"
+  },
+  {
+    "id": 931,
+    "cell_name": "Syncytiotrophoblast cell"
+  },
+  {
+    "id": 932,
+    "cell_name": "Synthetic smooth muscle cell"
+  },
+  {
+    "id": 933,
+    "cell_name": "Systemic–venous endothelial cell"
+  },
+  {
+    "id": 934,
+    "cell_name": "T cell"
+  },
+  {
+    "id": 935,
+    "cell_name": "T cell & Natural killer cell"
+  },
+  {
+    "id": 936,
+    "cell_name": "T cell large granular lymphocytic leukemia cell"
+  },
+  {
+    "id": 937,
+    "cell_name": "T follicular helper(Tfh) cell"
+  },
+  {
+    "id": 938,
+    "cell_name": "T helper 1(Th1) cell"
+  },
+  {
+    "id": 939,
+    "cell_name": "T helper 17(Th17) cell"
+  },
+  {
+    "id": 940,
+    "cell_name": "T helper 2(Th2) cell"
+  },
+  {
+    "id": 941,
+    "cell_name": "T helper 9(Th9) cell"
+  },
+  {
+    "id": 942,
+    "cell_name": "T helper cell"
+  },
+  {
+    "id": 943,
+    "cell_name": "T helper(Th) cell"
+  },
+  {
+    "id": 944,
+    "cell_name": "Tenogenic cell"
+  },
+  {
+    "id": 945,
+    "cell_name": "Terminal differentiated B cell"
+  },
+  {
+    "id": 946,
+    "cell_name": "Terminal effector CD8+ T cell"
+  },
+  {
+    "id": 947,
+    "cell_name": "Terminal effector T cell"
+  },
+  {
+    "id": 948,
+    "cell_name": "Terminally differentiated CD8+ cell"
+  },
+  {
+    "id": 949,
+    "cell_name": "Terminally differentiated effector memory T cell"
+  },
+  {
+    "id": 950,
+    "cell_name": "Thalamic cell"
+  },
+  {
+    "id": 951,
+    "cell_name": "Theca cell"
+  },
+  {
+    "id": 952,
+    "cell_name": "Thick Ascending Limb cell"
+  },
+  {
+    "id": 953,
+    "cell_name": "Thin Ascending Limb cell"
+  },
+  {
+    "id": 954,
+    "cell_name": "Thymic epithelial cell"
+  },
+  {
+    "id": 955,
+    "cell_name": "Thymic epithelial cell (TEC)"
+  },
+  {
+    "id": 956,
+    "cell_name": "Thymus seeding progenitor (TSP)"
+  },
+  {
+    "id": 957,
+    "cell_name": "Thyrotroph cell"
+  },
+  {
+    "id": 958,
+    "cell_name": "Tissue migratory CD4+ T  cell (TMC)"
+  },
+  {
+    "id": 959,
+    "cell_name": "Tissue resident cell"
+  },
+  {
+    "id": 960,
+    "cell_name": "Tissue resident effector memory T cell"
+  },
+  {
+    "id": 961,
+    "cell_name": "Tissue resident macrophage"
+  },
+  {
+    "id": 962,
+    "cell_name": "Tissue resident memory T(TRM) cell"
+  },
+  {
+    "id": 963,
+    "cell_name": "Tissue resident memory-like T cell"
+  },
+  {
+    "id": 964,
+    "cell_name": "Tissue-resident macrophage"
+  },
+  {
+    "id": 965,
+    "cell_name": "Tissue-resident memory T (TRM) cell"
+  },
+  {
+    "id": 966,
+    "cell_name": "Trabecular meshwork cell"
+  },
+  {
+    "id": 967,
+    "cell_name": "Transient-amplifying(TA) cell"
+  },
+  {
+    "id": 968,
+    "cell_name": "Transit-amplifying cell"
+  },
+  {
+    "id": 969,
+    "cell_name": "Transitional B cell"
+  },
+  {
+    "id": 970,
+    "cell_name": "Transitional CD8+ T cell"
+  },
+  {
+    "id": 971,
+    "cell_name": "Transitional basal progenitor cell"
+  },
+  {
+    "id": 972,
+    "cell_name": "Transitional exhausted CD8+ T cell"
+  },
+  {
+    "id": 973,
+    "cell_name": "Trophectoderm cell"
+  },
+  {
+    "id": 974,
+    "cell_name": "Trophoblast cell"
+  },
+  {
+    "id": 975,
+    "cell_name": "Trophoblast stem cell"
+  },
+  {
+    "id": 976,
+    "cell_name": "Truncated radial glial cell"
+  },
+  {
+    "id": 977,
+    "cell_name": "Tubular cell"
+  },
+  {
+    "id": 978,
+    "cell_name": "Tuft-like cell"
+  },
+  {
+    "id": 979,
+    "cell_name": "Tuft-like medullary thymic epithelial cell"
+  },
+  {
+    "id": 980,
+    "cell_name": "Tumor endothelial cell"
+  },
+  {
+    "id": 981,
+    "cell_name": "Tumor epithelial cell"
+  },
+  {
+    "id": 982,
+    "cell_name": "Tumor regulatory T cell"
+  },
+  {
+    "id": 983,
+    "cell_name": "Tumor-associated microglia cell"
+  },
+  {
+    "id": 984,
+    "cell_name": "Tumor-infiltrating regulatory T cell"
+  },
+  {
+    "id": 985,
+    "cell_name": "Tumor-initiating stem cell(tSC)"
+  },
+  {
+    "id": 986,
+    "cell_name": "Tumor-reactive CD8+ infiltrating T cell"
+  },
+  {
+    "id": 987,
+    "cell_name": "Tumor-specific T cell"
+  },
+  {
+    "id": 988,
+    "cell_name": "Tumor‐associated macrophage (TAM)"
+  },
+  {
+    "id": 989,
+    "cell_name": "Umbilical cord blood (CB) cell"
+  },
+  {
+    "id": 990,
+    "cell_name": "Umbrella cell"
+  },
+  {
+    "id": 991,
+    "cell_name": "Undifferentiated pancreatic progenitor cell"
+  },
+  {
+    "id": 992,
+    "cell_name": "Unswitched and switched memory B cell"
+  },
+  {
+    "id": 993,
+    "cell_name": "Upper layer cell"
+  },
+  {
+    "id": 994,
+    "cell_name": "Upper layer cortical neuron"
+  },
+  {
+    "id": 995,
+    "cell_name": "Ureteric bud cell"
+  },
+  {
+    "id": 996,
+    "cell_name": "Urethelial cell"
+  },
+  {
+    "id": 997,
+    "cell_name": "Urothelial cell"
+  },
+  {
+    "id": 998,
+    "cell_name": "Valvular cell"
+  },
+  {
+    "id": 999,
+    "cell_name": "Vas afferen cell"
+  },
+  {
+    "id": 1000,
+    "cell_name": "Vascular cell"
+  },
+  {
+    "id": 1001,
+    "cell_name": "Vascular endothelial cell"
+  },
+  {
+    "id": 1002,
+    "cell_name": "Vascular progenitor cell"
+  },
+  {
+    "id": 1003,
+    "cell_name": "Vascular smooth muscle cell(VSMC)"
+  },
+  {
+    "id": 1004,
+    "cell_name": "Vasculature cell"
+  },
+  {
+    "id": 1005,
+    "cell_name": "Vein cell"
+  },
+  {
+    "id": 1006,
+    "cell_name": "Vein endothelial cell"
+  },
+  {
+    "id": 1007,
+    "cell_name": "Vellus hair follicle cell"
+  },
+  {
+    "id": 1008,
+    "cell_name": "Venous cell"
+  },
+  {
+    "id": 1009,
+    "cell_name": "Venous endothelial cell"
+  },
+  {
+    "id": 1010,
+    "cell_name": "Ventral lateral ganglionic eminence precursor cell"
+  },
+  {
+    "id": 1011,
+    "cell_name": "Ventral medial ganglionic eminence precursor cell"
+  },
+  {
+    "id": 1012,
+    "cell_name": "Ventricular cardiomyocyte"
+  },
+  {
+    "id": 1013,
+    "cell_name": "Ventricular cell"
+  },
+  {
+    "id": 1014,
+    "cell_name": "Ventricular radial glial cell"
+  },
+  {
+    "id": 1015,
+    "cell_name": "Venular endothelial cell"
+  },
+  {
+    "id": 1016,
+    "cell_name": "Venule endothelial cell"
+  },
+  {
+    "id": 1017,
+    "cell_name": "White adipocyte"
+  },
+  {
+    "id": 1018,
+    "cell_name": "White blood cell"
+  },
+  {
+    "id": 1019,
+    "cell_name": "Yolk sac-derived myeloid-biased progenitor cell(YSMP)"
+  },
+  {
+    "id": 1020,
+    "cell_name": "Young neuron"
+  },
+  {
+    "id": 1021,
+    "cell_name": "Zona fasciculata cell"
+  },
+  {
+    "id": 1022,
+    "cell_name": "Zona glomerulosa cell"
+  },
+  {
+    "id": 1023,
+    "cell_name": "Zona reticularis cell"
+  },
+  {
+    "id": 1024,
+    "cell_name": "Zygote"
+  },
+  {
+    "id": 1025,
+    "cell_name": "glomerular Endothelial cell (ECg)"
+  },
+  {
+    "id": 1026,
+    "cell_name": "lmmLeydig cell"
+  },
+  {
+    "id": 1027,
+    "cell_name": "lrNK cell"
+  },
+  {
+    "id": 1028,
+    "cell_name": "lymphatic endothelial cell"
+  },
+  {
+    "id": 1029,
+    "cell_name": "m-Pericyte"
+  },
+  {
+    "id": 1030,
+    "cell_name": "pit mucous cell (PMC)"
+  },
+  {
+    "id": 1031,
+    "cell_name": "pre-MSN(medium spiny neuron)"
+  },
+  {
+    "id": 1032,
+    "cell_name": "vasa recta Endothelial cell (ECvr)"
+  },
+  {
+    "id": 1033,
+    "cell_name": "von Economo neuron(VEN)"
+  },
+  {
+    "id": 1034,
+    "cell_name": "γ δ T cell"
+  },
+  {
+    "id": 1035,
+    "cell_name": "δ cell"
+  }
+]

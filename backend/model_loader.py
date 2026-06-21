@@ -4,7 +4,7 @@ SEQUENTIAL EXECUTION MODE
 
 HF models:
 - txgemma
-- biomistral
+- meditron
 - medgemma
 
 Ollama models are NOT handled here.
@@ -57,7 +57,12 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
         model, tokenizer = load_hf_model(model_name)
 
         try:
-            inputs = tokenizer(prompt, return_tensors="pt")
+            inputs = tokenizer(
+                prompt,
+                return_tensors="pt",
+                truncation=True,
+                max_length=2048
+            )
             inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
 
             with torch.no_grad():
@@ -65,7 +70,8 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
                     **inputs,
                     max_new_tokens=max_new_tokens,
                     do_sample=False,
-                    use_cache=False
+                    use_cache=False,
+                    pad_token_id=tokenizer.eos_token_id
                 )
 
             input_len = inputs["input_ids"].shape[1]
@@ -98,13 +104,39 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
                 json={
                     "model": model_id,
                     "prompt": prompt,
-                    "stream": False
+                    "stream": False,
+                    "options": {
+                        "num_predict": 256,
+                        "temperature": 0,
+                        "top_p": 1
+                    }
                 },
-                timeout=120
+                timeout=300
             )
             response.raise_for_status()
 
-            return response.json().get("response", "").strip()
+            data = response.json()
+            response_text = data.get("response", "")
+
+            message_text = ""
+            if "message" in data and isinstance(data["message"], dict):
+                message_text = data["message"].get("content", "")
+
+            thinking_text = data.get("thinking", "")
+
+            content = "\n".join(
+                x for x in [
+                    response_text,
+                    message_text,
+                    thinking_text
+                ] if x
+            ).strip()
+
+            print("\n[OLLAMA RAW OUTPUT]")
+            print(data)
+            print("====================\n")
+
+            return content
 
         except Exception as e:
             print(f"[Ollama Error] {model_name}: {e}")
@@ -134,12 +166,18 @@ def load_hf_model(model_name: str):
 
     try:
         tokenizer = AutoTokenizer.from_pretrained(model_id)
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
 
         model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            torch_dtype=torch.float16,
-            low_cpu_mem_usage=True
-        )
+        model_id,
+        torch_dtype=(
+            torch.float16
+            if DEVICE.type == "mps"
+            else torch.float32
+        ),
+        low_cpu_mem_usage=True
+    )
 
         model.to(DEVICE)
         model.eval()

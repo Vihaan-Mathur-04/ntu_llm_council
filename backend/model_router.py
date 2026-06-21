@@ -1,5 +1,6 @@
 """
-Model routing layer (clean NTU council version - LLM ONLY, SEQUENTIAL SAFE).
+Model routing layer
+(NTU Council - Sequential Safe Version)
 """
 
 from typing import Any, Optional
@@ -14,57 +15,106 @@ from .config import MODEL_BACKENDS, OLLAMA_MODELS
 
 class ModelRouter:
     """
-    Unified inference interface:
+    Unified inference interface.
 
     BACKENDS:
-    - HF (TxGemma, MedGemma, BioMistral)
-    - Ollama (Qwen / LLaMA etc.)
+    - hf
+    - ollama
+
+    Memory-safe:
+    Models are loaded, used, and released
+    by model_loader.py
     """
 
     # =====================================================
     # OLLAMA BACKEND
     # =====================================================
     @staticmethod
-    def _run_ollama(prompt: str, model_name: str) -> str:
-        """
-        Ollama handles its own memory lifecycle.
-        No HF loading involved.
-        """
+    def _run_ollama(
+        prompt: str,
+        model_name: str,
+        max_new_tokens: int = 64
+    ) -> str:
 
         import requests
+        import traceback
 
-        # map logical name → actual ollama model id
-        model_id = OLLAMA_MODELS.get(model_name, model_name)
+        model_id = OLLAMA_MODELS.get(
+            model_name,
+            model_name
+        )
 
         try:
+
             response = requests.post(
                 "http://localhost:11434/api/generate",
                 json={
                     "model": model_id,
                     "prompt": prompt,
-                    "stream": False
+                    "stream": False,
+                    "options": {
+                        "num_predict": max_new_tokens,
+                        "temperature": 0,
+                        "top_p": 1
+                    }
                 },
-                timeout=120
+                timeout=300
             )
 
             response.raise_for_status()
-            return response.json().get("response", "").strip()
 
-        except Exception as e:
-            print(f"[Ollama Error] {model_name}: {e}")
+            data = response.json()
+
+            print("\n====================")
+            print(f"MODEL: {model_name}")
+            print("====================")
+            print(data)
+            print("====================\n")
+
+            # -------------------------
+            # Standard Ollama output
+            # -------------------------
+            if (
+                "response" in data
+                and data["response"]
+            ):
+                return data["response"].strip()
+
+            # -------------------------
+            # Chat-style output
+            # -------------------------
+            if (
+                "message" in data
+                and isinstance(data["message"], dict)
+            ):
+                content = data["message"].get(
+                    "content",
+                    ""
+                )
+
+                if content:
+                    return content.strip()
+
+            return ""
+
+        except Exception:
+
+            print(
+                f"\n[OLLAMA ERROR - {model_name}]"
+            )
+
+            traceback.print_exc()
+
             return "ERROR"
 
     # =====================================================
-    # HF BACKEND (SEQUENTIAL SAFE)
+    # HF BACKEND
     # =====================================================
     @staticmethod
-    def _run_hf(model_name: str, prompt: str) -> str:
-        """
-        STRICT MEMORY SAFE MODE:
-        - load model
-        - run inference
-        - unload immediately
-        """
+    def _run_hf(
+        model_name: str,
+        prompt: str
+    ) -> str:
 
         return run_unified_model(
             model_name=model_name,
@@ -76,18 +126,30 @@ class ModelRouter:
     # PUBLIC ENTRY POINT
     # =====================================================
     @classmethod
-    async def run_async(cls, model_name: str, input_data: Any) -> Optional[str]:
-        """
-        Async wrapper (pipeline compatibility only).
-        Execution is still strictly sequential per model.
-        """
+    async def run_async(
+        cls,
+        model_name: str,
+        input_data: Any
+    ) -> Optional[str]:
 
-        backend = MODEL_BACKENDS.get(model_name)
+        backend = MODEL_BACKENDS.get(
+            model_name
+        )
 
         if backend == "ollama":
-            return cls._run_ollama(input_data, model_name)
+
+            return cls._run_ollama(
+                input_data,
+                model_name
+            )
 
         if backend == "hf":
-            return cls._run_hf(model_name, input_data)
 
-        raise ValueError(f"Unknown backend for model: {model_name}")
+            return cls._run_hf(
+                model_name,
+                input_data
+            )
+
+        raise ValueError(
+            f"Unknown backend for model: {model_name}"
+        )
