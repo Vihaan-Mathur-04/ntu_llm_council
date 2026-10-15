@@ -14,6 +14,7 @@ Usage:
 """
 
 from pathlib import Path
+import math
 import pandas as pd
 import json
 
@@ -24,7 +25,7 @@ from sympy import Sum
 # CONFIG
 # ============================================================
 
-CELLMARKER_FILE = r"C:\Users\Vihaan\ntu_llm_council\CELLMARKER RAG SET.xlsx"
+CELLMARKER_FILE = "/Users/vihaan_mathur/ntu_project/llm_council/CELLMARKER RAG SET.xlsx"
 OUTPUT_CORPUS = "cellmarker_corpus.json"
 
 
@@ -57,6 +58,47 @@ print("=" * 80)
 print(df["species"].value_counts(dropna=False))
 
 human_df = df[df["species"].astype(str).str.lower() == "human"]
+
+# ============================================================
+# BUILD GLOBAL MARKER FREQUENCIES
+# ============================================================
+
+print("\n" + "=" * 80)
+print("BUILDING GLOBAL MARKER STATISTICS")
+print("=" * 80)
+
+marker_to_cells = {}
+
+for _, row in human_df.iterrows():
+
+    marker = str(row["marker"]).strip().upper()
+
+    cell = str(row["cell_name"]).strip()
+
+    if marker == "" or marker == "NAN":
+        continue
+
+    marker_to_cells.setdefault(marker, set()).add(cell)
+
+total_cells = human_df["cell_name"].nunique()
+
+marker_idf = {}
+
+for marker, cells in marker_to_cells.items():
+
+    frequency = len(cells)
+
+    idf = math.log((total_cells + 1) / (frequency + 1)) + 1
+
+    marker_idf[marker] = {
+
+        "frequency": frequency,
+
+        "idf": round(idf, 4)
+
+    }
+
+print(f"Unique markers : {len(marker_idf):,}")
 
 print(f"\nHuman rows retained: {len(human_df):,}")
 
@@ -118,13 +160,22 @@ grouped = human_df.groupby("cell_name")
 
 for cell_name, group in grouped:
 
-    markers = (
+    marker_names = (
         group["marker"]
         .dropna()
         .astype(str)
+        .str.upper()
         .unique()
         .tolist()
     )
+
+    markers = {}
+
+    for marker in sorted(marker_names):
+
+        if marker in marker_idf:
+
+            markers[marker] = marker_idf[marker]
 
     tissues = (
         group["tissue_type"]
@@ -153,9 +204,9 @@ for cell_name, group in grouped:
     entry = {
         "cell_name": str(cell_name),
 
-        "markers": sorted(markers),
+        "markers": markers,
 
-        "marker_count": len(markers),
+        "marker_count": len(marker_names),
 
         "tissues": tissues,
 
@@ -203,9 +254,11 @@ for i, entry in enumerate(corpus[:5], start=1):
     print(f"Markers: {entry['marker_count']}")
     print(f"Evidence Count: {entry['evidence_count']}")
 
+    preview = list(entry["markers"].keys())[:10]
+
     print(
         "Marker Preview:",
-        ", ".join(entry["markers"][:10])
+        ", ".join(preview)
     )
 
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
 INPUT_PATH = "/Users/vihaan_mathur/ntu_project/llm_council/2024-09-01_cellstar.csv"
-OUTPUT_PATH = "/Users/vihaan_mathur/ntu_project/llm_council/cellstar_preprocessed.csv"
+OUTPUT_PATH = "/Users/vihaan_mathur/ntu_project/llm_council/cellstar_reference_preprocessed.csv"
 
 CELL_ID_COL = "Cell_ID"
 CELL_NAME_COL = "Cell_Name"
@@ -23,13 +23,14 @@ def aggregate_cells(df):
 
     grouped = df.groupby(CELL_ID_COL, sort=False)
 
+    total_removed_duplicates = 0
+
     for cell_id, group in grouped:
 
-        # keep first cell name encountered
+        # Keep first cell name encountered
         cell_name = str(group[CELL_NAME_COL].iloc[0])
 
-        # IMPORTANT:
-        # keep EVERY marker occurrence
+        # Original marker list
         markers = (
             group[MARKER_COL]
             .fillna("")
@@ -43,12 +44,38 @@ def aggregate_cells(df):
             if m.strip()
         ]
 
-        grouped_rows.append({
-            "Cell_ID": cell_id,
-            "Cell_Name": cell_name,
-            "Marker_Genes": ",".join(markers),
-            "Marker_Count": len(markers)
-        })
+        # -----------------------------------------
+        # Remove duplicates within THIS CELL ONLY
+        # Preserve original order
+        # -----------------------------------------
+
+        seen = set()
+        unique_markers = []
+
+        for marker in markers:
+
+            marker_upper = marker.upper()
+
+            if marker_upper not in seen:
+                seen.add(marker_upper)
+                unique_markers.append(marker)
+
+        total_removed_duplicates += (
+            len(markers) - len(unique_markers)
+        )
+
+        grouped_rows.append(
+            {
+                "Cell_ID": cell_id,
+                "Cell_Name": cell_name,
+                "Cell_Name_Extended": str(group["Cell_Name_Extended"].iloc[0]),
+                "Tissue": str(group["Tissue"].iloc[0]),
+                "Marker_Genes": ",".join(unique_markers),
+                "Marker_Count": len(unique_markers)
+            }
+        )
+
+    print(f"\n[INFO] Removed {total_removed_duplicates} duplicate marker entries within cells.")
 
     return pd.DataFrame(grouped_rows)
 

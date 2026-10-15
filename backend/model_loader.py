@@ -4,14 +4,13 @@ SEQUENTIAL EXECUTION MODE
 
 HF models:
 - txgemma
-- meditron
+- llama
 - medgemma
 
 Ollama models are NOT handled here.
 They are handled inside model_router.py.
 """
 
-from typing import Any, Tuple
 import gc
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -32,8 +31,14 @@ def get_device():
 
 
 DEVICE = get_device()
+# =========================================================
+# HF MODEL CACHE
+# =========================================================
 
-def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) -> str:
+MODEL_CACHE = {}
+TOKENIZER_CACHE = {}
+
+def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 400) -> str:
     """
     TRUE DISPATCH LAYER (SEQUENTIAL SAFE, NO CACHING, NO RECURSION)
 
@@ -42,7 +47,6 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
     """
 
     from .config import MODEL_BACKENDS, OLLAMA_MODELS
-    from .model_loader import load_hf_model, DEVICE
     import torch
     import gc
     import requests
@@ -56,43 +60,57 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
 
         model, tokenizer = load_hf_model(model_name)
 
-        try:
-            inputs = tokenizer(
-                prompt,
-                return_tensors="pt",
-                truncation=True,
-                max_length=2048
-            )
-            inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
+        inputs = tokenizer(
+            prompt,
+            return_tensors="pt",
+            truncation=False,
+            max_length=2048
+        )
 
-            with torch.no_grad():
-                outputs = model.generate(
-                    **inputs,
-                    max_new_tokens=max_new_tokens,
-                    do_sample=False,
-                    use_cache=False,
-                    pad_token_id=tokenizer.eos_token_id
-                )
+        inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
 
-            input_len = inputs["input_ids"].shape[1]
-            result = tokenizer.decode(
-                outputs[0][input_len:],
-                skip_special_tokens=True
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                do_sample=False,
+                use_cache=True,
+                pad_token_id=tokenizer.eos_token_id
             )
 
-            return result.strip()
+        input_len = inputs["input_ids"].shape[1]
 
-        finally:
-            # CRITICAL MEMORY CLEANUP
-            del model
-            del tokenizer
-            gc.collect()
+        generated = outputs[0][input_len:]
 
-            if DEVICE.type == "mps":
-                torch.mps.empty_cache()
+        result = tokenizer.decode(
+            generated,
+            skip_special_tokens=True
+        ).strip()
+
+        print("\n[HF RAW OUTPUT]")
+        print(result)
+        print("====================\n")
+
+        print("=" * 80)
+        print(f"MODEL: {model_name}")
+        print(f"INPUT TOKENS : {input_len}")
+        print(f"OUTPUT TOKENS: {generated.shape[-1]}")
+        print(f"TOTAL TOKENS : {input_len + generated.shape[-1]}")
+        print("=" * 80)
+        if generated.shape[-1] == 0:
+            print(f"[WARNING] {model_name} generated ZERO new tokens.")
+
+        print("=" * 80)
+        print(model_name)
+        print("Prompt tokens:", input_len)
+        print("Generated tokens:", outputs.shape[-1])
+        print("New tokens:", generated.shape[-1])
+        print("=" * 80)
+
+        return result
 
     # =====================================================
-    # OLLAMA MODELS (Qwen, MedGemma)
+    # OLLAMA MODELS (Phi, MedGemma)
     # =====================================================
     if backend == "ollama":
 
@@ -106,7 +124,7 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
                     "prompt": prompt,
                     "stream": False,
                     "options": {
-                        "num_predict": 256,
+                        "num_predict": 1024,
                         "temperature": 0,
                         "top_p": 1
                     }
@@ -116,6 +134,9 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
             response.raise_for_status()
 
             data = response.json()
+
+            print(data.keys())
+
             response_text = data.get("response", "")
 
             message_text = ""
@@ -149,27 +170,38 @@ def run_unified_model(model_name: str, prompt: str, max_new_tokens: int = 64) ->
 
 def load_hf_model(model_name: str):
     """
-    STRICT HF LOADER (SEQUENTIAL SAFE)
-
-    MUST always return (model, tokenizer)
-    NEVER returns None silently
+    Load a Hugging Face model only once.
+    Subsequent calls reuse the cached model.
     """
-
-    from .config import HF_MODELS
-    from transformers import AutoTokenizer, AutoModelForCausalLM
-    import torch
 
     if model_name not in HF_MODELS:
         raise ValueError(f"Unknown HF model: {model_name}")
 
+    # -------------------------------
+    # Already loaded
+    # -------------------------------
+
+    if model_name in MODEL_CACHE:
+
+        return (
+            MODEL_CACHE[model_name],
+            TOKENIZER_CACHE[model_name]
+        )
+
+    # -------------------------------
+    # First load
+    # -------------------------------
+
     model_id = HF_MODELS[model_name]
 
-    try:
-        tokenizer = AutoTokenizer.from_pretrained(model_id)
-        if tokenizer.pad_token is None:
-            tokenizer.pad_token = tokenizer.eos_token
+    print(f"\n[HF] Loading {model_name}...")
 
-        model = AutoModelForCausalLM.from_pretrained(
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    model = AutoModelForCausalLM.from_pretrained(
         model_id,
         torch_dtype=(
             torch.float16
@@ -179,14 +211,15 @@ def load_hf_model(model_name: str):
         low_cpu_mem_usage=True
     )
 
-        model.to(DEVICE)
-        model.eval()
+    model.to(DEVICE)
+    model.eval()
 
-        return model, tokenizer
+    MODEL_CACHE[model_name] = model
+    TOKENIZER_CACHE[model_name] = tokenizer
 
-    except Exception as e:
-        print(f"[HF LOAD ERROR] {model_name}: {e}")
-        raise  # 🔥 IMPORTANT: DO NOT SILENCE FAILURES
+    print(f"[HF] {model_name} loaded and cached.")
+
+    return model, tokenizer
 
 
 # =========================================================
@@ -197,13 +230,13 @@ def run_loaded_model(
     model,
     tokenizer,
     prompt: str,
-    max_new_tokens: int = 64
+    max_new_tokens: int = 400
 ) -> str:
 
     inputs = tokenizer(
         prompt,
         return_tensors="pt",
-        truncation=True,
+        truncation=False,
         max_length=2048
     )
 
@@ -218,7 +251,7 @@ def run_loaded_model(
             **inputs,
             max_new_tokens=max_new_tokens,
             do_sample=False,
-            use_cache=False,
+            use_cache=True,
             pad_token_id=tokenizer.eos_token_id
         )
 

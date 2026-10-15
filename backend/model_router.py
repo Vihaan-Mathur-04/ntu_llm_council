@@ -10,39 +10,39 @@ from .config import MODEL_BACKENDS, OLLAMA_MODELS
 
 
 # =====================================================
+# TOKEN BUDGETS
+# =====================================================
+
+HF_TOKEN_BUDGETS = {
+    "phi": 750,
+    "llama": 750,
+    "txgemma": 750,
+    "medgemma": 1800,      # Chairman
+}
+
+DEFAULT_HF_TOKENS = 700
+
+
+# =====================================================
 # MODEL ROUTER
 # =====================================================
 
 class ModelRouter:
-    """
-    Unified inference interface.
-
-    BACKENDS:
-    - hf
-    - ollama
-
-    Memory-safe:
-    Models are loaded, used, and released
-    by model_loader.py
-    """
 
     # =====================================================
     # OLLAMA BACKEND
     # =====================================================
+
     @staticmethod
     def _run_ollama(
         prompt: str,
-        model_name: str,
-        max_new_tokens: int = 64
+        model_name: str
     ) -> str:
 
         import requests
         import traceback
 
-        model_id = OLLAMA_MODELS.get(
-            model_name,
-            model_name
-        )
+        model_id = OLLAMA_MODELS.get(model_name, model_name)
 
         try:
 
@@ -53,7 +53,7 @@ class ModelRouter:
                     "prompt": prompt,
                     "stream": False,
                     "options": {
-                        "num_predict": max_new_tokens,
+                        "num_predict": 1000,
                         "temperature": 0,
                         "top_p": 1
                     }
@@ -71,27 +71,14 @@ class ModelRouter:
             print(data)
             print("====================\n")
 
-            # -------------------------
-            # Standard Ollama output
-            # -------------------------
-            if (
-                "response" in data
-                and data["response"]
-            ):
+            if "response" in data and data["response"]:
                 return data["response"].strip()
 
-            # -------------------------
-            # Chat-style output
-            # -------------------------
             if (
                 "message" in data
                 and isinstance(data["message"], dict)
             ):
-                content = data["message"].get(
-                    "content",
-                    ""
-                )
-
+                content = data["message"].get("content", "")
                 if content:
                     return content.strip()
 
@@ -99,32 +86,16 @@ class ModelRouter:
 
         except Exception:
 
-            print(
-                f"\n[OLLAMA ERROR - {model_name}]"
-            )
+            print(f"\n[OLLAMA ERROR - {model_name}]")
 
             traceback.print_exc()
 
             return "ERROR"
 
     # =====================================================
-    # HF BACKEND
-    # =====================================================
-    @staticmethod
-    def _run_hf(
-        model_name: str,
-        prompt: str
-    ) -> str:
-
-        return run_unified_model(
-            model_name=model_name,
-            prompt=prompt,
-            max_new_tokens=64
-        )
-
-    # =====================================================
     # PUBLIC ENTRY POINT
     # =====================================================
+
     @classmethod
     async def run_async(
         cls,
@@ -132,9 +103,11 @@ class ModelRouter:
         input_data: Any
     ) -> Optional[str]:
 
-        backend = MODEL_BACKENDS.get(
-            model_name
-        )
+        backend = MODEL_BACKENDS.get(model_name)
+
+        # ----------------------------
+        # Ollama
+        # ----------------------------
 
         if backend == "ollama":
 
@@ -143,11 +116,26 @@ class ModelRouter:
                 model_name
             )
 
+        # ----------------------------
+        # HuggingFace
+        # ----------------------------
+
         if backend == "hf":
 
-            return cls._run_hf(
+            token_budget = HF_TOKEN_BUDGETS.get(
                 model_name,
-                input_data
+                DEFAULT_HF_TOKENS
+            )
+
+            print(
+                f"[TOKEN BUDGET] "
+                f"{model_name}: {token_budget}"
+            )
+
+            return run_unified_model(
+                model_name=model_name,
+                prompt=input_data,
+                max_new_tokens=token_budget
             )
 
         raise ValueError(

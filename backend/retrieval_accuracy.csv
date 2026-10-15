@@ -1,0 +1,432 @@
+query_index,ground_truth,top1,dice1,top2,dice2,top3,dice3,top4,dice4,ground_truth_rank,top1_correct,top2_correct,top3_correct,top4_correct,best_dice,ground_truth_dice
+0,taste receptor cell,Choriocapillaris cell,0.4278,lymphatic endothelial cell,0.4213,Microvascular cell,0.412,Brush cell (Tuft cell),0.3633,,False,False,False,False,0.4278,
+1,pluripotent stem cell,Pluripotent stem cell,0.8571,Epiblast cell,0.6147,Pluripotent cell,0.4318,Spermatogonial stem cell ,0.3692,1.0,True,True,True,True,0.8571,0.8571
+2,macrophage,Macrophage,0.2996,Monocyte,0.2629,Classical monocyte,0.2004,11b+ dendritic cell,0.1836,1.0,True,True,True,True,0.2996,0.2996
+3,macrophage,Macrophage,0.3258,Myeloid cell,0.2052,Monocyte,0.1933,Cytotoxic T cell,0.1804,1.0,True,True,True,True,0.3258,0.3258
+4,macrophage,Macrophage,0.4146,Myeloid cell,0.3219,M2 macrophage,0.3094,Monocyte,0.2632,1.0,True,True,True,True,0.4146,0.4146
+5,macrophage,Macrophage,0.3863,Monocyte,0.2636,M1 macrophage,0.2502,M2 macrophage,0.2396,1.0,True,True,True,True,0.3863,0.3863
+6,macrophage,Macrophage,0.2901,Monocyte,0.2089,M1 macrophage,0.2089,CD14+ monocyte,0.1826,1.0,True,True,True,True,0.2901,0.2901
+7,adipose-derived stem cell,Stem cell,0.2676,Cancer stem cell,0.2279,Ductal cell,0.1785,Epithelial progenitor cell,0.1572,,False,False,False,False,0.2676,
+8,adipose-derived stem cell,Cancer stem cell,0.2487,Stem cell,0.1944,Limbal stem cell,0.1693,Neural progenitor cell,0.141,,False,False,False,False,0.2487,
+9,adipose-derived stem cell,Stem cell,0.2532,Hematopoietic stem cell,0.1521,Neural progenitor cell,0.1397,Intestinal stem cell,0.1397,,False,False,False,False,0.2532,
+10,adipose-derived stem cell,Stem cell,0.3025,Hematopoietic stem cell,0.1345,Pericyte,0.1248,T cell,0.1155,,False,False,False,False,0.3025,
+11,adipose-derived stem cell,Stem cell,0.3347,Cancer stem cell,0.1565,Mesenchymal progenitor cell,0.1288,Progenitor cell,0.1169,,False,False,False,False,0.3347,
+12,adipose-derived stem cell,Collecting duct & Ureteric Bud cell,0.1988,Stem cell,0.1683,Mesenchymal stem cell,0.1295,Epithelial progenitor cell,0.1204,,False,False,False,False,0.1988,
+13,adipose-derived stromal cell,Stromal cell,0.7865,Glial cell,0.4256,Fibroblast,0.39,Cancer-associated fibroblast,0.3527,,False,False,False,False,0.7865,
+14,brown adipocyte,Brown adipocyte,0.8399,Ventral medial ganglionic eminence precursor cell,0.3298,Alveolar macrophage,0.1269,Stem cell,0.0212,1.0,True,True,True,True,0.8399,0.8399
+15,acinar cell,Acinar cell,0.6285,Non-β endocrine cell,0.3036,Intestinal cell,0.2314,Tissue resident macrophage,0.2118,1.0,True,True,True,True,0.6285,0.6285
+16,endothelial cell,Endothelial cell,0.2458,Vascular endothelial cell,0.1838,Pan-endothelial cell,0.1617,Vascular cell,0.1582,1.0,True,True,True,True,0.2458,0.2458
+17,endothelial cell,Sinusoidal endothelial cell,0.2182,Epithelial progenitor cell,0.207,Endothelial cell,0.1993,Dividing cell,0.1513,3.0,False,False,True,True,0.2182,0.1993
+18,endothelial cell,Endothelial cell,0.1568,Artery cell,0.1253,Perivascular cell,0.1151,Stromal cell,0.1063,1.0,True,True,True,True,0.1568,0.1568
+19,endothelial cell,Endothelial cell,0.2001,Capillary cell,0.1334,Brain cell,0.1114,Spermatogonial stem cell ,0.107,1.0,True,True,True,True,0.2001,0.2001
+20,endothelial cell,Endothelial cell,0.1622,Distal cell,0.1238,Vascular endothelial cell,0.1064,Mesangial cell,0.1058,1.0,True,True,True,True,0.1622,0.1622
+21,endothelial cell,Endothelial cell,0.177,Endocardial cell,0.1536,Proliferative cell,0.1167,Pan-endothelial cell,0.1038,1.0,True,True,True,True,0.177,0.177
+22,endothelial cell,Endothelial cell,0.2028,Vascular cell,0.1148,Cancer-associated fibroblast,0.1,Endothelial progenitor cell,0.095,1.0,True,True,True,True,0.2028,0.2028
+23,endothelial cell,Endothelial cell,0.1841,Capillary cell,0.1638,Hypoblast cell,0.1452,Pan-endothelial cell,0.1433,1.0,True,True,True,True,0.1841,0.1841
+24,endothelial cell,Pan-endothelial cell,0.2068,Glomerular endothelial cell,0.1668,Capillary cell,0.1218,Lymphocyte,0.1142,,False,False,False,False,0.2068,
+25,endothelial cell,Pan-endothelial cell,0.1863,Endothelial cell,0.1502,Fibroblast,0.1398,Multipotent retinal progenitor cell,0.1192,2.0,False,True,True,True,0.1863,0.1502
+26,fat cell (adipocyte),Adipocyte,0.6058,Mesenchymal progenitor cell,0.2095,Brown adipocyte,0.203,Fat cell,0.1951,,False,False,False,False,0.6058,
+27,mesenchymal stem cell,Mesenchymal stem cell,0.4829,Mesenchymal progenitor cell,0.4438,Multipotent stromal cell,0.3174,Cancer stem cell,0.3154,1.0,True,True,True,True,0.4829,0.4829
+28,pericyte,Pericyte,0.8475,Myofibroblast,0.3681,Smooth muscle cell,0.3575,Mural cell,0.3317,1.0,True,True,True,True,0.8475,0.8475
+29,smooth muscle cell,Smooth muscle cell,0.707,Pericyte,0.2931,Airway smooth muscle cell,0.2878,Vascular smooth muscle cell(VSMC),0.2873,1.0,True,True,True,True,0.707,0.707
+30,natural killer cell,Cytotoxic cell,0.0824,CD8+ T cell,0.0777,CD14+ monocyte,0.076,Natural killer cell,0.0732,4.0,False,False,False,True,0.0824,0.0732
+31,natural killer cell,Regulatory T (Treg) cell,0.0919,Tumor-infiltrating regulatory T cell,0.0884,Exhausted CD4+ T cell,0.081,Exhausted T(Tex) cell,0.0786,,False,False,False,False,0.0919,
+32,natural killer cell,Memory CD8+ T cell,0.112,Naive CD8+ T cell,0.1047,Regulatory T (Treg) cell,0.0919,Tumor-infiltrating regulatory T cell,0.0884,,False,False,False,False,0.112,
+33,natural killer cell,Memory CD4+ T cell,0.1079,Effector CD4+ T cell,0.0779,Activated langerhans cell,0.0558,Corticotroph tumor cell,0.0558,,False,False,False,False,0.1079,
+34,natural killer cell,Natural killer cell,0.0911,Natural killer T(NKT) cell,0.0825,Intraepithelial lymphocyte cell,0.0658,Mature osteoblast,0.0594,1.0,True,True,True,True,0.0911,0.0911
+35,natural killer cell,Natural killer T(NKT) cell,0.1049,Blood cell,0.0967,Diffuse gastric cancer cell,0.0875,Immature erythroid cell,0.0569,,False,False,False,False,0.1049,
+36,natural killer cell,Diffuse gastric cancer cell,0.0909,Fibroblast-like cell,0.0885,Distal convoluted tubule Type 2(DCT2) cell,0.0739,Regulatory T (Treg) cell,0.0693,,False,False,False,False,0.0909,
+37,natural killer cell,Cytotoxic T cell,0.1064,T cell large granular lymphocytic leukemia cell,0.0889,CD4+ recently activated effector memory or effector T cell (CTL),0.0836,Finally highly effector (TEMRA) memory T cell,0.0818,,False,False,False,False,0.1064,
+38,natural killer cell,Mucosa-associated invariant T (MAIT) cell,0.0944,Muscle satellite cell,0.0909,Cancer-associated fibroblast,0.0665,Proliferative ductal cell,0.0641,,False,False,False,False,0.0944,
+39,natural killer cell,Exhausted double-positive T cell,0.1083,Activated langerhans cell,0.0921,Natural killer cell,0.0848,Regulatory T(Treg) cell,0.0795,3.0,False,False,True,True,0.1083,0.0848
+40,natural killer cell,Natural killer cell,0.0981,Memory CD8+ T cell,0.0962,Regulatory T(Treg) cell,0.0916,Exhausted CD4+ T cell,0.0767,1.0,True,True,True,True,0.0981,0.0981
+41,natural killer cell,Proliferating stem cell,0.0944,Innate lymphoid cell,0.0884,Plasma cell,0.0871,Proliferative cell,0.0766,,False,False,False,False,0.0944,
+42,natural killer cell,Natural killer cell,0.0948,Effector memory CD8+ T cell,0.0942,T helper 1(Th1) cell,0.0733,Activated CD4+ T cell,0.0671,1.0,True,True,True,True,0.0948,0.0948
+43,natural killer cell,T helper 1(Th1) cell,0.1137,Migratory langerhans cell,0.0945,Natural killer cell,0.0928,Memory T cell,0.0852,3.0,False,False,True,True,0.1137,0.0928
+44,natural killer cell,Truncated radial glial cell,0.1105,Natural killer cell,0.0705,Naive CD4+ T cell,0.0705,Later-stage progenitor cell,0.0661,2.0,False,True,True,True,0.1105,0.0705
+45,natural killer cell,CD8+ intraepithelial cell,0.1142,Effector memory CD8+ T cell,0.0667,Later-stage progenitor cell,0.0661,Nephron progenitor cell,0.0657,,False,False,False,False,0.1142,
+46,natural killer cell,Naive T(Th0) cell,0.1318,Effector memory T cell,0.1082,CD4+ recently activated effector memory or effector T cell (CTL),0.1036,Natural killer T(NKT) cell,0.0807,,False,False,False,False,0.1318,
+47,natural killer cell,Effector memory T cell,0.094,Natural killer T(NKT) cell,0.0872,Naive T(Th0) cell,0.0814,Effector CD8+ T cell,0.0807,,False,False,False,False,0.094,
+48,natural killer cell,Proliferative cell,0.0711,Luminal epithelial cell,0.0695,Gland ductal cell,0.0628,Natural killer cell,0.0626,4.0,False,False,False,True,0.0711,0.0626
+49,natural killer cell,Osteoblast,0.0827,Eomesodermin homolog(EOMES)+ regulatory T cell type 1,0.0644,Regulatory chondrocyte,0.0591,Hematopoietic cell,0.0583,,False,False,False,False,0.0827,
+50,natural killer cell,Natural killer T(NKT) cell,0.0783,Classical monocyte,0.076,Tissue resident memory T(TRM) cell,0.0714,Exhausted CD8+ T cell,0.0699,,False,False,False,False,0.0783,
+51,natural killer cell,Exhausted CD8+ T cell,0.0976,Natural killer T(NKT) cell,0.0809,Natural killer cell,0.0796,Activated T cell,0.0767,3.0,False,False,True,True,0.0976,0.0796
+52,natural killer cell,Plasma cell,0.0848,Natural killer T(NKT) cell,0.0792,Non-classical monocyte,0.0786,Classical monocyte,0.0683,,False,False,False,False,0.0848,
+53,natural killer cell,Tissue migratory CD4+ T  cell (TMC),0.1087,Mucosa-associated invariant T (MAIT) cell,0.1013,Innate Lymphoid cell,0.0997,CD8+ mucosal-associated invariant T cell(CD8+ MAIT),0.0932,,False,False,False,False,0.1087,
+54,natural killer cell,CD8+ mucosal-associated invariant T cell(CD8+ MAIT),0.0813,Mucosa-associated invariant T (MAIT) cell,0.0703,Activated CD8+ T cell,0.0646,Effector memory CD8+ T cell,0.0597,,False,False,False,False,0.0813,
+55,natural killer cell,Activated T cell,0.0622,Spinal-progenitor-like cell,0.0618,Plasma cell,0.0602,Podocyte precursor,0.0565,,False,False,False,False,0.0622,
+56,natural killer cell,Regulatory CD4+ T cell,0.0763,Suppressive regulatory T cell,0.0726,Activated T cell,0.0647,Memory T cell,0.063,,False,False,False,False,0.0763,
+57,natural killer cell,Memory CD4+ T cell,0.0765,Capillary cell,0.0753,Cardiomyocyte,0.0704,Pan-endothelial cell,0.0658,,False,False,False,False,0.0765,
+58,natural killer cell,Memory T cell,0.0781,Capillary cell,0.0753,Memory CD8+ T cell,0.0708,Neural stem cell,0.0703,,False,False,False,False,0.0781,
+59,natural killer cell,Memory CD8+ T cell,0.1017,Conventional dendritic cell 1(cDC1),0.0761,Tissue resident memory T(TRM) cell,0.0736,Leukocyte,0.072,,False,False,False,False,0.1017,
+60,natural killer cell,Leukocyte,0.1361,Effector CD8+ T cell,0.1063,Effector memory CD8+ T cell,0.1014,Tissue resident memory T(TRM) cell,0.096,,False,False,False,False,0.1361,
+61,natural killer cell,Effector memory CD8+ T cell,0.1325,Effector T(Teff) cell,0.0899,Revertant memory CD8+ T(TEMRA) cell,0.0827,Cytotoxic T cell,0.0821,,False,False,False,False,0.1325,
+62,natural killer cell,Proximal cell,0.0637,Dividing cell,0.063,Pre-exhausted CD8+ T cell,0.063,Microglial cell,0.0626,,False,False,False,False,0.0637,
+63,natural killer cell,Pro-neutrophil,0.1336,Ematopoietic progenitor-like cell,0.0814,Naive double-positive T cell,0.077,Migratory langerhans cell,0.0674,,False,False,False,False,0.1336,
+64,m2 macrophage,M2 macrophage,0.8653,Tumor‐associated macrophage (TAM),0.4378,Alveolar macrophage,0.3412,Monocyte-derived macrophage,0.3405,1.0,True,True,True,True,0.8653,0.8653
+65,progenitor cell,Progenitor cell,0.1848,Abnormal myeloid cell,0.1507,Platelet,0.1401,Pelvic epithelial cell,0.1341,1.0,True,True,True,True,0.1848,0.1848
+66,progenitor cell,Progenitor cell,0.241,Pelvic epithelial cell,0.1715,Nephron progenitor cell,0.132,Goblet cell,0.1273,1.0,True,True,True,True,0.241,0.241
+67,progenitor cell,Progenitor cell,0.1798,Osteoblast,0.1258,Renal tubular cell,0.1032,Deuterosomal cell,0.1031,1.0,True,True,True,True,0.1798,0.1798
+68,progenitor cell,Progenitor cell,0.221,Stem cell,0.1733,Mesothelial cell,0.1449,Cancer stem cell,0.1344,1.0,True,True,True,True,0.221,0.221
+69,progenitor cell,Progenitor cell,0.2159,Stem cell,0.1804,Hematopoietic stem cell,0.1173,Epithelial cell,0.1124,1.0,True,True,True,True,0.2159,0.2159
+70,progenitor cell,Progenitor cell,0.2399,Neural progenitor cell,0.1618,Cancer stem cell,0.1609,Radial glial cell,0.1462,1.0,True,True,True,True,0.2399,0.2399
+71,progenitor cell,Progenitor cell,0.2102,Oligodendrocyte progenitor cell,0.1825,Interstitial cell,0.1129,Oligodendrocyte precursor cell,0.1101,1.0,True,True,True,True,0.2102,0.2102
+72,progenitor cell,Progenitor cell,0.1928,Neuroectoderm cell,0.1858,Oligodendrocyte precursor cell,0.1851,Oligodendroglial cell,0.182,1.0,True,True,True,True,0.1928,0.1928
+73,hematopoietic stem cell,Hematopoietic stem cell,0.3071,Hematopoietic progenitor cell,0.191,CD106+ mesenchymal stem cell,0.1178,Conventional dendritic cell 2a(cDC2a),0.1161,1.0,True,True,True,True,0.3071,0.3071
+74,hematopoietic stem cell,Hematopoietic stem cell,0.2441,Mature luminal cell,0.0959,Cancer stem cell,0.093,Innate Lymphoid cell,0.0922,1.0,True,True,True,True,0.2441,0.2441
+75,hematopoietic stem cell,Hematopoietic stem cell,0.2609,Hematopoietic progenitor cell,0.2159,Artery cell,0.1267,Vascular endothelial cell,0.1194,1.0,True,True,True,True,0.2609,0.2609
+76,hematopoietic stem cell,Hematopoietic stem cell,0.1875,Hematopoietic progenitor cell,0.1292,Conventional T(Tconv) cell,0.1186,lmmLeydig cell,0.1038,1.0,True,True,True,True,0.1875,0.1875
+77,hematopoietic stem cell,Hematopoietic progenitor cell,0.3786,Hematopoietic stem cell,0.3258,Yolk sac-derived myeloid-biased progenitor cell(YSMP),0.1685,Multipotent progenitor cell,0.1537,2.0,False,True,True,True,0.3786,0.3258
+78,fibroblast,Fibroblast,0.3396,Myofibroblast,0.2533,Cancer-associated fibroblast,0.2295,Mesenchymal cell,0.2015,1.0,True,True,True,True,0.3396,0.3396
+79,fibroblast,Fibroblast,0.4245,Myofibroblast,0.2827,Pericyte,0.21,Mesothelial cell,0.2027,1.0,True,True,True,True,0.4245,0.4245
+80,fibroblast,Fibroblast,0.4318,Stromal cell,0.2237,Pericyte,0.2201,Cancer-associated fibroblast,0.207,1.0,True,True,True,True,0.4318,0.4318
+81,fibroblast,Fibroblast,0.3758,Cancer-associated fibroblast,0.2167,Smooth muscle cell,0.1694,Stromal cell,0.1621,1.0,True,True,True,True,0.3758,0.3758
+82,m1 macrophage,M1 macrophage,0.8826,T cell large granular lymphocytic leukemia cell,0.3111,Mature dendritic cell,0.2845,Interstitial macrophage,0.2718,1.0,True,True,True,True,0.8826,0.8826
+83,epithelial cell,Pelvic epithelial cell,0.1366,Enterocyte,0.1217,Epithelial cell,0.1035,Exhausted CD4+ T cell,0.081,3.0,False,False,True,True,0.1366,0.1035
+84,epithelial cell,Goblet cell,0.1537,Lung cell,0.105,Effector memory CD8+ T cell,0.1037,Epithelial cell,0.1033,4.0,False,False,False,True,0.1537,0.1033
+85,epithelial cell,Epithelial cell,0.1108,Secretory epithelial Cell,0.1101,Stromal cell,0.1054,Goblet cell,0.1003,1.0,True,True,True,True,0.1108,0.1108
+86,epithelial cell,Epithelial cell,0.1261,Stromal cell,0.1153,Secretory epithelial Cell,0.1101,Secretory cell,0.1057,1.0,True,True,True,True,0.1261,0.1261
+87,epithelial cell,Epithelial cell,0.1258,Secretory cell,0.1052,Myofibroblast,0.0822,Vascular endothelial cell,0.0797,1.0,True,True,True,True,0.1258,0.1258
+88,epithelial cell,Collecting ductal cell,0.1046,Epithelial cell,0.1009,Vascular smooth muscle cell(VSMC),0.0995,Fibrocartilage chondrocyte,0.0973,2.0,False,True,True,True,0.1046,0.1009
+89,epithelial cell,Epithelial cell,0.173,Paget cell,0.1438,Ciliated cell,0.1282,Brush cell (Tuft cell),0.1012,1.0,True,True,True,True,0.173,0.173
+90,epithelial cell,Epithelial cell,0.1396,Brush cell (Tuft cell),0.1012,Club cell (Clara cell),0.0998,Secretory cell,0.0909,1.0,True,True,True,True,0.1396,0.1396
+91,epithelial cell,Basal cell,0.1671,Epithelial cell,0.1279,CD14+ monocyte,0.1176,Proximal straight tubular cell,0.1075,2.0,False,True,True,True,0.1671,0.1279
+92,epithelial cell,Epithelial cell,0.1236,Alveolar pneumocyte Type II,0.1033,Alveolar epithelial cell Type 2,0.0971,Ciliated cell,0.0912,1.0,True,True,True,True,0.1236,0.1236
+93,epithelial cell,Epithelial cell,0.1124,Perivascular cell,0.1119,Ciliated cell,0.1015,Distal tubular cell,0.0958,1.0,True,True,True,True,0.1124,0.1124
+94,epithelial cell,Epithelial cell,0.1277,Goblet cell,0.106,Secretory cell,0.1006,Epithelial-mesenchymal cell,0.1005,1.0,True,True,True,True,0.1277,0.1277
+95,epithelial cell,Epithelial cell,0.1496,Mucous-ciliated cell,0.104,Goblet cell,0.1037,Cortical cell,0.0989,1.0,True,True,True,True,0.1496,0.1496
+96,epithelial cell,Ductal cell,0.1167,Epithelial cell,0.1129,Epidermis cell,0.1017,Pan-endothelial cell,0.0984,2.0,False,True,True,True,0.1167,0.1129
+97,epithelial cell,Mesothelial cell,0.1215,Epithelial cell,0.118,Basal cell,0.0973,Transitional B cell,0.0909,2.0,False,True,True,True,0.1215,0.118
+98,epithelial cell,Keratinocyte,0.0851,Cholangiocyte,0.08,Mesangial cell,0.0719,Epithelial cell,0.0681,4.0,False,False,False,True,0.0851,0.0681
+99,epithelial cell,Cholangiocyte,0.1253,Ductal cell,0.0998,Mesothelial cell,0.0927,Epithelial cell,0.0912,4.0,False,False,False,True,0.1253,0.0912
+100,mast cell,Mast cell,0.5226,Basophil,0.2589,Monocyte,0.1952,Myeloid cell,0.1932,1.0,True,True,True,True,0.5226,0.5226
+101,dendritic cell,Dendritic cell,0.222,Myeloid dendritic cell,0.1676,Monocyte,0.1304,Plasmacytoid dendritic cell(pDC),0.1294,1.0,True,True,True,True,0.222,0.222
+102,dendritic cell,Dendritic cell,0.2578,Plasmacytoid dendritic cell(pDC),0.1973,Myeloid cell,0.1446,B cell,0.143,1.0,True,True,True,True,0.2578,0.2578
+103,dendritic cell,Dendritic cell,0.3356,Conventional dendritic cell(cDC),0.1932,Myeloid dendritic cell,0.1849,Myeloid cell,0.1844,1.0,True,True,True,True,0.3356,0.3356
+104,dendritic cell,Dendritic cell,0.3683,Plasmacytoid dendritic cell(pDC),0.2023,Myeloid cell,0.1847,Myeloid dendritic cell,0.1829,1.0,True,True,True,True,0.3683,0.3683
+105,dendritic cell,Dendritic cell,0.251,Classical monocyte,0.2168,Plasmacytoid dendritic cell(pDC),0.2138,M2 macrophage,0.2099,1.0,True,True,True,True,0.251,0.251
+106,b cell,B cell,0.2942,Plasmablast,0.2169,Follicular B cell,0.1875,Plasmacytoid dendritic cell(pDC),0.178,1.0,True,True,True,True,0.2942,0.2942
+107,b cell,B cell,0.273,Plasmacytoid dendritic cell(pDC),0.1591,Pre-dendritic cell(pre-DC),0.1529,Memory B cell,0.1378,1.0,True,True,True,True,0.273,0.273
+108,b cell,B cell,0.2699,Memory B cell,0.1736,Plasma cell,0.1331,Plasmacytoid dendritic cell(pDC),0.1216,1.0,True,True,True,True,0.2699,0.2699
+109,b cell,B cell,0.2304,Classical monocyte,0.1725,Interstitial macrophage,0.1516,Endocrine cell,0.1513,1.0,True,True,True,True,0.2304,0.2304
+110,b cell,B cell,0.283,Naive B cell,0.2259,Pro-B cell,0.1681,Plasma cell,0.151,1.0,True,True,True,True,0.283,0.283
+111,b cell,B cell,0.2687,Follicular B cell,0.1883,Naive T(Th0) cell,0.1815,Memory CD8+ T cell,0.1591,1.0,True,True,True,True,0.2687,0.2687
+112,b cell,Mantle cell lymphoma (MCL) cell,0.1533,Central memory CD4+ T cell,0.1468,CAR-T cell,0.139,Activated CD4+ T cell,0.1334,,False,False,False,False,0.1533,
+113,neuron,Neuron,0.1915,Neurogenic retinal progenitor cell,0.1733,Neural progenitor cell,0.1407,Progenitor cell,0.1079,1.0,True,True,True,True,0.1915,0.1915
+114,neuron,Neuron,0.2193,Inhibitory neuron,0.1553,Excitatory neuron,0.1366,Neural progenitor cell,0.1148,1.0,True,True,True,True,0.2193,0.2193
+115,neuron,Neuron,0.2645,Excitatory neuron,0.1685,Photoreceptor cell,0.114,Neural progenitor cell,0.109,1.0,True,True,True,True,0.2645,0.2645
+116,neuron,Neuron,0.333,Globose basal cell,0.2212,Inhibitory neuron,0.2005,Interneuron,0.1603,1.0,True,True,True,True,0.333,0.333
+117,neuron,Inhibitory neuron,0.2541,Neuron,0.2173,Radial glial cell,0.1252,Interneuron,0.1223,2.0,False,True,True,True,0.2541,0.2173
+118,neuron,Neuron,0.2373,Inhibitory neuron,0.17,Deep layer neuron,0.1522,Subpallium cell,0.1378,1.0,True,True,True,True,0.2373,0.2373
+119,neuron,Neuron,0.2358,Excitatory neuron,0.1267,Neural crest cell,0.1245,CD106+ mesenchymal stem cell,0.1178,1.0,True,True,True,True,0.2358,0.2358
+120,neuron,Neuron,0.1937,Excitatory neuron,0.1613,Retinal ganglion cell,0.13,Sensory neuron,0.1286,1.0,True,True,True,True,0.1937,0.1937
+121,monocyte,Monocyte,0.2681,Conventional dendritic cell 2b(cDC2b),0.2148,Myeloid cell,0.1863,M2 macrophage,0.1828,1.0,True,True,True,True,0.2681,0.2681
+122,monocyte,Monocyte,0.266,Macrophage,0.1692,Myeloid cell,0.1495,M2 macrophage,0.1335,1.0,True,True,True,True,0.266,0.266
+123,monocyte,Monocyte,0.175,Pelvic epithelial cell,0.1322,CD14+ monocyte,0.1235,Migratory langerhans cell,0.1144,1.0,True,True,True,True,0.175,0.175
+124,monocyte,Monocyte,0.2266,Tissue resident memory T(TRM) cell,0.1584,M2 macrophage,0.1573,M1 macrophage,0.1554,1.0,True,True,True,True,0.2266,0.2266
+125,monocyte,Monocyte,0.2136,Macrophage,0.1704,Myeloid cell,0.1585,Neutrophil,0.1372,1.0,True,True,True,True,0.2136,0.2136
+126,monocyte,Monocyte,0.2177,Classical monocyte,0.1823,CD16+ monocyte,0.1745,Myeloid cell,0.1628,1.0,True,True,True,True,0.2177,0.2177
+127,monocyte,Monocyte,0.2465,Neutrophil,0.225,Macrophage,0.1898,Conventional dendritic cell 2b(cDC2b),0.1593,1.0,True,True,True,True,0.2465,0.2465
+128,monocyte,Monocyte,0.2088,M1 macrophage,0.1888,Macrophage,0.1828,Neutrophil,0.1768,1.0,True,True,True,True,0.2088,0.2088
+129,t cell,T cell,0.2716,CD8+ T cell,0.1972,Regulatory T (Treg) cell,0.1928,Exhausted CD8+ T cell,0.1861,1.0,True,True,True,True,0.2716,0.2716
+130,t cell,T cell,0.256,Activated T cell,0.217,Natural killer cell,0.1849,Mucosa-associated invariant T (MAIT) cell,0.1817,1.0,True,True,True,True,0.256,0.256
+131,t cell,T cell,0.3239,Naive CD8+ T cell,0.2919,Regulatory T(Treg) cell,0.2738,Activated T cell,0.2317,1.0,True,True,True,True,0.3239,0.3239
+132,t cell,T cell,0.351,Exhausted CD8+ T cell,0.2331,CD8+ T cell,0.2266,Regulatory T(Treg) cell,0.2143,1.0,True,True,True,True,0.351,0.351
+133,t cell,T cell,0.3295,Memory CD8+ T cell,0.2637,Effector CD8+ T cell,0.2396,CD8+ T cell,0.2316,1.0,True,True,True,True,0.3295,0.3295
+134,mesenchymal cell,Mesenchymal cell,0.7629,Fibroblast,0.3822,Cancer-associated fibroblast,0.3422,Myofibroblast,0.3399,1.0,True,True,True,True,0.7629,0.7629
+135,purkinje cell,Purkinje cell,0.3969,Neuronal intermediate progenitor cell,0.2982,Inter-mediate progenitor cell,0.2423,Intermediate progenitor cell,0.2115,1.0,True,True,True,True,0.3969,0.3969
+136,effector memory cd4+ t cell,Effector memory CD4+ T cell,0.9674,Memory regulatory T cell,0.4576,Central memory T cell,0.3962,T helper cell,0.3923,1.0,True,True,True,True,0.9674,0.9674
+137,memory cd4+ t cell,Memory CD4+ T cell,0.9256,CD4+ central memory like T (Tcm-like) cell,0.5899,Effector CD4+ T cell,0.5401,Central memory T cell,0.5369,1.0,True,True,True,True,0.9256,0.9256
+138,myeloid cell,Myeloid cell,0.7362,Monocyte,0.3859,Macrophage,0.3607,Neutrophil,0.3097,1.0,True,True,True,True,0.7362,0.7362
+139,myeloid cell,Myeloid cell,0.6233,M2 macrophage,0.3554,Macrophage,0.3299,Monocyte,0.2911,1.0,True,True,True,True,0.6233,0.6233
+140,plasma cell,Plasma cell,0.9237,Plasmablast,0.5475,B cell,0.3335,Naive B cell,0.2571,1.0,True,True,True,True,0.9237,0.9237
+141,regulatory T cell,Regulatory T(Treg) cell,0.3157,Regulatory T (Treg) cell,0.2378,T cell,0.2115,CD4 T cell,0.2051,,False,False,False,False,0.3157,
+142,regulatory T cell,Regulatory T(Treg) cell,0.2996,Regulatory T (Treg) cell,0.282,Exhausted T(Tex) cell,0.2027,Activated T cell,0.1991,,False,False,False,False,0.2996,
+143,regulatory T cell,Regulatory T(Treg) cell,0.4427,Regulatory T (Treg) cell,0.3726,Exhausted CD8+ T cell,0.2164,T follicular helper(Tfh) cell,0.2032,,False,False,False,False,0.4427,
+144,gamma delta(Â¦ÃÂ¦Ã) t cell,Gamma delta(γδ) T cell,0.7976,CD4 T cell,0.5085,CD4+ cytotoxic T2 cell,0.5037,Activated CD8+ T cell,0.5004,,False,False,False,False,0.7976,
+145,ionocyte,Ureteric bud cell,0.145,Collecting duct-transitional cell,0.1429,Collecting duct & Ureteric Bud cell,0.1249,Microvillar cell,0.1142,,False,False,False,False,0.145,
+146,ionocyte,Biliary cell,0.1343,Epithelial progenitor cell,0.1202,Microvillar cell,0.1105,Collecting duct-transitional cell,0.1018,,False,False,False,False,0.1343,
+147,ionocyte,Collecting duct-transitional cell,0.1517,Corticotroph tumor cell,0.1381,Epithelial progenitor cell,0.1252,Ionocyte,0.1036,4.0,False,False,False,True,0.1517,0.1036
+148,goblet cell,Goblet cell,0.3238,Secretory cell,0.1622,Microglia-derived tumor-associated macrophage(Mg-TAM),0.1238,Plasma cell,0.1159,1.0,True,True,True,True,0.3238,0.3238
+149,goblet cell,Goblet cell,0.3543,Enterocyte,0.23,Club cell (Clara cell),0.219,Secretory cell,0.1542,1.0,True,True,True,True,0.3543,0.3543
+150,goblet cell,Goblet cell,0.469,Club cell (Clara cell),0.2485,Plasma cell,0.1749,Secretory cell,0.1264,1.0,True,True,True,True,0.469,0.469
+151,club cell (clara cell),Club cell (Clara cell),0.7474,Epithelial progenitor cell,0.5646,Secretory cell,0.4119,Goblet cell,0.4118,1.0,True,True,True,True,0.7474,0.7474
+152,red blood cell (erythrocyte),Red blood cell (erythrocyte),0.8518,Erythroid cell,0.6627,Erythroid lineage cell,0.6123,Erythroid progenitor cell,0.4646,1.0,True,True,True,True,0.8518,0.8518
+153,platelet,Platelet,0.5321,Megakaryocyte,0.4225,Patelet,0.306,Megakaryocyte progenitor cell,0.2776,1.0,True,True,True,True,0.5321,0.5321
+154,basal epithelial cell,Basal epithelial cell,0.8735,Basal progenitor cell,0.7529,Myo-epithelial cell,0.7096,Non-malignant epithelial cell,0.5915,1.0,True,True,True,True,0.8735,0.8735
+155,secretory cell,Secretory cell,0.6738,Club cell (Clara cell),0.5065,Goblet cell,0.4366,Classical monocyte,0.2253,1.0,True,True,True,True,0.6738,0.6738
+156,neuroendocrine cell,Panneuron,0.1391,Excitatory neuron,0.1267,Enteroendocrine cell,0.1175,Neuroendocrine cell,0.0928,4.0,False,False,False,True,0.1391,0.0928
+157,neuroendocrine cell,Immunosuppressive neutrophil,0.1135,Young neuron,0.1066,Enterochromaffin cell,0.0644,Stem-cell-derived-endothelial cell,0.0589,,False,False,False,False,0.1135,
+158,neuroendocrine cell,Pulmonary neuroendocrine cell,0.1504,Enteroendocrine cell,0.1166,Distal stem cell,0.1159,Goblet cell,0.102,,False,False,False,False,0.1504,
+159,neuroendocrine cell,Pulmonary neuroendocrine cell,0.1612,Frontal cortex cell,0.0981,Tuft-like medullary thymic epithelial cell,0.0943,Immature medullary thymic epithelial cell,0.0907,,False,False,False,False,0.1612,
+160,basal cell,Basal cell,0.2289,Mesothelial cell,0.1242,Corneocyte-like cell,0.1142,Epithelial cell,0.1112,1.0,True,True,True,True,0.2289,0.2289
+161,basal cell,Basal cell,0.4016,Cancer stem cell,0.1762,Luminal epithelial cell,0.1326,Proliferative ductal cell,0.1214,1.0,True,True,True,True,0.4016,0.4016
+162,basal cell,Basal cell,0.4314,Keratinocyte,0.2156,Basal epithelial cell,0.1948,Cartilage progenitor cell,0.1705,1.0,True,True,True,True,0.4314,0.4314
+163,ciliated cell,Ciliated cell,0.302,Ventricular radial glial cell,0.1118,Conventional dendritic cell 1(cDC1),0.087,Cardiomyocyte,0.0724,1.0,True,True,True,True,0.302,0.302
+164,ciliated cell,Ciliated cell,0.2427,Endodermal cell,0.0679,Chondrocyte,0.0627,Injured Proximal tubular cell,0.0592,1.0,True,True,True,True,0.2427,0.2427
+165,ciliated cell,Ciliated cell,0.1556,Chondrocyte,0.0627,m-Pericyte,0.0615,Homeostatic chondrocyte,0.057,1.0,True,True,True,True,0.1556,0.1556
+166,ciliated cell,Ciliated cell,0.137,Respiratory ciliated cell,0.0607,Multiciliated cell,0.06,Proximal segment cell,0.0585,1.0,True,True,True,True,0.137,0.137
+167,ciliated cell,Collecting Duct Principal Cell,0.0679,Respiratory ciliated cell,0.0641,Ciliated cell,0.0624,Gonadotroph cell,0.0608,3.0,False,False,True,True,0.0679,0.0624
+168,ciliated cell,Ciliated cell,0.0984,Collecting Duct Principal Cell,0.0679,Neural stem-like cell,0.0644,Gonadotroph cell,0.0608,1.0,True,True,True,True,0.0984,0.0984
+169,ciliated cell,Umbrella cell,0.1764,Respiratory secretory cell,0.1125,Corneocyte-like cell,0.1065,Proliferative lymphocyte,0.1014,,False,False,False,False,0.1764,
+170,osteocyte,Osteoblast,0.5151,Chondrocyte,0.4672,Mature osteoblast,0.3245,Undifferentiated pancreatic progenitor cell,0.2472,,False,False,False,False,0.5151,
+171,granulocyte,Granulocyte,0.7658,Neutrophil progenitor cell,0.4361,Neutrophil,0.3634,Myeloid derived suppressor cell (MDSC),0.3584,1.0,True,True,True,True,0.7658,0.7658
+172,T-helper 17 cell,T helper 17(Th17) cell,0.6182,CD8+ mucosal-associated invariant T cell(CD8+ MAIT),0.3723,Tissue resident cell,0.2908,CD4 peripherally derived regulatory T cell,0.2831,,False,False,False,False,0.6182,
+173,cd8+ t cell,CD8+ T cell,0.455,Exhausted CD8+ T cell,0.4268,Regulatory T (Treg) cell,0.3056,Natural killer T(NKT) cell,0.2916,1.0,True,True,True,True,0.455,0.455
+174,cd8+ t cell,CD8+ T cell,0.4608,Exhausted CD8+ T cell,0.4308,Exhausted T(Tex) cell,0.3374,Effector T(Teff) cell,0.3241,1.0,True,True,True,True,0.4608,0.4608
+175,cd8+ t cell,CD8+ T cell,0.3902,Exhausted CD8+ T cell,0.3564,Cytotoxic T cell,0.3015,Effector memory CD8+ T cell,0.2964,1.0,True,True,True,True,0.3902,0.3902
+176,cartilage progenitor cell,Cartilage progenitor cell,0.7049,Chondrocyte,0.6014,Prehypertrophic chondrocyte,0.5119,Osteoblast,0.4379,1.0,True,True,True,True,0.7049,0.7049
+177,myeloid dendritic cell,Myeloid dendritic cell,0.87,Monocyte derived dendritic cell,0.5487,Conventional dendritic cell(cDC),0.541,Mature dendritic cell,0.5107,1.0,True,True,True,True,0.87,0.87
+178,hepatocyte,Hepatocyte,0.7491,Hepatic cell,0.442,Hepatoblast,0.3309,Fat cell,0.1967,1.0,True,True,True,True,0.7491,0.7491
+179,cholangiocyte,Cholangiocyte,0.9408,Biliary cell,0.7092,Luminal cell,0.396,Epithelial ductal cell,0.3873,1.0,True,True,True,True,0.9408,0.9408
+180,lymphocyte,Lymphocyte,0.8551,Natural killer T(NKT) cell,0.4214,Effector CD8+ T cell,0.4164,Cytotoxic T cell,0.3746,1.0,True,True,True,True,0.8551,0.8551
+181,naive b cell,Naive B cell,0.9779,Immature B cell,0.6106,Memory CD27+ B cell,0.5922,Pre-B cell,0.5897,1.0,True,True,True,True,0.9779,0.9779
+182,memory b cell,Memory B cell,0.7637,Naive B cell,0.3502,Memory CD27+ B cell,0.3353,IgG memory B cell,0.3264,1.0,True,True,True,True,0.7637,0.7637
+183,blood cell,Blood cell,0.9278,Megakaryocyte-erythroid-mast cell progenitor cell,0.387,Granulocyte-monocyte progenitor cell(GMP),0.3583,MPO granulocyte,0.3583,1.0,True,True,True,True,0.9278,0.9278
+184,plasmacytoid dendritic cell(pdc),Plasmacytoid dendritic cell(pDC),0.4388,Pre-dendritic cell(pre-DC),0.1984,Dendritic cell,0.1641,Plasma cell,0.1481,1.0,True,True,True,True,0.4388,0.4388
+185,plasmacytoid dendritic cell(pdc),Plasmacytoid dendritic cell(pDC),0.3717,Pre-dendritic cell(pre-DC),0.1581,Dendritic cell,0.1491,Plasma cell,0.1444,1.0,True,True,True,True,0.3717,0.3717
+186,plasmacytoid dendritic cell(pdc),Plasmacytoid dendritic cell(pDC),0.4416,Follicular B cell,0.1714,Memory CD8+ T cell,0.1438,Pre-dendritic cell(pre-DC),0.1429,1.0,True,True,True,True,0.4416,0.4416
+187,plasmacytoid dendritic cell(pdc),Plasmacytoid dendritic cell(pDC),0.209,Early T cell progenitor (ETP),0.1376,Myoepithelial cell,0.1318,Osteoclast,0.0931,1.0,True,True,True,True,0.209,0.209
+188,leukocyte,Immune cell,0.6502,Leukocyte,0.4481,Monocyte,0.3925,CD8+ T cell,0.3897,2.0,False,True,True,True,0.6502,0.4481
+189,cytotoxic t cell,Cytotoxic T cell,0.9121,Effector CD4+ T cell,0.6186,CD4+ cytotoxic T1 cell,0.6163,Activated CD8+ T cell,0.6088,1.0,True,True,True,True,0.9121,0.9121
+190,myofibroblast cell,Myofibroblast,0.638,Cancer-associated fibroblast,0.4621,Perivascular cell,0.4167,Mesothelial cell,0.3742,,False,False,False,False,0.638,
+191,lymphoid cell,Innate lymphoid cell,0.6001,Lymphoid cell,0.541,Innate Lymphoid cell,0.4731,Effector memory T cell,0.3574,2.0,False,True,True,True,0.6001,0.541
+192,neutrophil,Neutrophil,0.3637,Monocyte,0.2029,Granulocyte,0.1958,Macrophage,0.1617,1.0,True,True,True,True,0.3637,0.3637
+193,neutrophil,Neutrophil,0.3103,Myeloid cell,0.221,Macrophage,0.1949,Monocyte,0.1641,1.0,True,True,True,True,0.3103,0.3103
+194,neutrophil,Neutrophil,0.411,Monocyte,0.201,Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell,0.1828,Myeloid cell,0.1713,1.0,True,True,True,True,0.411,0.411
+195,neutrophil,Neutrophil,0.2971,Classical monocyte,0.1678,M1 macrophage,0.1566,CD14+ monocyte,0.1436,1.0,True,True,True,True,0.2971,0.2971
+196,luminal cell,Luminal cell,0.3391,Merkel cell,0.3179,Umbrella cell,0.2898,Developing nephron,0.2806,1.0,True,True,True,True,0.3391,0.3391
+197,urothelial cell,Urothelial cell,0.7494,Luminal cell,0.6652,Glomerular parietal epithelial cell,0.4887,Effector Th2-like cell,0.4693,1.0,True,True,True,True,0.7494,0.7494
+198,lymphatic endothelial cell,Lymphatic endothelial cell,0.9002,Lymphatic cell,0.7284,lymphatic endothelial cell,0.6106,Fibroblastic reticular cell,0.6057,1.0,True,True,True,True,0.9002,0.9002
+199,interstitial cell,Leydig cell,0.1591,Interstitial cell,0.142,Ovarian stromal cell,0.1082,Fibrocartilage chondrocyte,0.0973,2.0,False,True,True,True,0.1591,0.142
+200,interstitial cell,Interstitial cell,0.2556,Leydig cell,0.2517,Myofibroblast,0.1163,Fibroblast,0.1045,1.0,True,True,True,True,0.2556,0.2556
+201,interstitial cell,Interstitial cell,0.258,Leydig cell,0.2018,Cancer-associated fibroblast,0.1469,lmmLeydig cell,0.1381,1.0,True,True,True,True,0.258,0.258
+202,memory t cell,Effector memory T cell,0.7832,Memory T cell,0.6898,Central memory T cell,0.5147,Memory CD8+ T cell,0.5077,2.0,False,True,True,True,0.7832,0.6898
+203,cd1c-cd141- dendritic cell,Conventional dendritic cell 2b(cDC2b),0.1867,M2 macrophage,0.1689,Myeloid cell,0.1662,Monocyte,0.1636,,False,False,False,False,0.1867,
+204,cd1c-cd141- dendritic cell,Myeloid dendritic cell,0.1859,Myeloid cell,0.1854,CD16+ monocyte,0.1766,Conventional dendritic cell 2b(cDC2b),0.1726,,False,False,False,False,0.1859,
+205,cd1c-cd141- dendritic cell,Myeloid cell,0.2173,Classical monocyte,0.2143,Monocyte,0.2039,Myeloid dendritic cell,0.1784,,False,False,False,False,0.2173,
+206,beta cell(Â¦Ã cell),Beta cell(β cell),0.727,Stem-cell-derived-beta cell,0.2405,Endocrine cell,0.1902,lmmLeydig cell,0.1248,,False,False,False,False,0.727,
+207,melanocyte,Melanocyte,0.9192,Mueller glia cell,0.4516,Neural crest-like cell,0.4242,Melanoma cell,0.3212,1.0,True,True,True,True,0.9192,0.9192
+208,cd4+ t cell,CD4+ T cell,0.6589,Activated T cell,0.3557,Activated CD4+ T cell,0.3464,Regulatory T(Treg) cell,0.3273,1.0,True,True,True,True,0.6589,0.6589
+209,cd4+ t cell,CD4+ T cell,0.5303,T follicular helper(Tfh) cell,0.3978,Regulatory T (Treg) cell,0.3065,Exhausted CD4+ T cell,0.3037,1.0,True,True,True,True,0.5303,0.5303
+210,t follicular helper(tfh) cell,T follicular helper(Tfh) cell,0.7956,Exhausted CD4+ T cell,0.4153,Regulatory T (Treg) cell,0.3272,Suppressive regulatory T cell,0.2596,1.0,True,True,True,True,0.7956,0.7956
+211,basophil,Basophil,0.5292,Mast cell,0.398,Activated CD4+ T cell,0.3202,Myeloid progenitor cell,0.3086,1.0,True,True,True,True,0.5292,0.5292
+212,megakaryocyte,Megakaryocyte,0.7826,Platelet,0.4904,Patelet,0.3221,Megakaryocyte progenitor cell,0.3133,1.0,True,True,True,True,0.7826,0.7826
+213,eosinophil,Granulocyte,0.3395,Eosinophil,0.2794,Pro-neutrophil,0.2697,Multipotent progenitor cell,0.2221,2.0,False,True,True,True,0.3395,0.2794
+214,t helper 2(th2) cell,T helper 2(Th2) cell,0.7605,T helper 17(Th17) cell,0.299,T follicular helper(Tfh) cell,0.2719,Regulatory CD4+ T cell,0.2545,1.0,True,True,True,True,0.7605,0.7605
+215,naive t(th0) cell,Naive T(Th0) cell,0.8946,Naive CD4+ T cell,0.764,CD4+ central memory like T (Tcm-like) cell,0.6601,Naive CD8+ T cell,0.5351,1.0,True,True,True,True,0.8946,0.8946
+216,classical monocyte,Classical monocyte,0.9256,Myeloid derived suppressor cell (MDSC),0.5638,CD14 monocyte,0.4589,Interferon responsive secretory cell,0.4201,1.0,True,True,True,True,0.9256,0.9256
+217,monocyte progenitor cell,Monocyte progenitor cell,1.0,Myelo-monocytic cell,0.9084,Naive progenitor cell,0.4195,Intermediate monocyte,0.4065,1.0,True,True,True,True,1.0,1.0
+218,immature b cell,Immature B cell,0.8884,Transitional B cell,0.6948,Pre-B cell,0.6663,Memory CD27+ B cell,0.5605,1.0,True,True,True,True,0.8884,0.8884
+219,plasmablast,Plasmablast,0.9269,Memory CD27+ B cell,0.588,Dividing plasma B cell,0.5723,Antibody-secreting cell,0.5684,1.0,True,True,True,True,0.9269,0.9269
+220,mature b cell,Mature B cell,0.9398,Activated B cell,0.667,Follicular cell,0.5942,Double-negative B cell,0.5006,1.0,True,True,True,True,0.9398,0.9398
+221,foxp3+ natural regulatory t (treg) cell,Early activated CD4+ T cell,0.9289,Conventional CD4+ T cell,0.8441,T helper 9(Th9) cell,0.8441,Memory regulatory T cell,0.7861,,False,False,False,False,0.9289,
+222,conventional dendritic cell,Conventional dendritic cell(cDC),0.721,Myeloid dendritic cell,0.408,Conventional dendritic cell 1(cDC1),0.3705,CLEC10A+ dendritic cell,0.3542,,False,False,False,False,0.721,
+223,multipotent progenitor cell,Multipotent progenitor cell,0.5213,Early response secretory cell,0.3077,Hematopoietic stem cell,0.2912,Megakaryocyte-erythroid-mast cell progenitor cell,0.2222,1.0,True,True,True,True,0.5213,0.5213
+224,t helper cell,Memory T cell,0.449,Activated CD4+ T cell,0.4413,Conventional T(Tconv) cell,0.4283,Activated T cell,0.4134,,False,False,False,False,0.449,
+225,effector t(teff) cell,Effector T(Teff) cell,0.8167,T helper 1(Th1) cell,0.5808,CD8+ recently activated effector memory or effector T cell (CTL),0.5726,Effector memory CD8+ T cell,0.5509,1.0,True,True,True,True,0.8167,0.8167
+226,erythroblast,Erythroid cell,0.4459,Erythroid lineage cell,0.3596,Red blood cell (erythrocyte),0.2963,Primitive erythrocyte,0.2262,,False,False,False,False,0.4459,
+227,trophoblast cell,Trophoblast cell,0.5686,Gland ductal cell,0.4461,Trophectoderm cell,0.3741,Extravillous trophoblast cell,0.3187,1.0,True,True,True,True,0.5686,0.5686
+228,decidual cell,Cytotoxic natural killer cell,0.4481,Memory double-positive T cell,0.3031,Malignant plasma cell,0.2808,Lactotroph cell,0.28,,False,False,False,False,0.4481,
+229,glial cell,Glial cell,0.8361,Stromal cell,0.4566,Schwann cell,0.3588,Oligodendrocyte progenitor cell,0.226,1.0,True,True,True,True,0.8361,0.8361
+230,astrocyte,Astrocyte,0.1224,Stem cell,0.1189,Radial glial cell,0.1166,Nonmyelinating schwann cell,0.106,1.0,True,True,True,True,0.1224,0.1224
+231,astrocyte,Neural stem cell,0.2218,Radial glial cell,0.1809,Proliferative neural progenitor cell,0.1381,Astrocyte,0.1336,4.0,False,False,False,True,0.2218,0.1336
+232,astrocyte,Oligodendrocyte,0.1652,Astrocyte,0.1433,Oligodendrocyte progenitor cell,0.1418,Glial cell,0.1406,2.0,False,True,True,True,0.1652,0.1433
+233,astrocyte,Astrocyte,0.1696,Oligodendrocyte progenitor cell,0.1484,Glial cell,0.1195,Schwann cell,0.1149,1.0,True,True,True,True,0.1696,0.1696
+234,astrocyte,Astrocyte,0.1316,Capillary cell,0.121,Descending vasa recta cell,0.1101,Epsilon cell,0.1007,1.0,True,True,True,True,0.1316,0.1316
+235,astrocyte,Astrocyte,0.1732,Pan-neuronal cell,0.1147,Oligodendrocyte progenitor cell,0.1144,Collecting duct-principal cell,0.0967,1.0,True,True,True,True,0.1732,0.1732
+236,astrocyte,Spermatogonial stem cell,0.1477,Multipotent retinal progenitor cell,0.1366,Astrocyte,0.1032,Immature glial cell,0.0974,3.0,False,False,True,True,0.1477,0.1032
+237,mucosa-associated invariant t (mait) cell,Mucosa-associated invariant T (MAIT) cell,0.7222,CD8+ mucosal-associated invariant T cell(CD8+ MAIT),0.4406,T helper 17(Th17) cell,0.3511,Memory CD4+ T cell,0.3077,1.0,True,True,True,True,0.7222,0.7222
+238,neuronal stem cell,Neural stem cell,0.4831,Neural progenitor cell,0.3552,Stem cell,0.3041,Globose basal cell,0.3018,,False,False,False,False,0.4831,
+239,microglial cell,Microglial cell,0.1764,M1 macrophage,0.1656,Myeloid cell,0.1552,Macrophage,0.1518,1.0,True,True,True,True,0.1764,0.1764
+240,microglial cell,Microglial cell,0.1921,Polymorphonuclear myeloid-derived suppressor(PMN-MDSC) cell,0.1314,Neural stem cell,0.1268,Neutrophil,0.1179,1.0,True,True,True,True,0.1921,0.1921
+241,microglial cell,Microglial cell,0.197,Macrophage,0.1373,Conventional dendritic cell 1(cDC1),0.1309,11b+ dendritic cell,0.1273,1.0,True,True,True,True,0.197,0.197
+242,microglial cell,Microglial cell,0.1944,Macrophage,0.1211,Dermal cell,0.1025,Cancer-associated fibroblast,0.1023,1.0,True,True,True,True,0.1944,0.1944
+243,microglial cell,Microglial cell,0.1981,Conventional dendritic cell 2b(cDC2b),0.172,Macrophage,0.1564,Monocyte,0.1471,1.0,True,True,True,True,0.1981,0.1981
+244,microglial cell,Microglial cell,0.1982,Tumor‐associated macrophage (TAM),0.1722,Macrophage,0.1571,M2 macrophage,0.1529,1.0,True,True,True,True,0.1982,0.1982
+245,microglial cell,Microglial cell,0.1873,Follicular B cell,0.1385,Macrophage,0.1368,Tumor‐associated macrophage (TAM),0.1177,1.0,True,True,True,True,0.1873,0.1873
+246,microglial cell,Microglial cell,0.1681,M1 macrophage,0.1328,CLEC10A+ dendritic cell,0.1309,Neural stem cell,0.1303,1.0,True,True,True,True,0.1681,0.1681
+247,microglial cell,Microglial cell,0.1566,Microglial cell,0.1537,Neural stem cell,0.1121,M2 macrophage,0.1106,1.0,True,True,True,True,0.1566,0.1566
+248,endocrine cell,Endocrine cell,0.9145,Gastric neuroendocrine cell,0.5064,Enteroendocrine cell,0.4973,Gamma cell,0.4749,1.0,True,True,True,True,0.9145,0.9145
+249,outer radial glia,Radial glial cell,0.7071,Outer radial glia,0.6501,Proliferative neural progenitor cell,0.5566,Neuroectoderm cell,0.5505,2.0,False,True,True,True,0.7071,0.6501
+250,interneuron,Interneuron,0.626,Inhibitory neuron,0.4924,Amacrine cell,0.3387,GABAergic neuron,0.2249,1.0,True,True,True,True,0.626,0.626
+251,mesothelial cell,Mesothelial cell,0.8904,Myofibroblast,0.4075,Myoepithelial cell,0.272,Cycling cell,0.2493,1.0,True,True,True,True,0.8904,0.8904
+252,excitatory neuron,Excitatory neuron,0.926,Cortical cell,0.4875,Glutamatergic neuron,0.4832,Deep layer neuron,0.4691,1.0,True,True,True,True,0.926,0.926
+253,oligodendrocyte,Oligodendrocyte,0.3373,Oligodendrocyte precursor cell,0.119,Oligodendrocyte progenitor cell,0.114,Mature neuronal,0.1129,1.0,True,True,True,True,0.3373,0.3373
+254,oligodendrocyte,Oligodendrocyte,0.3453,Oligodendrocyte progenitor cell,0.1646,Oligodendrocyte precursor cell,0.1328,Distal convoluted tubule Type 1(DCT1) cell,0.1195,1.0,True,True,True,True,0.3453,0.3453
+255,oligodendrocyte,Oligodendrocyte,0.2375,Oligodendrocyte progenitor cell,0.1501,Glomerular endothelial cell,0.0898,CD16+ monocyte,0.0878,1.0,True,True,True,True,0.2375,0.2375
+256,oligodendrocyte,Oligodendrocyte,0.1641,Oligodendrocyte progenitor cell,0.1357,Oligodendrocyte precursor cell,0.0852,Sympathoblast cell,0.0794,1.0,True,True,True,True,0.1641,0.1641
+257,osteoblast,Osteoblast,0.7477,Chondrocyte,0.4174,Multipotent stromal cell,0.4026,Positive mesenchymal stem cell,0.3131,1.0,True,True,True,True,0.7477,0.7477
+258,osteoclast,Osteoclast,0.6051,Undifferentiated pancreatic progenitor cell,0.2986,Activated natural killer cell,0.2814,Fibrocartilage chondrocyte,0.2196,1.0,True,True,True,True,0.6051,0.6051
+259,langerhans cell,Langerhans cell,0.6458,Langerin-positive dendritic cell,0.5432,Pan-microglial cell,0.3654,Effector memory CD4 T cell,0.3352,1.0,True,True,True,True,0.6458,0.6458
+260,myoblast,Myoid cell,0.4041,Paraxial mesoderm cell,0.3934,Myoblast,0.3694,Placode cell,0.3319,3.0,False,False,True,True,0.4041,0.3694
+261,erythroid progenitor cell,Erythroid progenitor cell,0.9229,Erythroblast,0.5847,Erythroid cell,0.56,Immature erythroid cell,0.5377,1.0,True,True,True,True,0.9229,0.9229
+262,precursor B cell,Pre-B cell,0.7362,Memory CD27+ B cell,0.6796,Activated cell,0.6041,Mature progenitor cell,0.6041,,False,False,False,False,0.7362,
+263,common myeloid progenitor,Haematopoietic stem cell,0.7011,Early T cell progenitor (ETP),0.6434,Haematopoietic progenitor cell,0.6434,Tumor-initiating stem cell(tSC),0.6434,,False,False,False,False,0.7011,
+264,common lymphoid progenitor cell,Common lymphoid progenitor cell,0.7606,Early B cell,0.6034,Haematopoietic stem cell,0.5658,Hematopoietic-related cell,0.5658,1.0,True,True,True,True,0.7606,0.7606
+265,neutrophil progenitor cell,Neutrophil progenitor cell,1.0,LTF granulocyte,0.8916,Granulocyte-monocyte progenitor cell(GMP),0.8838,MPO granulocyte,0.8838,1.0,True,True,True,True,1.0,1.0
+266,pro-b cell,Pro-B cell,0.7964,Pre-B cell,0.5641,Double-negative B cell,0.5631,Haematopoietic progenitor cell,0.5631,1.0,True,True,True,True,0.7964,0.7964
+267,lymphoid progenitor cell,Lymphoid progenitor cell,0.8528,Naive-like T cell,0.5547,Naïve or central memory  T cell,0.4457,Resting T cell,0.4313,1.0,True,True,True,True,0.8528,0.8528
+268,motor neuron,Motor neuron,0.9499,Cholinergic neuron,0.6034,Sympathoblast cell,0.593,Intrathymic fibroblast(Fb1),0.3583,1.0,True,True,True,True,0.9499,0.9499
+269,pyramidal neuron,Broad excitatory neuron,0.3695,Neuronal-like cell,0.3695,Purkinje cell,0.3096,Mature neuronal,0.2902,,False,False,False,False,0.3695,
+270,ependymal cell,Respiratory ciliated cell,0.2634,Ependymal cell,0.2376,Ciliated cell,0.233,Proximal segment cell,0.1779,2.0,False,True,True,True,0.2634,0.2376
+271,precursor cell,Oligodendrocyte precursor cell,0.156,Oligodendrocyte progenitor cell,0.15,Enterocyte,0.1217,Oligodendrocyte,0.1147,,False,False,False,False,0.156,
+272,precursor cell,Oligodendrocyte,0.1683,Oligodendrocyte precursor cell,0.145,Oligodendrocyte progenitor cell,0.1429,Fibroblast,0.1342,,False,False,False,False,0.1683,
+273,oligodendrocyte precursor cell,Activated langerhans cell,0.1061,Oligodendrocyte precursor cell,0.0927,Oligodendrocyte progenitor cell,0.0885,Oligodendrocyte,0.0705,2.0,False,True,True,True,0.1061,0.0927
+274,oligodendrocyte precursor cell,Oligodendrocyte progenitor cell,0.0797,Endocrine cell,0.0754,Excitatory neuron,0.0721,Normal follicular cell,0.0644,,False,False,False,False,0.0797,
+275,oligodendrocyte precursor cell,Oligodendrocyte progenitor cell,0.1209,Excitatory neuron,0.1033,Memory B cell precursor,0.1033,Innate Lymphoid cell,0.0877,,False,False,False,False,0.1209,
+276,oligodendrocyte precursor cell,Delta cell,0.0987,Excitatory neuron,0.0712,Oligodendrocyte,0.0646,Ventricular radial glial cell,0.0642,,False,False,False,False,0.0987,
+277,oligodendrocyte precursor cell,Oligodendrocyte precursor cell,0.2017,Mature neuronal,0.1144,Oligodendrocyte progenitor cell,0.1098,Adipocyte progenitor cell,0.085,1.0,True,True,True,True,0.2017,0.2017
+278,oligodendrocyte precursor cell,Proximal tubule cell,0.1076,Outer radial glia,0.1071,Neurogenic retinal progenitor cell,0.1012,Lipid-associated macrophage(LAM),0.0912,,False,False,False,False,0.1076,
+279,oligodendrocyte precursor cell,Oligodendrocyte progenitor cell,0.1323,Conventional dendritic cell 2a(cDC2a),0.0929,Oligodendrocyte precursor cell,0.0863,Frontal cortex cell,0.0849,3.0,False,False,True,True,0.1323,0.0863
+280,retinal ganglion cell,Retinal ganglion cell,0.1528,Leydig cell,0.131,Enteroendocrine cell,0.1208,Schwann cell,0.1167,1.0,True,True,True,True,0.1528,0.1528
+281,retinal ganglion cell,Sensory neuron,0.2141,Chromaffin cell,0.1086,Amacrine cell,0.1041,Cancer stem cell,0.1003,,False,False,False,False,0.2141,
+282,retinal ganglion cell,Retinal ganglion cell,0.2033,Cardiomyocyte,0.135,Caudal cortex cell,0.1127,Panneuron,0.1036,1.0,True,True,True,True,0.2033,0.2033
+283,glutamatergic neuron,Glutamatergic neuron,0.6346,Cortical cell,0.5931,Early-born neuron,0.5248,GABAergic neuron,0.5196,1.0,True,True,True,True,0.6346,0.6346
+284,neural progenitor cell,Neural progenitor cell,0.5471,Cartilage progenitor cell,0.321,Neural stem cell,0.2865,Proliferative cell,0.2406,1.0,True,True,True,True,0.5471,0.5471
+285,antigen-presenting cell,Antigen-presenting cell,0.7107,Immature B cell,0.553,Kupffer cell,0.436,CLEC10A+ dendritic cell,0.4137,1.0,True,True,True,True,0.7107,0.7107
+286,exhausted T cell,Exhausted T(Tex) cell,0.7392,Exhausted CD4+ T cell,0.6891,Exausted T(Tex) cell,0.6774,Transitional exhausted CD8+ T cell,0.5977,,False,False,False,False,0.7392,
+287,sensory neuron,Sensory neuron,0.9283,D1-MSN(medium spiny neuron),0.4023,Sympathoblast cell,0.3844,Ventral lateral ganglionic eminence precursor cell,0.3674,1.0,True,True,True,True,0.9283,0.9283
+288,neural crest cell,Neural crest cell,0.7813,Neural plate cell,0.3632,Bowman’s gland cell,0.3518,Presomitic mesoderm(PSM) cell,0.3389,1.0,True,True,True,True,0.7813,0.7813
+289,dopaminergic neuron,Dopaminergic neuron,0.5988,Midbrain dopaminergic neuron,0.42,Subplate neuron,0.2956,Midbrain floorplate progenitor cell,0.2626,1.0,True,True,True,True,0.5988,0.5988
+290,cholinergic neuron,Cholinergic neuron,0.7739,Motor neuron,0.6328,Amacrine cell,0.2662,Neuron,0.0118,1.0,True,True,True,True,0.7739,0.7739
+291,neuroblast (sensu Vertebrata),Secretory transient-amplifying cell,0.4158,Anterior cell,0.3921,Young neuron,0.3367,Presomitic mesoderm cell,0.3053,,False,False,False,False,0.4158,
+292,mesoderm cell,Mesoderm cell,0.6043,Cardiovascular progenitor cell,0.4284,Mesenchymal stem cell,0.4061,Positive mesenchymal stem cell,0.2927,1.0,True,True,True,True,0.6043,0.6043
+293,mature luminal cell,Mature luminal cell,0.7531,Luminal epithelial cell,0.6102,EMT non-cancer stem cell(EMT non-CSC),0.3406,Peripheral immune cell,0.3406,1.0,True,True,True,True,0.7531,0.7531
+294,myoepithelial cell,Myoepithelial cell,0.5182,Basal epithelial cell,0.4499,Smooth muscle-like cell,0.4428,Myo-epithelial cell,0.4426,1.0,True,True,True,True,0.5182,0.5182
+295,alveolar macrophage,Alveolar macrophage,0.9584,Meyloid cell,0.5591,Satellite cell,0.4793,Kupffer cell,0.436,1.0,True,True,True,True,0.9584,0.9584
+296,osteoprogenitor cell,Osteoprogenitor cell,0.804,Inflammatory cancer‐associated fibroblast (iCAF),0.7711,Leptomeningeal cell,0.5418,Anterior cell,0.4741,1.0,True,True,True,True,0.804,0.804
+297,cardiac muscle cell,Cardiomyocyte,0.5965,Cardiac cell,0.3593,Ventricular cardiomyocyte,0.3593,Dividing cardiomyocyte,0.3342,,False,False,False,False,0.5965,
+298,gabaergic neuron,GABAergic neuron,0.4594,Cortical cell,0.325,Intrinsic neuron,0.3114,Amacrine cell,0.3028,1.0,True,True,True,True,0.4594,0.4594
+299,retinal pigment epithelial cell,Retinal pigment epithelial cell,0.9702,Choroid plexus cell,0.3432,Parvalbumin interneuron,0.3366,Melanocyte,0.3353,1.0,True,True,True,True,0.9702,0.9702
+300,myelinating schwann cell,Myelinating schwann cell,1.0,Schwann cell precursor cell,0.9248,Neural Crest (NC) cell,0.666,Ensheathing glial cell,0.3131,1.0,True,True,True,True,1.0,1.0
+301,enterocyte,Enterocyte,0.5553,Intestinal cell,0.3364,Proximal tubular cell,0.1344,Early proximal tubule cell,0.1282,1.0,True,True,True,True,0.5553,0.5553
+302,transit-amplifying cell,Transit-amplifying cell,0.8596,Proliferating progenitor cell,0.7058,Proliferating myeloid cell,0.66,Cycling cell,0.5112,1.0,True,True,True,True,0.8596,0.8596
+303,enteroendocrine cell,Enteroendocrine cell,0.4013,Endocrine cell,0.2753,Intestinal cell,0.1694,Sensory neuron,0.1563,1.0,True,True,True,True,0.4013,0.4013
+304,paneth cell,Monocyte,0.1626,Macrophage,0.1478,M2 macrophage,0.1331,Dendritic cell,0.1232,,False,False,False,False,0.1626,
+305,paneth cell,Conventional dendritic cell 2b(cDC2b),0.1846,Macrophage,0.1564,Myeloid cell,0.154,M2 macrophage,0.1411,,False,False,False,False,0.1846,
+306,paneth cell,M1 macrophage,0.2276,Macrophage,0.2221,Monocyte,0.1918,Myeloid cell,0.1798,,False,False,False,False,0.2276,
+307,paneth cell,Macrophage,0.1892,Monocyte,0.144,M1 macrophage,0.1189,Myeloid cell,0.1135,,False,False,False,False,0.1892,
+308,endothelial cell of vascular tree,Vascular endothelial cell,0.5029,Panvascular cell,0.2735,Endothelial cell,0.27,Vascular cell,0.2564,,False,False,False,False,0.5029,
+309,epiblast cell,Epiblast cell,0.4709,Pluripotent cell,0.2374,Spermatogonial stem cell ,0.2171,H1 embryonic stem cell,0.1812,1.0,True,True,True,True,0.4709,0.4709
+310,oocyte,Tissue resident effector memory T cell,0.0831,Brush cell (Tuft cell),0.072,Prospermatogonia,0.0711,Germinal center B cell,0.0691,,False,False,False,False,0.0831,
+311,morula cell (blastomere),Adult neural stem cell,0.0852,Foam cell,0.0805,Neuroepithelial cell,0.0791,CD34+ progenitor cell,0.0784,,False,False,False,False,0.0852,
+312,primitive endoderm cell,Definitive endoderm cell,0.4474,Primitive endoderm cell,0.3106,Hypoblast cell,0.2966,Mesendodermal cell,0.2751,2.0,False,True,True,True,0.4474,0.3106
+313,zygote,Zygote,1.0,Classical dendritic cell b(cDCb),0.5877,Monocyte derived dendritic cell,0.2934,CLEC10A+ dendritic cell,0.2164,1.0,True,True,True,True,1.0,1.0
+314,1-cell stage cell (blastomere),Zygote,0.2655,Proximal segment cell,0.0984,Macroglial cell,0.0897,Classical dendritic cell b(cDCb),0.0838,,False,False,False,False,0.2655,
+315,germ cell,Mesangial cell,0.0772,CD16+ monocyte,0.0737,Cranial neural crest-derived mesenchymal cell,0.0644,Primitive hematopoiesis cell,0.0618,,False,False,False,False,0.0772,
+316,germ cell,Limbal stem cell,0.0894,Epithelial progenitor cell,0.0878,Squamous cell,0.0826,Conventional dendritic cell 2a(cDC2a),0.0793,,False,False,False,False,0.0894,
+317,germ cell,Germ cell,0.1138,Elongating cell,0.111,Spermatogonial stem cell ,0.106,Follicular B cell,0.0713,1.0,True,True,True,True,0.1138,0.1138
+318,germ cell,Spermatogonial cell,0.1267,Stromal cell,0.0671,Synthetic smooth muscle cell,0.0641,Ascending vasa recta cell,0.0608,,False,False,False,False,0.1267,
+319,germ cell,Follicular B cell,0.0751,Synthetic smooth muscle cell,0.0641,Perichondrial embryonic skeletal stem cell,0.0618,Smooth muscle cell,0.061,,False,False,False,False,0.0751,
+320,germ cell,Chromaffin cell,0.1086,Neural stem cell,0.0676,Ductal cell,0.0671,Ventricular cell,0.0639,,False,False,False,False,0.1086,
+321,germ cell,Intestinal metaplasia cell,0.1133,Spermatogonial cell,0.0951,Germ cell,0.0779,Nephron progenitor cell,0.0681,3.0,False,False,True,True,0.1133,0.0779
+322,germ cell,Radial glial cell,0.092,Antigen presentation cancer-associated fibroblast,0.0889,Mononuclear phagocyte,0.0861,11b+ dendritic cell,0.0768,,False,False,False,False,0.092,
+323,germ cell,Proliferating cell,0.0662,Inner radial glial cell,0.0628,Leukemic stem cell,0.0608,Mature neuronal,0.0608,,False,False,False,False,0.0662,
+324,germ cell,Renal vesicle & comma-shaped body cell,0.097,Cancer stem cell,0.0848,Mesenchymal progenitor cell,0.0762,Proliferative cell,0.068,,False,False,False,False,0.097,
+325,germ cell,Ciliated cell,0.1303,Prospermatogonia,0.105,Ependymal-like cell,0.0662,Stromal progenitor cell,0.0582,,False,False,False,False,0.1303,
+326,germ cell,Prospermatogonia,0.1022,Spermatogonial cell,0.0648,Plasmacytoid dendritic cell(pDC),0.0615,Pan-trophectoderm cell,0.0593,,False,False,False,False,0.1022,
+327,germ cell,Spermatogonial cell,0.0648,Endometrial stromal cell,0.0646,Podocyte precursor,0.0623,Ventral medial ganglionic eminence precursor cell,0.0621,,False,False,False,False,0.0648,
+328,germ cell,Primordial germ cell,0.0637,Podocyte precursor,0.0623,Plasmacytoid dendritic cell,0.058,Scar‐associated macrophage (SAM),0.0573,,False,False,False,False,0.0637,
+329,germ cell,Prospermatogonia,0.1022,Subpallium cell,0.0959,Squamous epithelial cell,0.0629,Distal tubule & loop of Henle cell,0.0624,,False,False,False,False,0.1022,
+330,germ cell,Vas afferen cell,0.1393,Germinal center B cell,0.0804,Pan-endothelial cell,0.0697,Mesenchymal cell,0.064,,False,False,False,False,0.1393,
+331,germ cell,Pan-endothelial cell,0.0739,Neural crest stem cell,0.0627,Intrathymic fibroblast(Fb1),0.0606,Dorsal medial ganglionic eminence precursor cell,0.059,,False,False,False,False,0.0739,
+332,germ cell,Germ cell,0.1589,Proliferative cell,0.1285,Adult spermatogonia,0.1092,Spermatogonial stem cell,0.0937,1.0,True,True,True,True,0.1589,0.1589
+333,germ cell,Germ cell,0.1198,Activated langerhans cell,0.1089,Spermatogonial stem cell,0.0937,Medial and distal segment cell,0.0624,1.0,True,True,True,True,0.1198,0.1198
+334,germ cell,Epiblast cell,0.0921,Neural progenitor cell,0.0726,Foregut cell,0.0679,Frontal cortex cell,0.0657,,False,False,False,False,0.0921,
+335,germ cell,Epiblast cell,0.0921,Horizontal basal cell,0.09,Merkel cell,0.0812,Tumor‐associated macrophage (TAM),0.0789,,False,False,False,False,0.0921,
+336,germ cell,Regulatory T (Treg) cell,0.0985,Alveolar cell Type 1,0.0885,Cancer-associated fibroblast,0.0641,Proximal tubule progenitor cell,0.0615,,False,False,False,False,0.0985,
+337,embryonic stem cell,Epiblast cell,0.3233,Cancer stem cell,0.3206,Spermatogonial stem cell ,0.2754,Stem cell,0.2711,,False,False,False,False,0.3233,
+338,ectodermal cell,Anterior placode cell,0.6312,Osteoprogenitor cell,0.606,Neural precursor cell,0.5371,Proneural cell,0.5282,,False,False,False,False,0.6312,
+339,muscle cell,Myocyte,0.5938,Muscle cell,0.5329,Cardiomyocyte,0.3325,Myoid cell,0.3291,2.0,False,True,True,True,0.5938,0.5329
+340,neural cell,Mature neuronal,0.6446,Caudal forebrain cell,0.5658,Retinal cell,0.5658,Neural precursor cell,0.5391,,False,False,False,False,0.6446,
+341,podocyte,Podocyte,0.3909,Pan-endothelial cell,0.2275,Adult podocyte,0.2081,Mature podocyte,0.2015,1.0,True,True,True,True,0.3909,0.3909
+342,podocyte,Podocyte,0.3567,Mature podocyte,0.266,Adult podocyte,0.196,Podocyte progenitor,0.1915,1.0,True,True,True,True,0.3567,0.3567
+343,primordial germ cell,Spermatogonial stem cell ,0.5917,Pluripotent cell,0.5476,Epiblast cell,0.4991,Pluripotency cell,0.3362,,False,False,False,False,0.5917,
+344,keratinocyte,Keratinocyte,0.8808,Basal epithelial cell,0.5193,Epidermal cell,0.4652,Limbal stem cell,0.4508,1.0,True,True,True,True,0.8808,0.8808
+345,alveolar cell,Alveolar cell,0.6617,Alveolar epithelial cell Type 1,0.415,Alveolar cell Type 1,0.2664,Alveolar cell Type 2,0.2595,1.0,True,True,True,True,0.6617,0.6617
+346,alveolar type ii (atii) cell,Alveolar type II (ATII) cell,0.6679,Alveolar cell Type 2,0.6573,Alveolar epithelial cell Type 2,0.6335,Alveolar cell Type 1,0.4745,1.0,True,True,True,True,0.6679,0.6679
+347,alveolar cell type 1,Alveolar cell Type 1,0.6952,Alveolar epithelial cell Type 1,0.5103,Alveolar cell Type 2,0.5046,Alveolar pneumocyte Type I,0.3776,1.0,True,True,True,True,0.6952,0.6952
+348,ciliated epithelial cell,Ciliated cell,0.2189,Basal cell,0.0849,Club cell (Clara cell),0.0803,Parvalbumin interneuron,0.066,,False,False,False,False,0.2189,
+349,ciliated epithelial cell,Ciliated cell,0.1015,Ciliated epithelial Cell,0.0661,Parvalbumin interneuron,0.066,Respiratory ciliated cell,0.0641,2.0,False,True,True,True,0.1015,0.0661
+350,ciliated epithelial cell,Ciliated cell,0.1853,Respiratory ciliated cell,0.1516,Medial and distal segment cell,0.0778,Proximal segment cell,0.0728,,False,False,False,False,0.1853,
+351,photoreceptor cell,Rod cell,0.5074,Photoreceptor cell,0.4689,Bipolar cell,0.4665,Caudal forebrain cell,0.2068,2.0,False,True,True,True,0.5074,0.4689
+352,cone cell,Cone cell,0.8724,Cone photoreceptor cell,0.7494,Conventional dendritic cell 2a(cDC2a),0.1024,,,1.0,True,True,True,True,0.8724,0.8724
+353,amacrine cell,Amacrine cell,0.9393,GABAergic neuron,0.7256,Interneuron precursor cell,0.5347,lymphatic endothelial cell,0.437,1.0,True,True,True,True,0.9393,0.9393
+354,rod cell,Rod cell,1.0,Neuron,0.0243,,,,,1.0,True,True,True,True,1.0,1.0
+355,corneal epithelial cell,Corneal epithelial cell,1.0,Non-malignant epithelial cell,0.6028,Myo-epithelial cell,0.453,Basal keratinocyte,0.4452,1.0,True,True,True,True,1.0,1.0
+356,sertoli cell,Sertoli cell,0.2897,Malignant plasma cell,0.1109,Primitive endoderm cell,0.1081,Distal tubular cell,0.0841,1.0,True,True,True,True,0.2897,0.2897
+357,sertoli cell,Sertoli cell,0.1831,Goblet cell,0.094,Club cell (Clara cell),0.0914,Granulocyte,0.0874,1.0,True,True,True,True,0.1831,0.1831
+358,sertoli cell,Neurogenic retinal progenitor cell,0.1025,Sertoli cell,0.0979,Pan-endothelial cell,0.0732,Parvalbumin interneuron,0.0648,2.0,False,True,True,True,0.1025,0.0979
+359,granulosa cell,Fibroblast,0.1817,Classical monocyte,0.1714,Interstitial cell,0.1425,Cancer-associated fibroblast,0.1191,,False,False,False,False,0.1817,
+360,mesangial cell,Mesangial cell,0.447,Smooth muscle cell,0.3771,Pericyte,0.2363,Endothelial cell,0.2255,1.0,True,True,True,True,0.447,0.447
+361,pancreatic ductal cell,Ductal cell,0.8149,Cholangiocyte,0.6334,Biliary cell,0.483,Ureteric bud cell,0.4729,,False,False,False,False,0.8149,
+362,kupffer cell,Tumor‐associated macrophage (TAM),0.4185,Conventional dendritic cell 2b(cDC2b),0.3371,Pan-macrophage,0.3247,Mono-macrophage,0.3075,,False,False,False,False,0.4185,
+363,hematopoietic precursor cell,Haematopoietic stem cell,0.7011,Endodermal progenitor cell,0.6827,Haematopoietic progenitor cell,0.6434,Tumor-initiating stem cell(tSC),0.6434,,False,False,False,False,0.7011,
+364,hepatic stellate cell,Cancer-associated fibroblast,0.4211,Fetal leydig progenitor cell,0.3856,Hepatic stellate cell,0.3817,Smooth muscle-like cell,0.3371,3.0,False,False,True,True,0.4211,0.3817
+365,primitive erythrocyte,Primitive erythrocyte,0.8613,Primitive hematopoiesis cell,0.724,Megakaryocyte-erythroid-mast cell progenitor cell,0.5454,Early erythrocyte,0.4975,1.0,True,True,True,True,0.8613,0.8613
+366,sinusoidal endothelial cell,Sinusoidal endothelial cell,1.0,Resident memory T cell,0.5515,Sinusoidal cell,0.4154,Classical dendritic cell b(cDCb),0.3764,1.0,True,True,True,True,1.0,1.0
+367,epidermal stem cell,Haematopoietic progenitor cell,0.4742,Tumor-initiating stem cell(tSC),0.4742,Umbilical cord blood (CB) cell,0.4742,CD4+ tumor antigen-specific T (Tas) cell,0.454,,False,False,False,False,0.4742,
+368,epidermal transit amplifying cell,Epidermal cell,0.9665,Differentiated keratinocyte,0.8311,Intermediate keratinocyte,0.6722,Spinous cell,0.6722,,False,False,False,False,0.9665,
+369,parietal cell,Parietal cell,0.872,Gastric parietal cell,0.613,Perietal cell,0.613,Peritubular myoid cell,0.4691,1.0,True,True,True,True,0.872,0.872
+370,megakaryocyte-erythroid progenitor,Early T cell progenitor (ETP),0.4269,Myeloid progenitor cell,0.3942,Memory CD27+ B cell,0.3671,Mature neutrophil,0.3609,,False,False,False,False,0.4269,
+371,proerythroblast,Erythroblast,0.9268,Erythroid progenitor cell,0.3399,Erythroid cell,0.1516,Red blood cell (erythrocyte),0.058,,False,False,False,False,0.9268,
+372,enterochromaffin cell,Stem-cell-derived-endothelial cell,0.8417,Enterochromaffin cell,0.5129,Hepatoblast,0.453,Midbrain floorplate progenitor cell,0.4065,2.0,False,True,True,True,0.8417,0.5129
+373,endocardial cell,Endocardial cell,0.7066,Early erythroid progenitor cell,0.3846,Early megakaryocyte progenitor cell,0.3846,Neural crest-derived cell,0.3719,1.0,True,True,True,True,0.7066,0.7066
+374,epicardial cell,Epicardial cell,0.7748,Luminal cell,0.4462,Hypoblast cell,0.4302,Glomerular cell,0.4056,1.0,True,True,True,True,0.7748,0.7748
+375,proximal tubule cell,Proximal tubular cell,0.5639,Proximal straight tubular cell,0.3324,Pan Proximal tubular cell,0.3126,Proximal convoluted tubular cell,0.2382,,False,False,False,False,0.5639,
+376,intercalated cell,Intercalated cell,0.7739,Collecting ductal cell,0.6395,Collecting duct-intercalated cell (type A),0.5414,Collecting duct-transitional cell,0.5181,1.0,True,True,True,True,0.7739,0.7739
+377,collecting duct principal cell,Collecting duct-principal cell,0.607,Principal cell,0.3442,Connecting tubular cell,0.2482,Distal convoluted tubule Type 2(DCT2) cell,0.2333,,False,False,False,False,0.607,
+378,distal convoluted tubular cell,Distal convoluted tubule Type 1(DCT1) cell,0.5246,Distal convoluted tubule Type 2(DCT2) cell,0.3516,Melanoma cell,0.2841,Pre-tubular aggregate cell,0.248,,False,False,False,False,0.5246,
+379,liver bud hepatic cell,Hepatocyte,0.1088,Fibrocartilage chondrocyte,0.0996,Pelvic epithelial cell,0.0993,Interferon responsive secretory cell,0.0912,,False,False,False,False,0.1088,
+380,epsilon cell,Epsilon cell,0.7121,Immature endocrine cell,0.3534,Late neuronal progenitor cell,0.2774,Immature medullary thymic epithelial cell,0.2663,1.0,True,True,True,True,0.7121,0.7121
+381,alpha cell (Â¦Ã cell),Alpha cell (α cell),0.3592,Stem-cell-derived-alpha cell,0.2931,Endocrine cell,0.1586,Non-β endocrine cell,0.1347,,False,False,False,False,0.3592,
+382,delta cell,Delta cell,0.7275,Stem-cell-derived-beta cell,0.4051,Gamma cell,0.3446,Non-β endocrine cell,0.2461,1.0,True,True,True,True,0.7275,0.7275
+383,lung epithelial cell,Alveolar cell Type 2,0.6399,Alveolar type II (ATII) cell,0.6213,Lung cell,0.5691,Alveolar epithelial cell Type 2,0.5396,,False,False,False,False,0.6399,
+384,inflammatory cell,Pan-microglial cell,0.8085,Haematopoietic progenitor cell,0.7504,Tumor-initiating stem cell(tSC),0.7504,Umbilical cord blood (CB) cell,0.7504,,False,False,False,False,0.8085,
+385,myotube,Myocyte,0.3638,Muscle cell,0.2347,Myoid cell,0.2112,Cardiomyocyte,0.0691,,False,False,False,False,0.3638,
+386,enteric neuron,Enteric neuron,0.8551,Intrinsic primary afferent neuron,0.4624,Ureteric bud cell,0.3491,Neuronal intermediate progenitor cell,0.3201,1.0,True,True,True,True,0.8551,0.8551
+387,sustentacular cell,Sustentacular cell,1.0,Proneural cell,0.6913,Epiblast-like cell,0.4725,Embryonic stem cell,0.4523,1.0,True,True,True,True,1.0,1.0
+388,theca cell,Theca cell,0.9554,Leptomeningeal cell,0.6113,Ovarian stromal cell,0.4713,Zona fasciculata cell,0.3667,1.0,True,True,True,True,0.9554,0.9554
+389,ovarian stromal cell,Ovarian stromal cell,1.0,Zona fasciculata cell,0.3667,Zona reticularis cell,0.3057,lmmLeydig cell,0.2371,1.0,True,True,True,True,1.0,1.0
+390,ovarian somatic cell,Somatic cell,0.9265,Cancer Stem cell,0.5301,Colonic stem cell,0.5301,Blood vessel cell,0.522,,False,False,False,False,0.9265,
+391,stellate cell,Stellate cell,0.6944,Pro-tumor type-2 pericyte,0.418,Mural cell,0.4035,Cortical stromal cell,0.3872,1.0,True,True,True,True,0.6944,0.6944
+392,pancreatic polypeptide cell,Pancreatic polypeptide cell,0.6807,Dorsal lateral ganglionic eminence precursor cell,0.4653,LGE-lineage cell (lateral ganglionic eminence),0.3584,Undifferentiated pancreatic progenitor cell,0.3537,1.0,True,True,True,True,0.6807,0.6807
+393,arterial endothelial cell,Arterial endothelial cell,0.6206,Arteriole endothelial cell,0.2463,Artery endothelial cell,0.2463,Artery cell,0.1344,1.0,True,True,True,True,0.6206,0.6206
+394,venous endothelial cell,Venous endothelial cell,0.9186,Venous cell,0.2699,Vascular endothelial cell,0.2165,Squamous cell,0.1892,1.0,True,True,True,True,0.9186,0.9186
+395,thyrotrope,Epithelial cell,0.0085,Astrocyte,0.0058,,,,,,False,False,False,False,0.0085,
+396,gonadotrope,Gonadotroph cell,0.3482,,,,,,,,False,False,False,False,0.3482,
+397,somatotrope,,,,,,,,,,False,False,False,False,0.0,
+398,early transit-amplifying prostate epithelial cell,,,,,,,,,,False,False,False,False,0.0,
+399,luteal cell,Syncytiotrophoblast cell,0.406,Classical plasma cell,0.3528,Somatic cell,0.2555,Smooth muscle cell,0.1042,,False,False,False,False,0.406,
+400,peritubular myoid cell,Peritubular myoid cell,0.7702,Myoid cell,0.4204,Pro-tumor type-2 pericyte,0.3862,Muscularis cell,0.3825,1.0,True,True,True,True,0.7702,0.7702
+401,macroglial cell,Macroglial cell,0.8633,Cortical stromal cell,0.3301,Early response secretory cell,0.2923,T cell large granular lymphocytic leukemia cell,0.2832,1.0,True,True,True,True,0.8633,0.8633
+402,horizontal cell,Horizontal cell,0.8129,Pre-tubular aggregate cell,0.5612,Late neuronal progenitor cell,0.5065,Anterior cell,0.3813,1.0,True,True,True,True,0.8129,0.8129
+403,bulge stem cell,CD4+ tumor antigen-specific T (Tas) cell,0.6701,Portal vein epithelial cell,0.477,Mature osteoblast,0.4195,T follicular helper(Tfh) cell,0.1031,,False,False,False,False,0.6701,
+404,skeletal muscle cell,Myoblast,0.4208,Cortical stromal cell,0.3489,Airway smooth muscle cell,0.2998,Muscle cell,0.2349,,False,False,False,False,0.4208,
+405,granule cell,Corneal cell,1.0,Granule cell,1.0,Normal cell,0.093,T helper 2(Th2) cell,0.0389,2.0,False,True,True,True,1.0,1.0
+406,erythroid lineage cell,Erythroid lineage cell,1.0,Immature erythroid cell,0.7317,Erythrocyte,0.5847,Erythroid progenitor cell,0.4851,1.0,True,True,True,True,1.0,1.0
+407,marginal zone b cell,Marginal zone B cell,0.7634,Unswitched and switched memory B cell,0.5504,IgM memory B cell,0.5256,Memory CD27- B cell,0.4987,1.0,True,True,True,True,0.7634,0.7634
+408,tendon cell,Sex+ Cell,0.7875,Tenogenic cell,0.6953,Inflammatory cancer‐associated fibroblast (iCAF),0.6275,Theca cell,0.4725,,False,False,False,False,0.7875,
+409,spermatogonium,Spermatogonial cell,0.6527,Spermatogonial stem cell,0.5834,Trophoblast stem cell,0.2889,Prospermatogonia,0.2785,,False,False,False,False,0.6527,
+410,thymocyte,Fibro-adipogenic progenitor cell,0.4005,Stem cell,0.0262,Natural killer cell,0.0186,Epithelial cell,0.0085,,False,False,False,False,0.4005,
+411,squamous epithelial cell,Squamous epithelial cell,1.0,Basal-like cell,0.9074,Esophageal epithelial cell,0.9074,Non-malignant epithelial cell,0.6111,1.0,True,True,True,True,1.0,1.0
+412,articular chondrocyte,,,,,,,,,,False,False,False,False,0.0,
+413,long-term hematopoietic stem cell,Vein cell,0.3192,Lymphatic endothelial cell,0.2265,Panvascular cell,0.2227,Mesangial cell,0.0966,,False,False,False,False,0.3192,
+414,granulocytopoietic cell,,,,,,,,,,False,False,False,False,0.0,
+415,immature olfactory sensory neuron,Immature neuron,0.262,Retinal ganglion cell,0.2522,Regulatory T(Treg) cell,0.0241,Neuron,0.0123,,False,False,False,False,0.262,
+416,granule cell precursor,Late neuronal progenitor cell,0.5649,Anterior cell,0.4135,Neuronal progenitor cell,0.41,Dorsal lateral ganglionic eminence precursor cell,0.3969,,False,False,False,False,0.5649,
+417,olfactory ensheathing cell,Basal progenitor cell,0.3332,Alveolar pneumocyte Type II,0.2878,Neuroectoderm cell,0.2858,Epsilon cell,0.2796,,False,False,False,False,0.3332,
+418,schwann cell precursor,Schwann cell ,0.7739,Schwann cell precursor cell,0.7547,Melanocytes and Schwann cell,0.5742,Neural Crest (NC) cell,0.5729,,False,False,False,False,0.7739,
+419,preputial gland cell,Mast cell,0.199,Basophil,0.1152,Immune cell,0.0438,CD8+ T cell,0.0236,,False,False,False,False,0.199,
+420,collecting duct intercalated cell,Collecting duct-transitional cell,0.3285,Collecting duct-intercalated cell (type A),0.2919,Collecting ductal cell,0.2486,Pan-Collecting duct-intercalated cell,0.2242,,False,False,False,False,0.3285,
+421,collecting duct transient cell,Collecting duct-transitional cell,0.3825,Collecting duct-intercalated cell (type B),0.2417,Secretory transient-amplifying cell,0.2349,Microvillar cell,0.2247,,False,False,False,False,0.3825,
+422,periportal hepatocyte,Proximal tubule cell,0.4454,Hepatic cell,0.1748,Developing nephron,0.149,Pan Proximal tubular cell,0.117,,False,False,False,False,0.4454,
+423,cumulus cell,,,,,,,,,,False,False,False,False,0.0,
+424,large luteal cell,CD4+ T cell,0.0125,Cancer cell,0.009,,,,,,False,False,False,False,0.0125,
+425,ovarian surface epithelial cell,Fibro-adipogenic progenitor cell,0.4536,Epithelial cell,0.0085,,,,,,False,False,False,False,0.4536,
+426,dermal sheath cell,Pro-tumor type-2 pericyte,0.5961,Muscularis cell,0.5872,Myofibroblastic cancer-associated fibroblast,0.5872,Chondrocyte,0.4181,,False,False,False,False,0.5961,
+427,mucous cell,NECK cell,1.0,Gland mucous cell,0.6723,Basal gland mucous cell,0.6723,Goblet cell,0.0458,,False,False,False,False,1.0,
+428,tendon progenitor,Cap mesenchymal cell,0.8725,Sex+ Cell,0.4175,Mesoderm cell,0.2569,,,,False,False,False,False,0.8725,
+429,spermatocyte,,,,,,,,,,False,False,False,False,0.0,
+430,perivascular reticular cell (prcs),Haematopoietic progenitor cell,1.0,Tumor-initiating stem cell(tSC),1.0,Umbilical cord blood (CB) cell,1.0,Precursor cell,0.4319,,False,False,False,False,1.0,

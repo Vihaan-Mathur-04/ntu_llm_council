@@ -1,10 +1,14 @@
 import json
 
 
-CORPUS_FILE = "backend\\cellmarker_corpus.json"
+CORPUS_FILE = "/Users/vihaan_mathur/ntu_project/llm_council/backend/cellmarker_corpus.json"
 
 DEFAULT_TOP_K = 10
 
+
+# =====================================================
+# LOAD CORPUS
+# =====================================================
 
 def load_corpus():
 
@@ -20,60 +24,132 @@ def load_corpus():
 CORPUS = load_corpus()
 
 
+# =====================================================
+# RETRIEVAL
+# =====================================================
+
 def retrieve_candidates(
     query_markers,
     top_k=DEFAULT_TOP_K
 ):
     """
     Retrieve candidate cell types using
-    marker overlap.
-
-    Returns:
-        List[dict]
+    IDF-weighted Dice similarity.
     """
 
-    query_set = {
-        marker.upper().strip()
-        for marker in query_markers
-    }
+    # ----------------------------------------------------
+    # Normalise query markers
+    # Accept either a comma-separated string or a list
+    # ----------------------------------------------------
+
+    if isinstance(query_markers, str):
+
+        query_markers = [
+
+            gene.strip().upper()
+
+            for gene in query_markers.split(",")
+
+            if gene.strip()
+
+        ]
+
+    else:
+
+        query_markers = [
+
+            str(gene).strip().upper()
+
+            for gene in query_markers
+
+            if str(gene).strip()
+
+        ]
+
+    query_set = set(query_markers)
 
     results = []
 
     for entry in CORPUS:
 
-        cell_markers = {
-            marker.upper().strip()
-            for marker in entry["markers"]
-        }
+        marker_dict = entry["markers"]
 
-        if not cell_markers:
+        if not marker_dict:
             continue
+
+        cell_markers = set(marker_dict.keys())
 
         shared = query_set & cell_markers
 
-        overlap_score = len(shared)
-
-        if overlap_score == 0:
+        if not shared:
             continue
 
-        overlap_fraction = (
-            overlap_score /
-            len(cell_markers)
+        # ----------------------------------------
+        # Weighted overlap
+        # ----------------------------------------
+
+        shared_weight = sum(
+
+            marker_dict[m]["idf"]
+
+            for m in shared
+
+        )
+
+        candidate_weight = sum(
+
+            info["idf"]
+
+            for info in marker_dict.values()
+
+        )
+
+        # Query weight
+        #
+        # We only know IDF values for markers
+        # that exist in the corpus.
+        # Unknown markers receive weight = 1.
+        # ----------------------------------------
+
+        query_weight = 0
+
+        for marker in query_set:
+
+            if marker in marker_dict:
+
+                query_weight += marker_dict[marker]["idf"]
+
+            else:
+
+                query_weight += 1.0
+
+        weighted_dice = (
+
+            2 * shared_weight
+
+        ) / (
+
+            query_weight +
+
+            candidate_weight
+
         )
 
         results.append(
+
             {
+
                 "cell_name":
                     entry["cell_name"],
 
-                "overlap_score":
-                    overlap_score,
+                "dice_score":
+                    round(weighted_dice, 4),
 
-                "overlap_fraction":
-                    round(
-                        overlap_fraction,
-                        4
-                    ),
+                "shared_weight":
+                    round(shared_weight, 4),
+
+                "overlap_score":
+                    len(shared),
 
                 "marker_count":
                     entry["marker_count"],
@@ -85,36 +161,49 @@ def retrieve_candidates(
                     sorted(shared),
 
                 "all_markers":
-                    entry["markers"]
+                    marker_dict
+
             }
+
         )
 
     results.sort(
+
         key=lambda x: (
-            x["overlap_score"],
-            x["overlap_fraction"],
+
+            x["dice_score"],
+
+            x["shared_weight"],
+
             x["evidence_count"]
+
         ),
+
         reverse=True
+
     )
 
     return results[:top_k]
 
 
-def build_evidence_packet(
-    query_markers,
-    top_k=DEFAULT_TOP_K
-):
-    """
-    Main RAG retrieval function.
+# =====================================================
+# BUILD EVIDENCE PACKET
+# =====================================================
 
-    Returns a structured evidence packet
-    for council consumption.
-    """
+def build_evidence_packet(
+
+    query_markers,
+
+    top_k=DEFAULT_TOP_K
+
+):
 
     candidates = retrieve_candidates(
+
         query_markers=query_markers,
+
         top_k=top_k
+
     )
 
     packet = {
@@ -127,28 +216,35 @@ def build_evidence_packet(
 
         "top_candidates":
             []
+
     }
 
     for rank, candidate in enumerate(
+
         candidates,
+
         start=1
+
     ):
 
-        packet[
-            "top_candidates"
-        ].append(
+        packet["top_candidates"].append(
+
             {
+
                 "rank":
                     rank,
 
                 "cell_name":
                     candidate["cell_name"],
 
+                "dice_score":
+                    candidate["dice_score"],
+
+                "shared_weight":
+                    candidate["shared_weight"],
+
                 "overlap_score":
                     candidate["overlap_score"],
-
-                "overlap_fraction":
-                    candidate["overlap_fraction"],
 
                 "marker_count":
                     candidate["marker_count"],
@@ -158,7 +254,9 @@ def build_evidence_packet(
 
                 "shared_markers":
                     candidate["shared_markers"]
+
             }
+
         )
 
     return packet

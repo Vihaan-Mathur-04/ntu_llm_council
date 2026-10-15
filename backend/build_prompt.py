@@ -3,78 +3,79 @@ def build_rag_context(packet):
     Convert a retrieval evidence packet into
     a text block suitable for insertion into
     an LLM prompt.
-
-    Input:
-        build_evidence_packet()
-
-    Output:
-        String
     """
 
     lines = []
 
-    lines.append(
-        "=== RETRIEVED CELL TYPE EVIDENCE ==="
-    )
-
+    lines.append("=== RETRIEVED CELL TYPE EVIDENCE ===")
     lines.append("")
 
-    lines.append(
-        "Observed Marker Genes:"
-    )
+    # -----------------------------------------------------
+    # Query
+    # -----------------------------------------------------
 
-    lines.append(
-        ", ".join(packet["query_markers"])
-    )
-
+    lines.append("Top Retrieved Candidate Cell Types:")
     lines.append("")
 
-    lines.append(
-        "Top Retrieved Candidate Cell Types:"
-    )
+    # -----------------------------------------------------
+    # Candidates
+    # -----------------------------------------------------
 
-    lines.append("")
-
-    for candidate in packet[
-        "top_candidates"
-    ]:
+    for candidate in packet["top_candidates"]:
 
         lines.append(
-            f"{candidate['rank']}. "
-            f"{candidate['cell_name']}"
+            f"{candidate['rank']}. {candidate['cell_name']}"
         )
 
         lines.append(
-            f"   Overlap Score: "
-            f"{candidate['overlap_score']}"
+            f"   Weighted Dice Similarity : {candidate['dice_score']:.3f}"
         )
 
         lines.append(
-            f"   Shared Markers: "
-            + ", ".join(
-                candidate[
-                    "shared_markers"
-                ]
-            )
+            f"   Shared Marker Weight     : {candidate['shared_weight']:.3f}"
         )
 
         lines.append(
-            f"   Evidence Count: "
-            f"{candidate['evidence_count']}"
+            f"   Shared Marker Count      : {candidate['overlap_score']}"
+        )
+
+        lines.append(
+            f"   Evidence Count           : {candidate['evidence_count']}"
+        )
+
+        lines.append(
+            "   Shared Markers           : "
+            + ", ".join(candidate["shared_markers"])
         )
 
         lines.append("")
 
+    # -----------------------------------------------------
+    # Instructions
+    # -----------------------------------------------------
+
     lines.append(
-        "Use the retrieved evidence above "
-        "to support your reasoning."
+        "Interpretation Guidelines:"
     )
 
     lines.append(
-        "Do not simply choose the top-ranked "
-        "candidate. Evaluate all evidence "
-        "carefully before making a final "
-        "cell type prediction."
+        "- Candidates are ranked using an IDF-weighted Dice similarity score."
+    )
+
+    lines.append(
+        "- Rare, biologically specific marker genes contribute more than common marker genes."
+    )
+
+    lines.append(
+        "- Treat the retrieved candidates as supporting biological evidence, not ground truth."
+    )
+
+    lines.append(
+        "- A lower-ranked candidate may still be correct if its marker profile better explains the observed genes."
+    )
+
+    lines.append(
+        "- If none of the retrieved candidates adequately explains the marker genes, you may predict a different cell type and explain why."
     )
 
     return "\n".join(lines)

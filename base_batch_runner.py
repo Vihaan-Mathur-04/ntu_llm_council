@@ -9,8 +9,8 @@ from base_cell_annotations import run_pipeline
 # CONFIG
 # =====================================================
 
-INPUT_FILE = "cellstar_preprocessed.csv"
-OUTPUT_FILE = "base_rag_cellstar_predictions.csv"
+INPUT_FILE="table_format.csv"
+OUTPUT_FILE = "base_new_rag_cellstar_predictions.csv"
 
 BATCH_SIZE = 2
 SLEEP_SECONDS = 5
@@ -19,10 +19,10 @@ SLEEP_SECONDS = 5
 # LOAD FULL DATASET
 # =====================================================
 
-df = pd.read_csv(INPUT_FILE)
-df = df.iloc[[1]].copy()
+df = pd.read_csv(INPUT_FILE).copy()
 
 total_rows = len(df)
+
 
 print(f"[INFO] Total rows in dataset: {total_rows}")
 print(f"[INFO] Batch size: {BATCH_SIZE}")
@@ -36,6 +36,7 @@ if os.path.exists(OUTPUT_FILE):
     os.remove(OUTPUT_FILE)
 
 first_write = True
+overall_start = time.time()
 
 # =====================================================
 # MAIN LOOP (BATCH EXECUTION ENGINE)
@@ -95,4 +96,7 @@ for start_row in range(0, total_rows, BATCH_SIZE):
 print("\n========================================")
 print("ALL BATCHES COMPLETE")
 print(f"FINAL OUTPUT: {OUTPUT_FILE}")
+print(
+    f"TOTAL RUNTIME: {(time.time() - overall_start)/3600:.2f} hours"
+)
 print("========================================")

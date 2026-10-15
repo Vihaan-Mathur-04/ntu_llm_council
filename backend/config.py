@@ -20,8 +20,9 @@ DATA_DIR = "data/conversations"
 
 OLLAMA_MODELS = {
     "medgemma": "medgemma",
-    "qwen": "qwen3.5:4b"   # ✅ FIXED: new primary lightweight model
-}
+    "phi": "phi4-mini:3.8b",
+    "llama": "llama3.1:8b"
+    }
 
 
 # =========================================================
@@ -29,7 +30,7 @@ OLLAMA_MODELS = {
 # =========================================================
 
 HF_MODELS = {
-    "meditron": "meditron:7b"
+    "txgemma":"google/txgemma-9b-chat"
 }
 
 
@@ -38,8 +39,9 @@ HF_MODELS = {
 # =========================================================
 
 COUNCIL_MEMBERS = [
-    "qwen",
-    "meditron"
+    "txgemma",
+    "llama",
+    "phi"
 ]
 
 
@@ -56,11 +58,12 @@ CHAIRMAN_MODEL = "medgemma"
 
 MODEL_BACKENDS = {
     # Ollama-backed models
-    "qwen": "ollama",        # ✅ FIXED
+    "phi": "ollama",        # ✅ FIXED
     "medgemma": "ollama",
 
     # HF-backed models
-    "meditron": "ollama"
+    "llama": "ollama",
+    "txgemma": "hf"
 }
 
 
@@ -69,8 +72,9 @@ MODEL_BACKENDS = {
 # =========================================================
 
 MODEL_ROLES = {
-    "qwen": "general_reasoner",
-    "meditron": "clinical_reasoner",
+    "phi": "simple_reasoner",
+    "llama": "strong_reasoner",
+    "txgemma": "biological_expert",
     "medgemma": "chairman_synthesizer"
 }
 

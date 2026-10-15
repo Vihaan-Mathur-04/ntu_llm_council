@@ -1,0 +1,18 @@
+Metric,Value
+Total Cells,10.0
+Correct Predictions,0.0
+Overall Accuracy,0.0
+Phi Accuracy,0.0
+Llama Accuracy,0.0
+TxGemma Accuracy,0.0
+Phi-Llama Agreement,0.0
+Phi-TxGemma Agreement,0.0
+Llama-TxGemma Agreement,0.0
+All Three Agree,0.0
+Majority Exists,0.0
+Chairman Followed Majority,0.0
+Chairman Overruled Majority,0.0
+Accuracy (Follow Majority),
+Accuracy (Overrule Majority),
+Total Runtime (s),219.59658408164975
+Average Time per Cell (s),21.959658408164977

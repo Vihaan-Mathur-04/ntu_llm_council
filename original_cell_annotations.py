@@ -1,25 +1,13 @@
 """
 Cell annotation pipeline (NTU LLM Council - MEMORY SAFE VERSION)
-
-FINAL ARCHITECTURE:
-- Input: dataframe ONLY (NO file handling here)
-- Load 1 model at a time
-- Run ALL cells
-- Unload model
-- Repeat
-
-Then:
-- Load chairman
-- Produce final classification + reasoning
 """
 
 import asyncio
 import time
 import pandas as pd
-import torch
-import gc
 
-from backend.model_loader import run_unified_model
+from backend.original_council import run_full_council
+from backend.original_council import safe_json_parse
 
 
 # =========================================================
@@ -29,234 +17,275 @@ from backend.model_loader import run_unified_model
 def format_prompt(marker_text: str):
 
     return f"""
-You are a computational biologist performing single-cell RNA-seq cell type annotation.
+You are an expert computational biologist specializing in single-cell RNA sequencing (scRNA-seq) cell type annotation.
 
-You will be given marker genes from ONE biological cell.
+==================================================
 
-Your task is to identify the most likely cell type represented by these genes.
+MARKER GENES
 
-RULES:
-- Output ONLY the final cell type name
-- No explanation
-- No reasoning
-- No gene names
-- No extra text
-- Your response can ONLY be in the 'response', not 'thinking'.
-- Single line output
-
-Examples:
-
-
-Marker genes:
-FCER1A, CLEC10A, HLA-DRA, CD74, CST3
-
-Answer:
-Dendritic cell
-
-Marker genes:
-PECAM1, KDR, VWF, EMCN, ESAM
-
-Answer:
-Endothelial cell
-
-Marker genes:
 {marker_text}
 
-Answer:
+==================================================
+
+Your task is to identify the single most likely biological cell type represented by these marker genes.
+
+The marker genes are presented in arbitrary order.
+
+• The order has NO biological meaning.
+• Evaluate the COMPLETE marker profile before reaching a conclusion.
+• Consider all markers collectively.
+• Do not rely on only one or two genes.
+
+==================================================
+
+BIOLOGICAL ANALYSIS
+
+1. Interpret the marker genes independently.
+2. Identify the most informative lineage-defining markers.
+3. Infer the most likely biological cell type.
+4. Explain your reasoning.
+5. Estimate your confidence.
+
+==================================================
+
+GUIDELINES
+
+• Base your decision ONLY on the supplied marker genes.
+• Mention only the most informative biological markers. You can only mention 5 - 7 marker genes in your reasoning.
+• Keep the reasoning concise (3–5 sentences).
+• Confidence should reflect biological certainty.
+
+==================================================
+
+OUTPUT
+
+Return EXACTLY ONE JSON object.
+
+{{
+  "prediction":"The most likely cell type",
+  "confidence":0.00,
+  "reasoning":"Concise biological explanation."
+}}
+
+IMPORTANT
+
+• Return ONE JSON object only.
+• No markdown.
+• No code fences.
+• No explanations before the JSON.
+• No explanations after the JSON.
+• Stop immediately after the closing brace.
 """.strip()
 
-
 # =========================================================
-# MODEL OVER DATASET (SEQUENTIAL EXECUTION)
-# =========================================================
-
-async def run_model_over_dataset(df, model_name, marker_col):
-
-    predictions = []
-
-    print("\n====================")
-    print(f"LOADING MODEL: {model_name}")
-    print("====================\n")
-
-    batch_start = time.time()
-
-    for i in range(len(df)):
-
-        row_start = time.time()
-
-        marker_text = str(df.iloc[i][marker_col])
-        prompt = format_prompt(marker_text)
-
-        output = run_unified_model(
-            model_name=model_name,
-            prompt=prompt,
-            max_new_tokens=8
-        )
-        print("\nRAW MODEL OUTPUT:")
-        print(repr(output))
-        print()
-
-        label = output.strip() if isinstance(output, str) else "ERROR"
-
-        predictions.append({
-            "label": label,
-            "confidence": None
-        })
-
-        row_time = time.time() - row_start
-        print(f"[{model_name}][{i}] → {label} ({row_time:.2f}s)")
-
-    batch_time = time.time() - batch_start
-    print(f"\n[MODEL DONE] {model_name} took {batch_time:.2f}s\n")
-
-    return predictions
-
-
-# =========================================================
-# CHAIRMAN PASS
-# =========================================================
-
-async def run_chairman(df, base_outputs, marker_col):
-
-    final_labels = []
-    final_confidences = []
-    final_reasoning = []
-
-    print("\n====================")
-    print("LOADING CHAIRMAN (MEDGEMMA)")
-    print("====================\n")
-
-    for i in range(len(df)):
-
-        prompt = f"""
-You are the chairman of a biomedical LLM council.
-
-Marker genes:
-{df.iloc[i][marker_col]}
-
-Base model predictions:
-- Qwen: {base_outputs['qwen'][i]['label']}
-- Meditron: {base_outputs['meditron'][i]['label']}
-
-TASK:
-1. Compare predictions
-2. Resolve disagreement
-3. Output final label
-4. Provide confidence (0-1)
-5. Provide short reasoning
-
-FORMAT:
-LABEL: ...
-CONFIDENCE: ...
-REASONING: ...
-""".strip()
-
-        output = run_unified_model(
-            model_name="medgemma",
-            prompt=prompt,
-            max_new_tokens=128
-        )
-        print("\nRAW MODEL OUTPUT:")
-        print(repr(output))
-        print()
-
-        label = "ERROR"
-        conf = None
-        reasoning = output
-
-        if isinstance(output, str):
-            if "LABEL:" in output:
-                label = output.split("LABEL:")[1].split("\n")[0].strip()
-
-            if "CONFIDENCE:" in output:
-                conf = output.split("CONFIDENCE:")[1].split("\n")[0].strip()
-
-            if "REASONING:" in output:
-                reasoning = output.split("REASONING:")[1].strip()
-
-        final_labels.append(label)
-        final_confidences.append(conf)
-        final_reasoning.append(reasoning)
-
-        print(f"[CHAIR][{i}] → {label}")
-
-    return final_labels, final_confidences, final_reasoning
-
-
-# =========================================================
-# SAFE EXTRACTOR
-# =========================================================
-
-def safe_extract(model_outputs, n):
-    if not model_outputs:
-        return ["ERROR"] * n
-
-    return [
-        x["label"] if isinstance(x, dict) and "label" in x else "ERROR"
-        for x in model_outputs
-    ]
-
-
-# =========================================================
-# PIPELINE (ONLY ACCEPTS DF)
+# PIPELINE
 # =========================================================
 
 async def run_pipeline(df):
 
     pipeline_start = time.time()
-    marker_col = df.columns[2]
 
-    base_outputs = {
-        "qwen": [],
-        "meditron": []
-    }
+    marker_col = df.columns[5]
 
-    # -------------------------
-    # BASE MODELS
-    # -------------------------
-    for model in ["qwen", "meditron"]:
+    # -----------------------------------------------------
+    # Council predictions
+    # -----------------------------------------------------
 
-        preds = await run_model_over_dataset(df, model, marker_col)
-        base_outputs[model] = preds
+    phi_outputs = []
+    llama_outputs = []
+    txgemma_outputs = []
 
-        gc.collect()
-        if torch.backends.mps.is_available():
-            torch.mps.empty_cache()
+    # -----------------------------------------------------
+    # Council reasoning
+    # -----------------------------------------------------
 
-    # -------------------------
-    # CHAIRMAN
-    # -------------------------
-    labels, confs, reasoning = await run_chairman(df, base_outputs, marker_col)
+    phi_reasoning = []
+    llama_reasoning = []
+    txgemma_reasoning = []
 
-    gc.collect()
-    if torch.backends.mps.is_available():
-        torch.mps.empty_cache()
+    # -----------------------------------------------------
+    # Raw outputs
+    # -----------------------------------------------------
+
+    phi_raw = []
+    llama_raw = []
+    txgemma_raw = []
+
+    # -----------------------------------------------------
+    # Chairman outputs
+    # -----------------------------------------------------
+
+    final_labels = []
+    final_confidences = []
+    final_reasoning = []
+    final_raw = []
+
+    # -----------------------------------------------------
+    # Agreement tracking
+    # -----------------------------------------------------
+
+    chairman_followed_rag = []
+    chairman_followed_majority = []
+
+    # =====================================================
+
+    for i in range(len(df)):
+
+        print("\n================================")
+        print(f"CELL {i}")
+        print("================================\n")
+
+        marker_text = str(df.iloc[i][marker_col])
+
+        stage1_results, chairman_result, chairman_raw, metadata = await run_full_council(
+            user_query=format_prompt(marker_text)
+        )
+
+        print("\nSTAGE 1 RESULTS:")
+        print(stage1_results)
+
+        print("\nCHAIRMAN RESULT:")
+        print(chairman_result)
+
+        # -------------------------------------------------
+        # Individual model outputs
+        # -------------------------------------------------
+
+        phi_result = next(
+            (x for x in stage1_results if x["model"] == "phi"),
+            {}
+        )
+
+        llama_result = next(
+            (x for x in stage1_results if x["model"] == "llama"),
+            {}
+        )
+
+        txgemma_result = next(
+            (x for x in stage1_results if x["model"] == "txgemma"),
+            {}
+        )
+
+        # Predictions
+
+        phi_outputs.append(phi_result.get("prediction", "ERROR"))
+        llama_outputs.append(llama_result.get("prediction", "ERROR"))
+        txgemma_outputs.append(txgemma_result.get("prediction", "ERROR"))
+
+        # Reasoning
+
+        phi_reasoning.append(phi_result.get("reasoning", ""))
+        llama_reasoning.append(llama_result.get("reasoning", ""))
+        txgemma_reasoning.append(txgemma_result.get("reasoning", ""))
+
+        # Raw outputs
+
+        phi_raw.append(phi_result.get("raw_response", ""))
+        llama_raw.append(llama_result.get("raw_response", ""))
+        txgemma_raw.append(txgemma_result.get("raw_response", ""))
+
+        # -------------------------------------------------
+        # Chairman
+        # -------------------------------------------------
+
+        if isinstance(chairman_result, str):
+            chairman_result = safe_json_parse(chairman_result)
+
+        if chairman_result is None:
+            chairman_result = {
+                "prediction": "ERROR",
+                "confidence": 0.0,
+                "reasoning": "No chairman response"
+            }
+
+        final_prediction = chairman_result.get(
+            "prediction",
+            "ERROR"
+        )
+
+        final_labels.append(final_prediction)
+        final_confidences.append(
+            chairman_result.get("confidence", None)
+        )
+        final_reasoning.append(
+            chairman_result.get("reasoning", "")
+        )
+
+        final_raw.append(chairman_raw)
+
+        # -------------------------------------------------
+        # Agreement
+        # -------------------------------------------------
+
+
+        chairman_followed_majority.append(
+            metadata.get(
+                "chairman_followed_majority",
+                False
+            )
+        )
+
+    # =====================================================
+    # FINAL DATAFRAME
+    # =====================================================
 
     output_df = df.copy()
 
-    output_df["Qwen"] = safe_extract(base_outputs["qwen"], len(df))
-    output_df["Meditron"] = safe_extract(base_outputs["meditron"], len(df))
+    # -------------------------------
+    # Model predictions
+    # -------------------------------
 
-    output_df["Council_Final"] = labels
-    output_df["Council_Confidence"] = confs
-    output_df["Council_Reasoning"] = reasoning
+    output_df["Phi"] = phi_outputs
+    output_df["Llama"] = llama_outputs
+    output_df["TxGemma"] = txgemma_outputs
+
+    # -------------------------------
+    # Model reasoning
+    # -------------------------------
+
+    output_df["Phi_Reasoning"] = phi_reasoning
+    output_df["Llama_Reasoning"] = llama_reasoning
+    output_df["TxGemma_Reasoning"] = txgemma_reasoning
+
+    # -------------------------------
+    # Raw outputs
+    # -------------------------------
+
+    output_df["Phi_Raw"] = phi_raw
+    output_df["Llama_Raw"] = llama_raw
+    output_df["TxGemma_Raw"] = txgemma_raw
+
+    # -------------------------------
+    # Final council output
+    # -------------------------------
+
+    output_df["Council_Final"] = final_labels
+    output_df["Council_Confidence"] = final_confidences
+    output_df["Council_Reasoning"] = final_reasoning
+    output_df["Council_Raw"] = final_raw
+
+    # -------------------------------
+    # Chairman agreement
+    # -------------------------------
+
+    output_df["Chairman_Followed_Majority"] = chairman_followed_majority
 
     print("\n========================")
     print("DONE")
     print("========================")
-    print(f"TOTAL TIME: {(time.time() - pipeline_start)/60:.2f} minutes")
+    print(
+        f"TOTAL TIME: {(time.time() - pipeline_start)/60:.2f} minutes"
+    )
+    total_runtime = time.time() - pipeline_start
+
+    output_df["Total_Runtime_Seconds"] = total_runtime
 
     return output_df
 
 
 # =========================================================
-# ENTRY POINT (SAFE TEST ONLY)
+# ENTRY POINT
 # =========================================================
 
 if __name__ == "__main__":
-
-    # IMPORTANT:
-    # DO NOT call run_pipeline with arguments anymore.
-    # Use batch_runner.py for slicing.
-
     print("[INFO] This module is now pipeline-only (no direct execution).")

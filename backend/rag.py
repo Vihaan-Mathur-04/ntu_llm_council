@@ -2,23 +2,23 @@ from backend.rag_retriever import build_evidence_packet
 from backend.build_prompt import build_rag_context
 
 
-DEFAULT_TOP_K = 10
+DEFAULT_TOP_K = 4
 
 
-def build_base_centric_prompt(
+def build_rag_prompt(
     marker_list,
     original_prompt,
     top_k=DEFAULT_TOP_K
 ):
     """
-    Base-Centric RAG
+    Shared RAG Builder
 
-    Retrieval occurs BEFORE
-    any council member sees
-    the prompt.
+    Constructs a retrieval-augmented prompt by appending
+    retrieved CellMarker evidence to an existing prompt.
 
-    Every model receives the
-    same retrieved evidence.
+    The function is architecture-independent and can be
+    used by both the base-centric and chairman-centric
+    council pipelines.
     """
 
     packet = build_evidence_packet(

@@ -1,0 +1,2 @@
+Model,Reference Column,Correct Predictions,Total Cells,Accuracy
+MedGemma,Cell_Name_Extended,11,236,0.046610169491525424
